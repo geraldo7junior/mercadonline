@@ -1,0 +1,15 @@
+
+
+
+
+<H2 TEXT-ALIGN='CENTER'><b><FONT FACE="TIMES" SIZE="1"><p align="center">Desenvolvedores</p></font></b></H2>
+<hr>
+
+Carlos César Bezerra Fonseca (Developer)cc_bf@hotmail.com ;<br>
+Cybele Félix Amorim Veríssimo (DBA, Tester)cybeleamorissimo@yahoo.com.br;<br>
+Edmiel Leandro Bandeira da Silva (Design)edmielleandro@gmail.com;<br>
+Geraldo Gomes da Cruz Júnior (Project Manager, Documentation, Design, Web and App Developer) <a href="geraldoj8@gmail.com">geraldoj8@gmail.com</a> ;<br> 
+Larissa Karollyne de Melo Ferreira (DBA, Tester)larissakarollyne@gmail.com ;<br>
+Mário Gomes de Melo (Developer)infoninja@hotmail.com .<br>
+<br>
+<hr>
