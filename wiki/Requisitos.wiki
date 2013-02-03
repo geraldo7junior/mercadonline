@@ -1,0 +1,57 @@
+
+
+
+
+<h2><b><FONT FACE="TIMES" SIZE="5"><p align="CENTER">MercadOnline System</p></font></b></h2>
+<hr>
+
+<h2><b><FONT FACE="TIMES" SIZE="5"><p align="CENTER">Requisitos Funcionais</p></font></b></h2>
+<hr>
+
+“São as declarações de serviços que o sistema deve fornecer, como o sistema deve reagir a entradas específicas e como o sistema deve se comportar em determinadas situações. Em alguns casos, os requisitos funcionais podem também estabelecer explicitamente o que o sistema não deve fazer.”<br>
+(Sommerville, Ian; Engenharia de Software, 2007, p. 80)<br>
+Os requisitos funcionais do sistema têm como meta:<br>
+•	RF001: Permitir o cadastro de clientes; <br>
+•	RF002: Recadastramento de clientes; <br>
+•	RF003: Ferramenta “Carrinho de compras”; <br>
+•	RF004: Ter a opção de imprimir comprovante de compra realizada; <br>
+•	RF005: Fornecer opções de pagamento; <br>
+•	RF006: Calcular o frete; <br>
+•	RF007: Permitir o contato entre cliente e supermercado; <br>
+•	RF008: Conter espaço para sugestões e críticas; <br>
+•	RF009: Fornecer características do produto; <br>
+•	RF0010: Exibir promoções; <br>
+•	RF0011: Autenticação por meio de login e senha; <br>
+•	RF0012: Fornecer categorias de produtos; <br>
+•	RF0013: Gerar protocolo ao finalizar uma compra; <br>
+•	RF0014: Imprimir dados das compras; <br>
+•	RF0015: Ter a opção de cancelar seleção de produto; <br>
+•	RF0016: Exibir mensagem de erros e sugestões; <br>
+•	RF0017: Salvar histórico de compras de clientes; <br>
+•	RF0018: Ter a opção de produtos sugeridos; <br>
+•	RF0019: Exibir histórico de compras para o usuário; <br>
+•	RF0020: Gerar relatório para administração. <br>
+<br>
+<hr>
+<br>
+
+
+
+<H2 TEXT-ALIGN='CENTER'><b><FONT FACE="TIMES" SIZE="5"><p align="center">Requisitos Não Funcionais</p></font></b></H2>
+<hr>
+
+<p align="justify">“Os requisitos não funcionais, como o nome sugere, são aqueles não diretamente relacionados às funções específicas fornecidas pelo sistema. Eles podem estar relacionados às propriedades emergentes do sistema, como confiabilidade, tempo de resposta e espaço de armazenamento. Como alternativa, eles podem definir restrições, como a capacidade dos dispositivos de E/S (entrada/saída) e as representações de dados usadas nas interfaces do sistema.”</p>
+<p>(Sommerville, Ian; Engenharia de Software, 2007, p. 82)<br>
+<p>Os requisitos não-funcionais do sistema têm como meta:<br>
+•	RNF001: Ser simples e intuitivo; <br>
+•	RNF002: A transição entre as páginas deve ocorrer em menos de 3s ; <br>
+•	RNF003: O banco de dados deve ser atualizado em tempo real; <br>
+•	RNF004: O sistema deve ser seguro; <br>
+•	RNF005: O hardware do sistema deve ser assegurado por um gerador (no-break); <br>
+•	RNF006: Não deve revelar aos operadores todos os dados pessoais do cliente; <br>
+•	RNF006: A linguagem de programação usada como padrão deve ser JAVA. <br>
+<br>
+<br>
+<hr>
+<hr>
+<br>  
