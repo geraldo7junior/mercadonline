@@ -1,0 +1,12 @@
+
+
+
+<H2><b><FONT FACE="TIMES" SIZE="5"><p align="center">Descrição do projeto</p></font></b></H2>
+<HR SIZE=1 WIDTH=100% COLOR="BLACK">
+<p align="JUSTIFY">Este projeto consiste em um sistema voltado para o gerenciamento e mecanismo de compra e venda a distância de supermercados.</p>
+<p align="JUSTIFY">O sistema visa simplificar o processo de compra e venda e poupar tempo e disposição de clientes, bem como ser capaz de gerenciar tais compras de maneira eficiente. Com isso espera-se que tal facilite o dia-a-dia dos clientes, como também traga maiores lucros ao estabelecimento comercial. </p>
+<p align="JUSTIFY">O software é subdividido em duas seções, uma gerencial e uma para o cliente, estas se comunicando através do mesmo servidor. O software cliente deve estar instalado no computador do usuário, cliente, e por este o mesmo poderá realizar seu cadastro, bem como realizar suas compras. O programa irá dispor de todos os produtos, bem como promoções, do mercado vinculado a este. O cliente cadastrado poderá adicionar os itens desejados para compra em uma ferramenta “carrinho de compras”, ao selecionar um produto o cliente terá informações específicas sobre esse, como a validade. Ao finalizar as opções de compras o sistema irá expor o local previamente cadastrado como opção padrão de entrega e da a opção de mudar local, ao se definir local de entrega o sistema irá calcular o preço total e expor o mesmo, bem como opções de pagamento. O sistema ao término da compra ainda emite um protocolo de pedido compra realizado. </p>
+<p align="JUSTIFY">O software gerencial é operado pela própria administração do mercado, este é responsável por mediar às compras, exibir pedidos pendentes, adicionar novos produtos ou promoções, dar baixa em pedidos, entre outros. Este também tem o papel financeiro, sendo responsável por balanços e ganhos por período, como também gerencial, de identificação de clientes, servindo para criar um perfil do mesmo para melhor atende-lo, impressão de pedidos de compras vinculados ao protocolo, entre outras funções. </p>
+<br>
+<hr>
+ 
