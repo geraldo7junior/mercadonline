@@ -1,8 +1,7 @@
 
 
 
-
-<h2><b><FONT FACE="TIMES" SIZE="5"><p align="CENTER">MercadOnline System</p></font></b></h2>
+<h2><b><FONT FACE="TIMES" SIZE="5"><p align="CENTER">Mercadonline System</p></font></b></h2>
 <hr>
 
 <h2><b><FONT FACE="TIMES" SIZE="5"><p align="CENTER">Requisitos Funcionais</p></font></b></h2>
