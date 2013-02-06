@@ -51,5 +51,4 @@ Os requisitos funcionais do sistema têm como meta:<br>
 <br>
 <br>
 <hr>
-<hr>
 <br>  
