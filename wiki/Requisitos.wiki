@@ -1,6 +1,6 @@
 ||<a href="http://code.google.com/p/mercadonline">Home</a>||<a href="http://code.google.com/p/mercadonline/wiki/DescricaoDoProjeto">Descrição Do Sistema</a>||<a href="http://code.google.com/p/mercadonline/wiki/Requisitos">Requisitos</a>||<a href="http://code.google.com/p/mercadonline/wiki/CasosDeUso">Casos de Uso</a>||<a href="http://code.google.com/p/mercadonline/wiki/DiagramasDeCasosDeUso">Diagramas</a>||<a href="http://code.google.com/p/mercadonline/wiki/ModeloDeEntidadeRelacional">Modelo de Entidade Relacional</a>||<a href="http://code.google.com/p/mercadonline/wiki/Desenvolvedores">Desenvolvedores</a>||<a href="http://code.google.com/p/mercadonline/wiki/Bibliografia">Bibliografia</a>||||<a href="http://code.google.com/p/mercadonline/wiki/video">Vídeos</a>||
 
-<h2><b><FONT FACE="TIMES" SIZE="5"><p align="CENTER">Mercadonline System</p></font></b></h2>
+<h2><b><FONT FACE="TIMES" SIZE="5"><p align="CENTER">Mercadonline</p></font></b></h2>
 <hr>
 
 <h2><b><FONT FACE="TIMES" SIZE="5"><p align="CENTER">Requisitos Funcionais</p></font></b></h2>
