@@ -49,6 +49,4 @@ Os requisitos funcionais do sistema têm como meta:<br>
 •	RNF006: Não deve revelar aos operadores todos os dados pessoais do cliente; <br>
 •	RNF006: A linguagem de programação usada como padrão deve ser JAVA. <br>
 <br>
-<br>
-<hr>
-<br>  
+<hr> 
