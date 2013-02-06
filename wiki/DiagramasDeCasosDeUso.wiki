@@ -5,6 +5,6 @@
 
 <h2><b><p align="center">Diagramas De Casos De Uso Mercadonline</p></b></h2><br>
 
-<p align="center"><img src="https://lh5.googleusercontent.com/-NrhV0R7ebco/URJCntNIQsI/AAAAAAAAANI/P2Rs2U8Aim4/s800/Diagrama%2520de%2520casos%2520de%2520uso.JPG"><br>
+<p align="center"><img src="https://lh3.googleusercontent.com/-IWw2Z5l2jCA/URKeQgT63jI/AAAAAAAAANk/V9Y-lL2N7X0/s800/Diagrama%2520de%2520Casos%2520de%2520Uso%2520Mercadonline.jpg"><br>
 <br>
 <hr>
