@@ -6,6 +6,7 @@
 <a href="https://docs.google.com/document/d/1EHLgKGBXoBV50Azw0Cu4ZHr4W7pOa7s_C4cc5Xv2-KQ/edit?usp=sharing">Relatório</a>
 <br>
 <a href="https://docs.google.com/spreadsheet/ccc?key=0AphIXVRKD54qdGh5bU1Sb0U4Y2k4WHZnYnBSTDFOSUE&usp=sharing">Planilha de requisitos</a>
-
+<br>
+<a href="https://docs.google.com/document/d/1ytBN3a4B-j1G7KokzgoWSOzdkZpeyeCOs62KN0F-FME/edit?usp=sharing">User stories, Planning poker e Business value</a> 
 <br>
 <hr>
