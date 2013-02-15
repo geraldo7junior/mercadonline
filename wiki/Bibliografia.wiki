@@ -8,5 +8,12 @@
 
 <p>1.	Sommerville, Ian. Requisitos de software. In: Ian Sommerville(Org.). Engenharia de Software. São Paulo: Pearson Addison - Wesley, 2007, p. 79-82.<br>
 <p>2.	Booch, Grady; Rumbaugh, James; Jacobson, Ivar; Casos de uso; Diagrama de casos de uso. IN: Booch, Grady; Rumbaugh, James; Jacobson, Ivar(Org.). UML: Guia do Usuário. Rio de Janeiro: Elsevier, 2005, p. 227-242.<br>
+
+<p>3. BROWN, William J. et ali. Antipatterns and Patterns in Software Configuration Management. Nova Iorque: Wiley computer publishing, 1999. 0-471-32929-0.<br>
+<p>4.	MIKKELSEN, Tim, PHERIGO, Suzanne. Parctical Software Configuration Management: The Latenight Developer's Handbook. Upper Saddle River, NJ, EUA: Prentice Hall PTR, 1997. 0-13-240854-6.<br>
+<p>5.	MOLINARI, Leonardo. Gerência de Configuração - Técnicas e Práticas no Desenvolvimento do Software. Florianópolis: Visual Books, 2007. 85-7502-210-5.<br>
+<p>6.	PRESSMAN, Roger S.. Engenharia de Software. São Paulo: Pearson Makron Books, 1995. 85-346-0237-9.<br>
+<p><a href="http://www.pronus.eng.br">7. Pronus.</a><br>
+
 <br>
 <hr>
