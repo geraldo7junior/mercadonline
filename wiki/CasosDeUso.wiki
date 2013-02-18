@@ -1,3 +1,5 @@
 ||<a href="http://code.google.com/p/mercadonline">Home</a>||<a href="http://code.google.com/p/mercadonline/wiki/DescricaoDoProjeto">Descrição Do Sistema</a>||<a href="http://code.google.com/p/mercadonline/wiki/Requisitos">Requisitos</a>||<a href="http://code.google.com/p/mercadonline/wiki/CasosDeUso">Casos de Uso</a>||<a href="http://code.google.com/p/mercadonline/wiki/Diagramas">Diagramas</a>||<a href="http://code.google.com/p/mercadonline/wiki/Docs">Docs</a>||||<a href="http://code.google.com/p/mercadonline/wiki/Desenvolvedores">Desenvolvedores</a>||<a href="http://code.google.com/p/mercadonline/wiki/Bibliografia">Bibliografia</a>||||<a href="http://code.google.com/p/mercadonline/wiki/video">Vídeos</a>||
 
-Em Breve !!!
+<a href="http://mercadonline.googlecode.com/files/DetalhamentoCasosDeUso_UC_17022013.pdf">Detalhamento dos Casos de Uso</a> 
+<br>
+<hr>
