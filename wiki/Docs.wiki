@@ -7,6 +7,8 @@
 <br>
 <a href="https://docs.google.com/spreadsheet/ccc?key=0AphIXVRKD54qdGh5bU1Sb0U4Y2k4WHZnYnBSTDFOSUE&usp=sharing">Planilha de requisitos</a>
 <br>
+<a href="https://docs.google.com/document/d/1ytBN3a4B-j1G7KokzgoWSOzdkZpeyeCOs62KN0F-FME/edit?usp=sharing">User Stories, Planning Poker e Business Value</a>
+<br>
 <a href="https://docs.google.com/document/d/1tZMeTsO2qYFATV0GGM6wmsnU3H5AX03t_ygXh_6NcrQ/edit?usp=sharing">Plano de gerência de configuração</a> 
 <br>
 <hr>
