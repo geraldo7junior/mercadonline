@@ -3,11 +3,11 @@
 <H2 TEXT-ALIGN='CENTER'><b><FONT FACE="TIMES" SIZE="1"><p align="center">Desenvolvedores</p></font></b></H2>
 <hr>
 
-Carlos César Bezerra Fonseca (--)cc_bf@hotmail.com ;<br>
-Cybele Félix Amorim Veríssimo (--)cybeleamorissimo@yahoo.com.br;<br>
-Geraldo Gomes da Cruz Júnior (--) <a href="geraldoj8@gmail.com">geraldoj8@gmail.com</a> ;<br> 
-Larissa Karollyne de Melo Ferreira (--)larissakarollyne@gmail.com ;<br>
-Mário Gomes de Melo (--)infoninja@hotmail.com .<br>
-Wendislau Victor Santos da Silva (--)wendislau_victor@hotmail.com;<br>
+Carlos César Bezerra Fonseca (Developer, DBA, CCB, Maintenance)cc_bf@hotmail.com ;<br>
+Cybele Félix Amorim Veríssimo (Tester, Design, DBA, CCB, Quality control, Auditors)cybeleamorissimo@yahoo.com.br;<br>
+Geraldo Gomes da Cruz Júnior (Developer, Documentation, Desing, Project Manager, CCB, Requirements, Graph) <a href="geraldoj8@gmail.com">geraldoj8@gmail.com</a> ;<br> 
+Larissa Karollyne de Melo Ferreira (Tester, Documentation, DBA, CCB, Requirements, Graph, Auditors)larissakarollyne@gmail.com ;<br>
+Mário Gomes de Melo (Developer, DBA, CCB, Maintenance)infoninja@hotmail.com .<br>
+Wendislau Victor Santos da Silva (Tester, DBA, CCB, Quality control, Auditors)wendislau_victor@hotmail.com;<br>
 <br>
 <hr>
