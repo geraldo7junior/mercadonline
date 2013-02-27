@@ -3,25 +3,3 @@
 <a href="http://mercadonline.googlecode.com/files/DetalhamentoCasosDeUso_UC_17022013.pdf">Detalhamento dos Casos de Uso</a> 
 <br>
 <hr>
-
-==Detalhamento dos Casos de Uso Mercadon==
-
-==UC0001 - Gerenciar Autenticação==
-
-||*Objetivos:*|| 
-||Controle dos usuários dos sistema, aumentando a segurança, e filtrando o acesso de distintos usuários deste.||
-||*Descrição:*||
-||O usuário acessa o sistema por meio de um ID e Senha e a partir destes é direcionado para sua devida área de acesso.||
-||*Ator:*||
-||Operador de caixa, Cliente e Gerente.||
-||*Prioridade:*||
-||Alta.||
-||*Pré-condição:*||
-||Estar cadastrado no sistema.||
-||*Pós-condição:*||
-||Acessar áreas diversas do sistema.||
-||Cenários Principais dos casos de uso:||
-||O usuário fornece ao sistema seu ID e senha e acessa este.||
-||*Fluxos altenativos:||
-||1. O usuárionão cadastrado deve procurar o gerente do projeto ou o operador de cadastro.||
-||2. Se o login ou senha estiverem incorretos a mensagem de erro deve ser exibida para o usuário.(ERRO 0001)||
