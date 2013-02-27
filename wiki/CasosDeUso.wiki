@@ -23,5 +23,5 @@
 ||Cenários Principais dos casos de uso:||
 ||O usuário fornece ao sistema seu ID e senha e acessa este.||
 ||*Fluxos altenativos:||
-||1. O usuárionão cadastrado deve procurar o gerente do projeto ou o operador de cadastro. 
-2. Se o login ou senha estiverem incorretos a mensagem de erro deve ser exibida para o usuário.(ERRO 0001)||
+||1. O usuárionão cadastrado deve procurar o gerente do projeto ou o operador de cadastro.||
+||2. Se o login ou senha estiverem incorretos a mensagem de erro deve ser exibida para o usuário.(ERRO 0001)||
