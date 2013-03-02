@@ -8,17 +8,17 @@
 
 ==UC0001 - Gerenciar Autenticação==
 
-||*Objetivos:*|| 
+||*Objetivos:|| 
 ||Controle dos usuários dos sistema, aumentando a segurança, e filtrando o acesso de distintos usuários deste.||
-||*Descrição:*||
+||*Descrição:||
 ||O usuário acessa o sistema por meio de um ID e Senha e a partir destes é direcionado para sua devida área de acesso.||
-||*Ator:*||
+||*Ator:||
 ||Operador de caixa, Cliente e Gerente.||
-||*Prioridade:*||
+||*Prioridade:||
 ||Alta.||
-||*Pré-condição:*||
+||*Pré-condição:||
 ||Estar cadastrado no sistema.||
-||*Pós-condição:*||
+||*Pós-condição:||
 ||Acessar áreas diversas do sistema.||
 ||Cenários Principais dos casos de uso:||
 ||O usuário fornece ao sistema seu ID e senha e acessa este.||
@@ -29,9 +29,9 @@
 
 ==UC0002 - Gerenciar Cadastro==
 
-||*Objetivos:*||
+||*Objetivos:||
 ||Cadastrar, recadastrar e excluir.||
-||*Descrição:*||
+||*Descrição:||
 ||O usuário na página de cadastro pode preencher sua planilha de solicitação de cadastramento no sistema, ou ainda se já for cadastrado, pode alterar seu cadastro ou até mesmo exclui-lo.||
 ||O cadastro do usuario ocorrerá frente ao fornecimento das informações:||
 ||• Tipo (obrigatório);||
@@ -44,15 +44,15 @@
 ||• Foto (obrigatório);||
 ||• Fone (obrigatório);||
 ||• Senha (obrigatório);||
-||*Ator:*||
+||*Ator:||
 ||Operador de caixa, Cliente e Gerente.||
-||*Prioridade:*||
+||*Prioridade:||
 ||Alta||
-||*Pré-condição:*||
+||*Pré-condição:||
 ||Querer participar do sistema ou para o caso de recadastramento e exclusão já está no sistema.||
-||*Pós-condição:*||
+||*Pós-condição:||
 ||Após confirmadas as informações e realizado o processo de cadastro, o usuário é tido como cadastrado, recadastrado ou excluído do sistema.||
-||*Cenários Principais dos casos de uso:*||
+||*Cenários Principais dos casos de uso:||
 ||O usuário é cadastrado, recadastrado ou excluído com sucesso do sistema.||
-||*Fluxos Alternativos:*||
+||*Fluxos Alternativos:||
 ||1. Caso as informações fornecidas pelo usuário não forem similares ao padrão, por exemplo, cpf, o qual mantém um padrão, o programa informará a falta de dígitos; (ERRO 002, ERRO 003).||
