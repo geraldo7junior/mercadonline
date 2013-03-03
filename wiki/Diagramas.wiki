@@ -6,20 +6,19 @@
 <h2><b><p align="center">Diagrama De Casos De Uso Mercadonline</p></b></h2><br>
 
 <p align="center"><img src="https://lh3.googleusercontent.com/-KLou6G9QZR4/USF-VN5paGI/AAAAAAAAAOg/Z3ZFqIIlc14/s800/DiagramaCasoUsoMercadon_UCD_17022013.jpg"><br>
-<a href="https://mercadonline.googlecode.com/files/DiagramaCasoUsoMercadon_UCD_17022013.jpg">DiagramaCasoUsoMercadon_UCD_17022013 - Versão: 0.01</a> 
+<a href="https://mercadonline.googlecode.com/files/DiagramaCasoUsoMercadon_UCD_17022013.jpg">Versão: 0.01</a> 
 <hr>
 
 <h2><b><p align="center">Diagrama De Classe Mercadonline</p></b></h2><br>
 
 <p align="center"><img src="https://lh5.googleusercontent.com/-eoSTEJgwZdc/UTOyjwvGjNI/AAAAAAAAAPs/G6IpwEXk1Bk/s800/DiagramaClasseMercadon_CD_27022013.jpg"><br>
-<a href="https://mercadonline.googlecode.com/files/DiagramaClasseMercadon_CD_27022013.jpg">DiagramaClasseMercadon_CD_27022013 - Versão: 1.0</a> 
+<a href="https://mercadonline.googlecode.com/files/DiagramaClasseMercadon_CD_27022013.jpg">Versão: 1.0</a> 
 <hr>
 
 <h2><b><p align="center">Diagrama De Pacotes</p></b></h2><br>
 
 <p align="center"><img src="https://lh6.googleusercontent.com/-PZSD4KQ9bV4/UTOyi93TPGI/AAAAAAAAAPk/-onu9eglrPQ/s800/DiagramaPacoteMercadon_PKGD_27022013.jpg"><br>
-<a href="
-https://mercadonline.googlecode.com/files/DiagramaPacoteMercadon_PKGD_27022013.jpg">DiagramaPacoteMercadon_PKGD_27022013 - Versão: 1.0</a> 
+<a href=" https://mercadonline.googlecode.com/files/DiagramaPacoteMercadon_PKGD_27022013.jpg">Versão: 1.0</a> 
 <hr>
 
 
