@@ -381,8 +381,10 @@
 ==UC0020 - Gerenciar Informações==
 || *Objetivos:* ||
 || Visualizar o histórico de todos os clientes, bem como poder gerenciar os produtos do mercado. ||
-|| *Descrição:* ||||O gerente do mercado poderá ter acesso e controlar informações referentes aos clientes cadastrados e funcionários do sistema. Tal gerente possui acesso privilegiado ao sistema, podendo atuar com as mesmas funções dos demais operadores. Este possui acessos exclusivos, como o cadastro de operadores nas demais atividades do sistema, como também um sistema inteligente de busca de informações, referentes
-aos históricos de compras realizadas pelos clientes. Este ainda pode gerenciar produtos realizando o cadastramento de novos, alterando informações existentes nos presentes ou excluindo produtos do sistema|||| *Ator:* ||
+|| *Descrição:* ||
+|| O gerente do mercado poderá ter acesso e controlar informações referentes aos clientes cadastrados e funcionários do sistema. Tal gerente possui acesso privilegiado ao sistema, podendo atuar com as mesmas funções dos demais operadores. Este possui acessos exclusivos, como o cadastro de operadores nas demais atividades do sistema, como também um sistema inteligente de busca de informações, referentes
+aos históricos de compras realizadas pelos clientes. Este ainda pode gerenciar produtos realizando o cadastramento de novos, alterando informações existentes nos presentes ou excluindo produtos do sistema. ||
+|| *Ator:* ||
 || Gerente. ||
 || *Prioridade:* ||
 || Alta. ||
