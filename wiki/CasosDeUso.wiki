@@ -76,7 +76,7 @@
 ||   1. Caso esteja faltando algum dado importante, aparecerá um asterisco vermelho no campo do dado. ||
 ||   2. Se o cartão de crédito utilizado, ou melhor forma de pagamento, estiver com algum problema, aparecerá a mensagem de erro de entrada inválida. (ERRO 002, ERRO 003) ||
 
-==UC0004 - Cancelar cadastro <<extend>> UC0002==
+==UC0004 - Cancelar cadastro / _extend UC0002_==
 || *Objetivos:* ||
 || Cancelar o cadastro do usuário. ||
 || *Descrição:* ||
@@ -94,7 +94,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. Caso o cadastro não consiga ser cancelado, procurar o gerente do mercado. ||
 
-==UC0005 - Alterar cadastro <<extend>> UC0002==
+==UC0005 - Alterar cadastro / _extend UC0002_==
 || *Objetivos:* ||
 || Alterar os dados do cadastro. ||
 || *Descrição:* ||
@@ -131,7 +131,7 @@
 || *Fluxos Alternativos:* ||
 ||   - ||
 
-==UC0007 - Histórico Particular <<include>> UC0006==
+==UC0007 - Histórico Particular / _include UC0006_==
 || *Objetivos:* ||
 || O usuário poderá ver o que já foi comprado por ele no sistema. ||
 || *Descrição:* ||
@@ -151,7 +151,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. Se as condições necessárias para se acessar este caso de uso não estiverem de acordo, ele aparecerá em branco. ||
 
-==UC0008 - Opções de compras <<include>> UC0006==
+==UC0008 - Opções de compras / _include UC0006_==
 || *Objetivos:* ||
 || O cliente poderá escolher que produto deseja comprar, através da disposição dele por categorias. ||
 || *Descrição:* ||
@@ -171,7 +171,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. Se o produto não estiver disponível aparecerá a mensagem ‘produto indisponível’. (ERRO 008) ||
 
-==UC0009 - Pesquisar Produto <<include>> UC0006==
+==UC0009 - Pesquisar Produto / _include UC0006_==
 || *Objetivos:* ||
 || O usuário poderá pesquisar com facilidade o produto desejado. ||
 || *Descrição:* ||
@@ -190,7 +190,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. Se o produto não for encontrado ou estiver indisponível no momento as mensagens dever ser exibidas para o usuário. (ERRO 007, ERRO 008) ||
 
-==UC0010 - Informações do Produto <<include>> UC0007, UC0008, UC0009==
+==UC0010 - Informações do Produto / _include UC0007, UC0008, UC0009_==
 || *Objetivos:* ||
 || O usuário poderá visualizar informações do produto que deseja comprar. ||
 || *Descrição:* ||
@@ -209,7 +209,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. Se o produto não for e|ncontrado ou não estiver indisponível no momento as mensagens devem ser exibidas para o usuário. (ERRO 007, ERRO 008) ||
 
-==UC0011 - Carrinho de compras <<include>> UC0007, UC0008, UC0009==
+==UC0011 - Carrinho de compras / _include UC0007, UC0008, UC0009_==
 || *Objetivos:* ||
 || O usuário poderá adicionar os produtos desejados a está ferramenta. ||
 || *Descrição:* ||
@@ -228,7 +228,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. O cliente pode remover produtos do carrinho de compras. ||
 
-==UC0012 - Opções de pagamento/frete <<extend>> UC0011==
+==UC0012 - Opções de pagamento/frete / _extend UC0011_==
 || *Objetivos:* ||
 || Escolher o local de entrega, logo efetuando o calculo do frete e por fim escolher a melhor forma de pagamento. ||
 || *Descrição:* ||
@@ -248,7 +248,7 @@
 ||   1. Se o local de entrega não for encontrado informar ao usuário; ||
 ||   2. Se a forma de pagamento inserida não estiver de acordo informar ao usuário. (ERRO 005, ERRO 006) ||
 
-==UC0013 - Cancelar <<extend>> UC0012==
+==UC0013 - Cancelar / _extend UC0012_==
 || *Objetivos:* ||
 || Cancelar compra. ||
 || *Descrição:* ||
@@ -267,7 +267,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. Se o usuário não conseguir cancelar sua compra, entrar em contato com o gerente. ||
 
-==UC0014 - Finalizar compra <<extend>> UC0012==
+==UC0014 - Finalizar compra / _extend UC0012_==
 || *Objetivos:* ||
 || Finalizar o pedido, compra. ||
 || *Descrição:* ||
@@ -286,7 +286,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. Algum problema com a opção de compra ou produtos escolhidos deve ser informado. ||
 
-==UC0015 - Gerar comprovante de compra <<include>> UC0014==
+==UC0015 - Gerar comprovante de compra / _include UC0014_==
 || *Objetivos:* ||
 || Gerar comprovante de compra. ||
 || *Descrição:* ||
@@ -304,7 +304,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. Caso haja qualquer erro, o usuário deverá em contato com o gerente. ||
 
-==UC0016 - Gerenciar entrega <<include>> UC0015==
+==UC0016 - Gerenciar entrega / _include UC0015_==
 || *Objetivos:* ||
 || O caixa e o gerente terão controle sobre o pedido realizado pelo cliente. ||
 || *Descrição:* ||
@@ -323,7 +323,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. Algum problema com o pedido o gerente deve ser informado. ||
 
-==UC0017 - Imprimir comprovante <<extend>> UC0015==
+==UC0017 - Imprimir comprovante / _extend UC0015_==
 || *Objetivos:* ||
 || Imprimir o comprovante de compra realizada. ||
 || *Descrição:* ||
@@ -360,7 +360,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. Se os dados necessários para se estabelecer o contato não estiverem devidamente preenchidos, a mensagem de erro deve ser exibida.  (ERRO 003) ||
 
-==UC0019 - Preencher formulário <<extend>> UC0018==
+==UC0019 - Preencher formulário / _extend UC0018_==
 || *Objetivos:* ||
 || Preencher o formulário de contato. ||
 || *Descrição:* ||
@@ -397,7 +397,7 @@ aos históricos de compras realizadas pelos clientes. Este ainda pode gerenciar 
 || *Fluxos Alternativos:* ||
 ||   1. Caso o gerente não esteja conseguindo acessar o sistema deverá procurar os desenvolvedores. ||
 
-==UC0021 - Histórico de compras <<extend>> UC0020==
+==UC0021 - Histórico de compras / _extend UC0020_==
 || *Objetivos:* ||
 || Visualizar o histórico de todos os clientes. ||
 || *Descrição:* ||
@@ -424,7 +424,7 @@ aos históricos de compras realizadas pelos clientes. Este ainda pode gerenciar 
 ||   1. Caso o gerente não esteja conseguindo acessar o sistema deverá procurar os desenvolvedores; ||
 ||   2. Caso algum espaço no sistema de busca estiver em branco este deve ser alertado ao gerente. (ERRO 002, ERRO 003) ||
 
-==UC0022 - Gerenciar Produtos <<extend>> UC0020==
+==UC0022 - Gerenciar Produtos / _extend UC0020_==
 || *Objetivos:* ||
 || Controlar os produtos disponíveis no sistema, bem como suas características. ||
 || *Descrição:* ||
@@ -470,7 +470,7 @@ aos históricos de compras realizadas pelos clientes. Este ainda pode gerenciar 
 || *Fluxos Alternativos:* ||
 ||   1. Caso o gerente não esteja conseguindo acessar o sistema deverá procurar os desenvolvedores. ||
 
-==UC0024 - Gerar relatórios <<extend>> UC0023==
+==UC0024 - Gerar relatórios / _extend UC0023_==
 || *Objetivos:* ||
 || Gerar relatórios. ||
 || *Descrição:* ||
