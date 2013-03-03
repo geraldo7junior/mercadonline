@@ -24,7 +24,7 @@
 || O usuário fornece ao sistema seu ID e senha e acessa este. ||
 || *Fluxos altenativos:* ||
 || 1. O usuárionão cadastrado deve procurar o gerente do projeto ou o operador de cadastro. ||
-|| 2. Se o login ou senha estiverem incorretos a mensagem de erro deve ser exibida para o usuário.(ERRO 0001) ||
+|| 2. Se o login ou senha estiverem incorretos a mensagem de erro deve ser exibida para o usuário. (ERRO 0001) ||
 
 
 ==UC0002 - Gerenciar Cadastro==
@@ -47,7 +47,7 @@
 || *Ator:* ||
 || Operador de caixa, Cliente e Gerente. ||
 || *Prioridade:* ||
-|| Alta ||
+|| Alta. ||
 || *Pré-condição:* ||
 || Querer participar do sistema ou para o caso de recadastramento e exclusão já está no sistema. ||
 || *Pós-condição:* ||
@@ -67,7 +67,7 @@
 || *Prioridade:* ||
 || Alta ||
 || *Pré-condição:* ||
-|| UC0001 ||
+|| UC0001. ||
 || *Pós-condição:* ||
 || Finalizar cadastro. ||
 || *Cenários Principais dos casos de uso:* ||
@@ -129,7 +129,7 @@
 || *Cenários Principais dos casos de uso:* || 
 || O cliente seleciona os produtos desejados, opção de pagamento e destino e finaliza a compra. O operador de caixa regula a situação do pedido até a sua entrega. ||
 || *Fluxos Alternativos:* ||
-
+|| - ||
 ==UC0007 - Histórico Particular <<include>> UC0006==
 || *Objetivos:* ||
 || O usuário poderá ver o que já foi comprado por ele no sistema. ||
@@ -168,7 +168,7 @@
 || *Cenários Principais dos casos de uso:* ||
 || O usuário escolhe os produtos entre as abas, podendo adicioná-los ao carrinho de compras. ||
 || *Fluxos Alternativos:* ||
-|| 1. Se o produto não estiver disponível aparecerá a mensagem ‘produto indisponível’.(ERRO 008) ||
+|| 1. Se o produto não estiver disponível aparecerá a mensagem ‘produto indisponível’. (ERRO 008) ||
 
 ==UC0009 - Pesquisar Produto <<include>> UC0006==
 || *Objetivos:* ||
@@ -245,7 +245,7 @@
 || O usuário Escolhe o local de entrega tem o preço total informado e escolhe a melhor forma de pagamento. ||
 || *Fluxos Alternativos:* ||
 || 1. Se o local de entrega não for encontrado informar ao usuário; ||
-|| 2. Se a forma de pagamento inserida não estiver de acordo informar ao usuário; (ERRO 005, ERRO 006) ||
+|| 2. Se a forma de pagamento inserida não estiver de acordo informar ao usuário. (ERRO 005, ERRO 006) ||
 
 ==UC0013 - Cancelar <<extend>> UC0012==
 || *Objetivos:* ||
@@ -357,7 +357,7 @@
 || *Cenários Principais dos casos de uso:* ||
 || O usuário previamente cadastrado consegue entrar em contato com o gerente. ||
 || *Fluxos Alternativos:* ||
-|| 1. Se os dados necessários para se estabelecer o contato não estiverem devidamente preenchidos, a mensagem de erro deve ser exibida. (ERRO 003) ||
+|| 1. Se os dados necessários para se estabelecer o contato não estiverem devidamente preenchidos, a mensagem de erro deve ser exibida.  (ERRO 003) ||
 
 ==UC0019 - Preencher formulário <<extend>> UC0018==
 || *Objetivos:* ||
@@ -375,7 +375,7 @@
 || *Cenários Principais dos casos de uso:* ||
 || O usuário previamente cadastrado consegue preencher o formulário. ||
 || *Fluxos Alternativos:* ||
-|| 1. Se os dados necessários para se estabelecer o contato não estiverem devidamente preenchidos, a mensagem de erro deve ser exibida. (ERRO 003) ||
+|| 1. Se os dados necessários para se estabelecer o contato não estiverem devidamente preenchidos, a mensagem de erro deve ser exibida.  (ERRO 003) ||
 
 ==UC0020 - Gerenciar Informações==
 || *Objetivos:* ||
@@ -492,11 +492,11 @@ aos históricos de compras realizadas pelos clientes. Este ainda pode gerenciar 
 || 1. Caso o gerente não esteja conseguindo acessar o sistema deverá procurar os desenvolvedores. ||
 
 ==CATÁLOGO DE ERROS==
-|| *ERRO 0001:* Login ou senha incorretos. Tente novamente. ||
-|| *ERRO 002:* Dados incorretos. ||
-|| *ERRO 003:* Faltam dados para a conclusão desta etapa. ||
-|| *ERRO 004:* Erro ao imprimir. ||
-|| *ERRO 005:* Local de entrega não encontrado. ||
-|| *ERRO 006:* Forma de pagamento incorreta. ||
-|| *ERRO 007:* Produto não encontrado. ||
-|| *ERRO 008:* Produto Indisponível. ||
+|| *ERRO 0001:* "Login ou senha incorretos. Tente novamente." ||
+|| *ERRO 002:* "Dados incorretos." ||
+|| *ERRO 003:* "Faltam dados para a conclusão desta etapa." ||
+|| *ERRO 004:* "Erro ao imprimir." ||
+|| *ERRO 005:* "Local de entrega não encontrado." ||
+|| *ERRO 006:* "Forma de pagamento incorreta." ||
+|| *ERRO 007:* "Produto não encontrado." ||
+|| *ERRO 008:* "Produto Indisponível." ||
