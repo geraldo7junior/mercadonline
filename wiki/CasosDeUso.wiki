@@ -56,3 +56,447 @@
 || O usuário é cadastrado, recadastrado ou excluído com sucesso do sistema. ||
 || *Fluxos Alternativos:* ||
 || 1. Caso as informações fornecidas pelo usuário não forem similares ao padrão, por exemplo, cpf, o qual mantém um padrão, o programa informará a falta de dígitos; (ERRO 002, ERRO 003). ||
+
+==UC0003 - Preencher dados <<include>> UC0002==
+|| *Objetivos:* ||
+|| Preencher os dados do cadastro de todos os usuários.||
+|| *Descrição:* ||
+|| Preencher dados para assim criar um cadastro contendo todos os dados dos usuários, para evitar erros e se ter controle. ||
+|| *Ator:* ||
+|| Operador de caixa, Cliente e Gerente. ||
+|| *Prioridade:* ||
+|| Alta ||
+|| *Pré-condição:* ||
+|| UC0001 ||
+|| *Pós-condição:* ||
+|| Finalizar cadastro. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário preencherá os dados. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Caso esteja faltando algum dado importante, aparecerá um asterisco vermelho no campo do dado. ||
+|| 2. Se o cartão de crédito utilizado, ou melhor forma de pagamento, estiver com algum problema, aparecerá a mensagem de erro de entrada inválida. (ERRO 002, ERRO 003) ||
+
+==UC0004 - Cancelar cadastro <<extend>> UC0002==
+|| *Objetivos:* ||
+|| Cancelar o cadastro do usuário. ||
+|| *Descrição:* ||
+|| Poder cancelar o cadastro de gerente/operador que não irá mais utilizar o programa, e de um cliente que queira cancelar seu cadastro por um motivo qualquer. ||
+|| *Ator:* ||
+|| Cliente, operador de caixa, gerente. ||
+|| *Prioridade:* ||
+|| Baixa. ||
+|| *Pré-condição:* ||
+|| Ter realizado o cadastro. ||
+|| *Pós-condição:* ||
+|| Cancelamento do cadastro. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| Usuário cancelará o cadastro. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Caso o cadastro não consiga ser cancelado, procurar o gerente do mercado. ||
+
+==UC0005 - Alterar cadastro <<extend>> UC0002==
+|| *Objetivos:* ||
+|| Alterar os dados do cadastro. ||
+|| *Descrição:* ||
+|| Alterar cadastro sempre que o usuário desejar. ||
+|| *Ator:* ||
+|| Cliente, operador de caixa, gerente. ||
+|| *Prioridade:* ||
+|| Média. ||
+|| *Pré-condição:* ||
+|| Ter realizado o cadastro. ||
+|| *Pós-condição:* ||
+|| Ter os dados alterados. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| Usuário consegue alterar cadastro. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Caso esteja faltando algum dado importante, aparecerá um asterisco vermelho no campo do dado. ||
+|| 2. Se o cartão de crédito utilizado, ou melhor forma de pagamento, estiver com algum problema, aparecerá a mensagem de erro de entrada inválida. (ERRO 002, ERRO 003) ||
+
+==UC0006 - Gerenciar Compras==
+|| *Objetivos:* ||
+|| Fazer com que o cliente encontre os seus produtos desejados e consiga compra-los. ||
+|| *Descrição:* ||
+|| O cliente pode pesquisar por um produto especifico, busca-lo por categorias, ou ainda seleciona-los de uma compra anterior, ao selecionar algum produto tem-se informações sobre ele. Estes podem ser adicionados à ferramenta “Carrinho de compras”, nesta ficaram armazenados todos os produtos desejados para compra. Com isso pode-se optar por opções de pagamento e frete e finalizar a compra, logo gerando um protocolo de confirmação de pedido. A partir deste o operador de caixa poderá controlar se o pedido já foi entregue ou não. ||
+|| *Ator:* ||
+|| Operador de caixa, Cliente e Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| Estar cadastrado no sistema. ||
+|| *Pós-condição:* ||
+|| Realizar compra. ||
+|| *Cenários Principais dos casos de uso:* || 
+|| O cliente seleciona os produtos desejados, opção de pagamento e destino e finaliza a compra. O operador de caixa regula a situação do pedido até a sua entrega. ||
+|| *Fluxos Alternativos:* ||
+
+==UC0007 - Histórico Particular <<include>> UC0006==
+|| *Objetivos:* ||
+|| O usuário poderá ver o que já foi comprado por ele no sistema. ||
+|| *Descrição:* ||
+|| O usuário poderá ver o que já foi comprado por ele no sistema, podendo repetir a comprar ou adicionar ou remover produtos a está lista já predefinida. ||
+|| *Ator:* ||
+|| Cliente, Caixa e Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| 1. Estar cadastrado no sistema; ||
+|| 2. Estar realizando uma compra; ||
+|| 3. Já ter realizado alguma compra. ||
+|| *Pós-condição:* ||
+|| O usuário vê o que já foi comprado por ele. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário vê o que já foi comprado por ele, podendo ou não confirmar a compra. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Se as condições necessárias para se acessar este caso de uso não estiverem de acordo, ele aparecerá em branco. ||
+
+==UC0008 - Opções de compras <<include>> UC0006==
+|| *Objetivos:* ||
+|| O cliente poderá escolher que produto deseja comprar, através da disposição dele por categorias. ||
+|| *Descrição:* ||
+|| O cliente terá a possiblidade de selecionar por categorias qual o produto que ele deseja comprar, facilitando assim suas compras. ||
+|| *Ator:* ||
+|| Cliente, gerente e operador de caixa. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| 1. Estar cadastrado no sistema; ||
+|| 2. Estar realizando uma compra; ||
+|| 3. Já ter realizado alguma compra. ||
+|| *Pós-condição:* ||
+|| O usuário seleciona o seu produto pelo menu de categorias. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário escolhe os produtos entre as abas, podendo adicioná-los ao carrinho de compras. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Se o produto não estiver disponível aparecerá a mensagem ‘produto indisponível’.(ERRO 008) ||
+
+==UC0009 - Pesquisar Produto <<include>> UC0006==
+|| *Objetivos:* ||
+|| O usuário poderá pesquisar com facilidade o produto desejado. ||
+|| *Descrição:* ||
+|| O usuário poderá pesquisar com facilidade o produto desejado e adicioná-lo ao seu carrinho de compras. ||
+|| *Ator:* ||
+|| Cliente, Caixa e Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| 1. Estar cadastrado no sistema; ||
+|| 2. Estar realizando uma compra. ||
+|| *Pós-condição:* ||
+|| O usuário realiza a pesquisa do produto. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário acha o produto desejado. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Se o produto não for encontrado ou estiver indisponível no momento as mensagens dever ser exibidas para o usuário. (ERRO 007, ERRO 008) ||
+
+==UC0010 - Informações do Produto <<include>> UC0007, UC0008, UC0009==
+|| *Objetivos:* ||
+|| O usuário poderá visualizar informações do produto que deseja comprar. ||
+|| *Descrição:* ||
+|| O usuário poderá visualizar informações do produto que deseja comprar, como nome, marca, mL´s, peso, validade e etc... ||
+|| *Ator:* ||
+|| Cliente, Caixa e Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| 1. Estar cadastrado no sistema; ||
+|| 2. Estar realizando uma compra. ||
+|| *Pós-condição:* ||
+|| O usuário visualiza as características do produto. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário visualiza as características do produto. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Se o produto não for e|ncontrado ou não estiver indisponível no momento as mensagens devem ser exibidas para o usuário. (ERRO 007, ERRO 008) ||
+
+==UC0011 - Carrinho de compras <<include>> UC0007, UC0008, UC0009==
+|| *Objetivos:* ||
+|| O usuário poderá adicionar os produtos desejados a está ferramenta. ||
+|| *Descrição:* ||
+|| O usuário poderá adicionar os produtos desejados a está ferramenta, bem como, visualizá-los e remove-los. A partir desta ferramenta que o usuário começa a concretização de sua compra. ||
+|| *Ator:* ||
+|| Cliente, Caixa e Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| 1. Estar cadastrado no sistema; ||
+|| 2. Estar realizando uma compra. ||
+|| *Pós-condição:* ||
+|| O usuário adiciona os seus produtos a ferramenta. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário adiciona os seus produtos desejados a ferramenta. ||
+|| *Fluxos Alternativos:* ||
+|| 1. O cliente pode remover produtos do carrinho de compras. ||
+
+==UC0012 - Opções de pagamento/frete <<extend>> UC0011==
+|| *Objetivos:* ||
+|| Escolher o local de entrega, logo efetuando o calculo do frete e por fim escolher a melhor forma de pagamento. ||
+|| *Descrição:* ||
+|| Escolher o local de entrega, logo efetuando o calculo do frete. O local de entrega predefinido é o informado no cadastro. Por fim escolher a melhor forma de pagamento. ||
+|| *Ator:* ||
+|| Cliente, Caixa e Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| 1. Estar cadastrado no sistema; ||
+|| 2. Estar realizando uma compra. ||
+|| *Pós-condição:* ||
+|| O usuário Escolhe o local de entrega tem o preço total informado e escolhe a melhor forma de pagamento. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário Escolhe o local de entrega tem o preço total informado e escolhe a melhor forma de pagamento. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Se o local de entrega não for encontrado informar ao usuário; ||
+|| 2. Se a forma de pagamento inserida não estiver de acordo informar ao usuário; (ERRO 005, ERRO 006) ||
+
+==UC0013 - Cancelar <<extend>> UC0012==
+|| *Objetivos:* ||
+|| Cancelar compra. ||
+|| *Descrição:* ||
+|| O usuário poderá cancelar sua compra. ||
+|| *Ator:* ||
+|| Cliente, Caixa e Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| 1. Estar cadastrado no sistema; ||
+|| 2. Estar realizando uma compra. ||
+|| *Pós-condição:* ||
+|| Ter cancelamento efetuado.||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário consegue cancelar sua compra. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Se o usuário não conseguir cancelar sua compra, entrar em contato com o gerente. ||
+
+==UC0014 - Finalizar compra <<extend>> UC0012==
+|| *Objetivos:* ||
+|| Finalizar o pedido, compra. ||
+|| *Descrição:* ||
+|| O usuário após escolher os produtos desejados, local de entrega e opção de pagamento, opta por finalizar o processo de compra, logo a efetuando. ||
+|| *Ator:* ||
+|| Cliente, Caixa e Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| 1. Estar cadastrado no sistema; ||
+|| 2. Estar realizando uma compra. ||
+|| *Pós-condição:* ||
+|| O usuário após escolher os produtos desejados, local de entrega e opção de pagamento, opta por finalizar o processo de compra, logo a efetuando. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário após escolher os produtos desejados, local de entrega e opção de pagamento, opta por finalizar o processo de compra, logo a efetuando. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Algum problema com a opção de compra ou produtos escolhidos deve ser informado. ||
+
+==UC0015 - Gerar comprovante de compra <<include>> UC0014==
+|| *Objetivos:* ||
+|| Gerar comprovante de compra. ||
+|| *Descrição:* ||
+|| O comprovante é gerado para que tanto o cliente, como o gerente tenham um forma de comprovar que tal compra foi realizada. ||
+|| *Ator:* ||
+|| Cliente, Caixa e Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| 1. O usuário ter realizado uma compra. ||
+|| *Pós-condição:* ||
+|| Comprovante gerado. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário gera um relatório de compra. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Caso haja qualquer erro, o usuário deverá em contato com o gerente. ||
+
+==UC0016 - Gerenciar entrega <<include>> UC0015==
+|| *Objetivos:* ||
+|| O caixa e o gerente terão controle sobre o pedido realizado pelo cliente. ||
+|| *Descrição:* ||
+|| O caixa e o gerente terão controle sobre o pedido realizado pelo cliente, sabendo o atual estado deste, se está em espera, em andamento ou se já foi entregue. ||
+|| *Ator:* ||
+|| Caixa e Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| 1. Estar cadastrado no sistema; ||
+|| 2. Gerenciar uma compra já finalizada (a partir do protocolo desta). ||
+|| *Pós-condição:* ||
+|| O operador de caixa controla as compras já efetuadas. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O operador de caixa controla as compras já efetuadas. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Algum problema com o pedido o gerente deve ser informado. ||
+
+==UC0017 - Imprimir comprovante <<extend>> UC0015==
+|| *Objetivos:* ||
+|| Imprimir o comprovante de compra realizada. ||
+|| *Descrição:* ||
+|| O usuário após efetuar a compra poderá imprimir o comprovante desta com data, hora, produtos e o protocolo de compra/venda. ||
+|| *Ator:* ||
+|| Cliente, Caixa e Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| 1. Estar cadastrado no sistema; ||
+|| 2. Já ter finalizado a compra. ||
+|| *Pós-condição:* ||
+|| O usuário imprimi o seu comprovante. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário imprimi o seu comprovante. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Algum problema com a impressão deve ser informado ao gerente. (ERRO 004) ||
+
+==UC0018 - Gerenciar Contatos==
+|| *Objetivos:* ||
+|| O usuário entrar em contato com o gerente. ||
+|| *Descrição:* ||
+|| O usuário pode indicar sugestões, dúvidas ou problemas ao gerente. ||
+|| *Ator:* ||
+|| Cliente e Gerente. ||
+|| *Prioridade:* ||
+|| Média. ||
+|| *Pré-condição:* ||
+|| Estar cadastrado no sistema. ||
+|| *Pós-condição:* ||
+|| Enviar a mensagem. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário previamente cadastrado consegue entrar em contato com o gerente. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Se os dados necessários para se estabelecer o contato não estiverem devidamente preenchidos, a mensagem de erro deve ser exibida. (ERRO 003) ||
+
+==UC0019 - Preencher formulário <<extend>> UC0018==
+|| *Objetivos:* ||
+|| Preencher o formulário de contato. ||
+|| *Descrição:* ||
+|| O usuário pode preencher um formulário de contato para ser enviado para o gerente. ||
+|| *Ator:* ||
+|| Cliente e Gerente. ||
+|| *Prioridade:* ||
+|| Média. ||
+|| *Pré-condição:* ||
+|| Estar cadastrado no sistema. ||
+|| *Pós-condição:* ||
+|| Preencher o formulário. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O usuário previamente cadastrado consegue preencher o formulário. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Se os dados necessários para se estabelecer o contato não estiverem devidamente preenchidos, a mensagem de erro deve ser exibida. (ERRO 003) ||
+
+==UC0020 - Gerenciar Informações==
+|| *Objetivos:* ||
+|| Visualizar o histórico de todos os clientes, bem como poder gerenciar os produtos do mercado. ||
+|| *Descrição:* ||
+|| O gerente do mercado poderá ter acesso e controlar informações referentes aos clientes cadastrados e funcionários do sistema. Tal gerente possui acesso privilegiado ao sistema, podendo atuar com as mesmas funções dos demais operadores. Este possui acessos exclusivos, como o cadastro de operadores nas demais atividades do sistema, como também um sistema inteligente de busca de informações, referentes
+aos históricos de compras realizadas pelos clientes. Este ainda pode gerenciar produtos realizando o cadastramento de novos, alterando informações existentes nos presentes ou excluindo produtos do sistema. ||
+|| *Ator:* ||
+|| Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| O gerente está no sistema. ||
+|| *Pós-condição:* ||
+|| O gerente pode realizar ações no sistema. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O gerente pode realizar ações no sistema. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Caso o gerente não esteja conseguindo acessar o sistema deverá procurar os desenvolvedores. ||
+
+==UC0021 - Histórico de compras <<extend>> UC0020==
+|| *Objetivos:* ||
+|| Visualizar o histórico de todos os clientes. ||
+|| *Descrição:* ||
+|| O gerente do mercado poderá ter acesso um sistema inteligente de busca de informações, referentes aos históricos de compras realizadas pelos clientes. ||
+|| A busca por históricos de compras será realizada frente aos filtros: ||
+|| • Protocolo da compra; ||
+|| • Data da compra; ||
+|| • Hora da compra; ||
+|| • Valores da compra; ||
+|| • Apresentou erro; ||
+|| • Cpf Cliente; ||
+|| • Nome Cliente; ||
+|| *Ator:* ||
+|| Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| O gerente está no sistema. ||
+|| *Pós-condição:* ||
+|| O gerente visualiza um histórico de usuário. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O gerente visualiza um histórico de usuário. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Caso o gerente não esteja conseguindo acessar o sistema deverá procurar os desenvolvedores; ||
+|| 2. Caso algum espaço no sistema de busca estiver em branco este deve ser alertado ao gerente. (ERRO 002, ERRO 003) ||
+
+==UC0022 - Gerenciar Produtos <<extend>> UC0020==
+|| *Objetivos:* ||
+|| Controlar os produtos disponíveis no sistema, bem como suas características. ||
+|| *Descrição:* ||
+|| O gerente do mercado poderá ter acesso e controlar informações referentes aos produtos do sistema, realizando o cadastramento de novos, alterando informações existentes nos presentes ou excluindo produtos do sistema. ||
+|| O cadastro de novos produtos ocorrerá frente ao fornecimento das informações: ||
+|| • Categoria (obrigatório); ||
+|| • Nome (obrigatório); ||
+|| • Marca (obrigatório); ||
+|| • Código (obrigatório); ||
+|| • Volume (obrigatório); ||
+|| • Massa (obrigatório); ||
+|| • Data de validade (obrigatório); ||
+|| • Informações nutricionais (obrigatório); ||
+|| *Ator:* ||
+|| Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| O gerente está no sistema. ||
+|| *Pós-condição:* ||
+|| O gerente pode realizar a gerencia em produtos. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O gerente pode realizar a gerencia em produtos. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Caso o gerente não esteja conseguindo acessar o sistema deverá procurar os desenvolvedores; ||
+|| 2. Caso algum espaço no cadastro do produto estiver em branco este deve ser alertado ao gerente. (ERRO 002, ERRO 003) ||
+
+==UC0023 - Gerenciar Finanças==
+|| *Objetivos:* ||
+|| Relatar movimentações financeiras periódicas ao gerente. ||
+|| *Descrição:* ||
+|| O gerente do mercado poderá gerenciar os ganhos do estabelecimento a partir de diversos filtros, poderá analisar ganhos por dia, mês, dentre outros .Este caso de uso visa um controle de porte financeiro, informando ao gerente quais os períodos de maior arrecadação, quais os clientes com maiores e menores volumes de compras, quais os produtos mais vendidos, enfim um sistema inteligente de relatórios financeiros. ||
+|| *Ator:* ||
+|| Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| O gerente está no sistema. ||
+|| *Pós-condição:* ||
+|| O gerente pode realizar o gerenciamento das finanças. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O gerente pode realizar o gerenciamento das finanças. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Caso o gerente não esteja conseguindo acessar o sistema deverá procurar os desenvolvedores. ||
+
+==UC0024 - Gerar relatórios <<extend>> UC0023==
+|| *Objetivos:* ||
+|| Gerar relatórios. ||
+|| *Descrição:* ||
+|| O gerente do mercado poderá gerenciar os ganhos do estabelecimento a partir da geração de relatórios, frente a diversos filtros. ||
+|| Os relatórios poderão ser gerados frentes aos seguintes filtros: ||
+|| • Dia; ||
+|| • Mês; ||
+|| • Intervalo de horário; ||
+|| *Ator:* ||
+|| Gerente. ||
+|| *Prioridade:* ||
+|| Alta. ||
+|| *Pré-condição:* ||
+|| O gerente está no sistema. ||
+|| *Pós-condição:* ||
+|| O gerente gera o relatório. ||
+|| *Cenários Principais dos casos de uso:* ||
+|| O gerente escolhe o filtro que deseja para o relatório e este é gerado. ||
+|| *Fluxos Alternativos:* ||
+|| 1. Caso o gerente não esteja conseguindo acessar o sistema deverá procurar os desenvolvedores. ||
+
+==CATÁLOGO DE ERROS==
+|| *ERRO 0001:* Login ou senha incorretos. Tente novamente. ||
+|| *ERRO 002:* Dados incorretos. ||
+|| *ERRO 003:* Faltam dados para a conclusão desta etapa. ||
+|| *ERRO 004:* Erro ao imprimir. ||
+|| *ERRO 005:* Local de entrega não encontrado. ||
+|| *ERRO 006:* Forma de pagamento incorreta. ||
+|| *ERRO 007:* Produto não encontrado. ||
+|| *ERRO 008:* Produto Indisponível. ||
