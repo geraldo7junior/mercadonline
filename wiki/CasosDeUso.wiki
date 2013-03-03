@@ -57,7 +57,7 @@
 || *Fluxos Alternativos:* ||
 ||   1. Caso as informações fornecidas pelo usuário não forem similares ao padrão, por exemplo, cpf, o qual mantém um padrão, o programa informará a falta de dígitos; (ERRO 002, ERRO 003). ||
 
-==UC0003 - Preencher dados <include> UC0002==
+==UC0003 - Preencher dados _include UC0002_==
 || *Objetivos:* ||
 || Preencher os dados do cadastro de todos os usuários.||
 || *Descrição:* ||
