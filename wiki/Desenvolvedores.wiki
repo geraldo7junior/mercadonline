@@ -5,9 +5,9 @@
 
 Carlos César Bezerra Fonseca (Developer, DBA, CCB, Maintenance)cc_bf@hotmail.com ;<br>
 Cybele Félix Amorim Veríssimo (Tester, Design, DBA, CCB, Quality control, Auditors)cybeleamorissimo@yahoo.com.br;<br>
-Geraldo Gomes da Cruz Júnior (Developer, Documentation, Desing, CCB, Requirements, Graph) <a href="geraldoj8@gmail.com">geraldoj8@gmail.com</a> ;<br> 
+Geraldo Gomes da Cruz Júnior (Developer, DBA, Documentation, Desing, CCB, Requirements, Graph) <a href="geraldoj8@gmail.com">geraldoj8@gmail.com</a> ;<br> 
 Larissa Karollyne de Melo Ferreira (Tester, Documentation, DBA, CCB, Requirements, Graph, Auditors)larissakarollyne@gmail.com ;<br>
-Mário Gomes de Melo (Developer, DBA, CCB, Maintenance)infoninja@hotmail.com .<br>
-Wendislau Victor Santos da Silva (Tester, DBA, CCB, Quality control, Auditors)wendislau_victor@hotmail.com;<br>
+Mário Gomes de Melo (Developer, DBA, CCB, Maintenance)infoninja@hotmail.com;<br>
+Wendislau Victor Santos da Silva (Tester, CCB, Quality control, Auditors)wendislau_victor@hotmail.com;<br>
 <br>
 <hr>
