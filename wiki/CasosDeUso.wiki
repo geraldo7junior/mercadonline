@@ -4,7 +4,7 @@
 <br>
 <hr>
 
-==Detalhamento dos Casos de Uso Mercadon==
+==Detalhamento dos Casos de Uso Mercadonline==
 
 ==UC0001 - Gerenciar Autenticação==
 
