@@ -30,6 +30,8 @@ Os requisitos funcionais do sistema têm como meta:<br>
 •	RF0019: Exibir histórico de compras para o usuário; <br>
 •	RF0020: Gerar relatório para administração. <br>
 <br>
+*Versão:*0.01
+<br>
 <hr>
 <br>
 
@@ -48,5 +50,6 @@ Os requisitos funcionais do sistema têm como meta:<br>
 •	RNF005: O hardware do sistema deve ser assegurado por um gerador (no-break); <br>
 •	RNF006: Não deve revelar aos operadores todos os dados pessoais do cliente; <br>
 •	RNF006: A linguagem de programação usada como padrão deve ser JAVA. <br>
+*Versão:*0.01
 <br>
 <hr> 
