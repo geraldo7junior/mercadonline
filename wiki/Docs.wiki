@@ -11,8 +11,6 @@
 <br>
 <a href="https://docs.google.com/document/d/1tZMeTsO2qYFATV0GGM6wmsnU3H5AX03t_ygXh_6NcrQ/edit?usp=sharing">Plano de gerência de configuração</a> 
 <br>
-<a href="https://docs.google.com/spreadsheet/ccc?key=0AphIXVRKD54qdGM4OGZ6cUlYMFlXLXRrZ25PYnlwZ1E&usp=sharing
-
-">Scrum</a> 
+<a href="https://docs.google.com/spreadsheet/ccc?key=0AphIXVRKD54qdGM4OGZ6cUlYMFlXLXRrZ25PYnlwZ1E&usp=sharing">Scrum</a>
 <br>
 <hr>
