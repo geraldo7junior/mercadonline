@@ -4,7 +4,7 @@
 <br>
 <hr>
 
-<center>==Detalhamento dos Casos de Uso Mercadonline==</center>
+==Detalhamento dos Casos de Uso Mercadonline==
 *Versão:0.01*
 
 ==UC0001 - Gerenciar Autenticação==
