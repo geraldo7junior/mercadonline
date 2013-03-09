@@ -5,7 +5,7 @@
 <hr>
 
 <h2><b><FONT FACE="TIMES" SIZE="5"><p align="CENTER">Detalhamento dos Casos de Uso Mercadonline</p></font></b></h2>
-*Versão:0.01*
+<hr>
 
 ==UC0001 - Gerenciar Autenticação==
 
@@ -493,7 +493,7 @@
 ||   1. Caso o gerente não esteja conseguindo acessar o sistema deverá procurar os desenvolvedores. ||
 
 ==CATÁLOGO DE ERROS==
-|| *ERRO 0001:* "Login ou senha incorretos. Tente novamente." ||
+|| *ERRO 001:* "Login ou senha incorretos. Tente novamente." ||
 || *ERRO 002:* "Dados incorretos." ||
 || *ERRO 003:* "Faltam dados para a conclusão desta etapa." ||
 || *ERRO 004:* "Erro ao imprimir." ||
@@ -501,3 +501,4 @@
 || *ERRO 006:* "Forma de pagamento incorreta." ||
 || *ERRO 007:* "Produto não encontrado." ||
 || *ERRO 008:* "Produto Indisponível." ||
+*Versão:0.01*
