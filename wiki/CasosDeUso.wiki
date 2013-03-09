@@ -4,7 +4,7 @@
 <br>
 <hr>
 
-==Detalhamento dos Casos de Uso Mercadonline==
+<h2><b><FONT FACE="TIMES" SIZE="5"><p align="CENTER">Detalhamento dos Casos de Uso Mercadonline</p></font></b></h2>
 *Versão:0.01*
 
 ==UC0001 - Gerenciar Autenticação==
