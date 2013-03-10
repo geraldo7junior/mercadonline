@@ -12,19 +12,19 @@
 <h2><b><p align="center">Diagrama De Classe Mercadonline</p></b></h2><br>
 
 <p align="center"><img src="https://lh4.googleusercontent.com/-aXYYB93ZYBA/UTvTm6r1RlI/AAAAAAAAARc/t0a_gWp48RU/s800/DiagramaClasseMercadon_CD_06032013.jpg"><br>
-<a href="https://mercadonline.googlecode.com/files/DiagramaClasseMercadon_CD_27022013.jpg">Versão: 1.0</a> 
+<a href="https://mercadonline.googlecode.com/files/DiagramaClasseMercadon_CD_06032013.jpg">Versão: 1.1</a> 
 <hr>
 
 <h2><b><p align="center">Diagrama De Pacotes</p></b></h2><br>
 
 <p align="center"><img src="https://lh4.googleusercontent.com/-CY6KNDvvX0Q/UTvTlSI_IRI/AAAAAAAAARU/zUxO6ExRSNw/s800/DiagramaPacoteMercadon_PKGD_06032013.jpg"><br>
-<a href="https://mercadonline.googlecode.com/files/DiagramaPacoteMercadon_PKGD_27022013.jpg">Versão: 1.0</a> 
+<a href="https://mercadonline.googlecode.com/files/DiagramaPacoteMercadon_PKGD_06032013.jpg">Versão: 1.1</a> 
 <hr>
 
 <h2><b><p align="center">Diagrama De atividades-Gerenciar Cadastro</p></b></h2><br>
 
 <p align="center"><img src="https://lh4.googleusercontent.com/-ZW3aTKh5YE8/UTvTTKiQKyI/AAAAAAAAARM/TAv2SS_OxvA/s800/DiagramaAtividadeMercadon_AD_06032013.jpg"><br>
-<a href="https://mercadonline.googlecode.com/files/DiagramaPacoteMercadon_PKGD_27022013.jpg">Versão: 1.0</a> 
+<a href="https://mercadonline.googlecode.com/files/DiagramaAtividadeMercadon_AD_06032013.jpg">Versão: 0.01</a> 
 <hr>
 
 <br>
