@@ -14,3 +14,15 @@
 <a href="https://docs.google.com/spreadsheet/ccc?key=0AphIXVRKD54qdGM4OGZ6cUlYMFlXLXRrZ25PYnlwZ1E&usp=sharing">Scrum</a>
 <br>
 <hr>
+<H1 TEXT-ALIGN='CENTER'><b><FONT FACE="TIMES" SIZE="1"><p align="center">Base Line _ Auditorias</p></font></b></H1>
+<hr>
+<a href="https://docs.google.com/document/d/18XUBcvYdOEjltPEGUUmNM76Ezr7-_TCSawO1rCePabQ/edit?usp=sharing">Baseline</a>
+<br>
+
+<a href="https://docs.google.com/document/d/1NpOpqG6dMA2HA4HAxLc1FIqU_GDz8bM38BMfvG9VCPw/edit?usp=sharing">Auditoria Física</a>
+<br>
+
+<a href="https://docs.google.com/document/d/1Pcr6O6klXdo3mmJ0MIC111Rgv6mg4izQpS9w0VAATCU/edit?usp=sharing">Auditoria Funcional</a>
+<br>
+
+<hr>
