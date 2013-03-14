@@ -14,6 +14,7 @@ public class Autenticar {
 			Statement stm = conexao.conn.createStatement();
 			
 			ResultSet resultado = stm.executeQuery(sql);
+			resultado.getArray(0);   // <<<Revisar
 					
 		} catch (SQLException e) {
 			
