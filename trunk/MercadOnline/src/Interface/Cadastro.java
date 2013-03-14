@@ -81,7 +81,7 @@ public class Cadastro extends JFrame {
 
 	public String getTxtSenha() {
 		String senha = new String(txtSenha.getPassword());
-		return senha.toString();
+		return senha;
 	}
 
 	public void setTxtSenha(JPasswordField txtSenha) {
