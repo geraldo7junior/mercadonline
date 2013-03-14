@@ -22,13 +22,13 @@ public class LimitaNumeroCaracteres extends PlainDocument
 
         if (iMaxLength <= 0)        // aceitara qualquer no. de caracteres
         {
-            super.insertString(offset, str.toUpperCase(), attr);
+            super.insertString(offset, str, attr);
             return;
         }
 
         int ilen = (getLength() + str.length());
         if (ilen <= iMaxLength)    // se o comprimento final for menor...
-            super.insertString(offset, str.toUpperCase(), attr);   // ...aceita str
+            super.insertString(offset, str, attr);   // ...aceita str
         }
 
 }
