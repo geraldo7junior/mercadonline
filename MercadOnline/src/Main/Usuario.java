@@ -16,27 +16,15 @@ public abstract class Usuario {
 	private String tipo;
 	private String endereço;
 
-	public static void entrarSistema() {
-	}
+	public abstract void entrarSistema();
 
-	public static void sairSistema() {
+	public abstract void sairSistema();
 
-	}
+	public abstract boolean cadastrarUsuario();
 
-	public static boolean cadastrarUsuario() {
-		return false;
+	public abstract boolean alterarCadastro();
 
-	}
-
-	public static boolean alterarCadastro() {
-		return false;
-
-	}
-
-	public static boolean deletarCadastro() {
-		return false;
-
-	}
+	public abstract boolean deletarCadastro();
 
 	public String getNome() {
 		return nome;
