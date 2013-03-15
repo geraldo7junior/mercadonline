@@ -15,13 +15,11 @@ import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
 
-import Main.ConexaoDB;
+import Main.Cliente;
 import Utilitarios.LimitaNumeroCaracteres;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 public class Cadastro extends JFrame {
 
@@ -47,8 +45,8 @@ public class Cadastro extends JFrame {
 	
 	
 
-	public String getTxtNome() {
-		return txtNome.getText();
+	public JTextField getTxtNome() {
+		return txtNome;
 	}
 
 	public void setTxtNome(JTextField txtNome) {
@@ -151,6 +149,14 @@ public class Cadastro extends JFrame {
 	public void setTxtUf(JTextField txtUf) {
 		this.txtUf = txtUf;
 	}
+	
+	public JTextField getTxtBairro() {
+		return txtBairro;
+	}
+
+	public void setTxtBairro(JTextField txtBairro) {
+		this.txtBairro = txtBairro;
+	}
 
 	/**
 	 * Launch the application.
@@ -208,39 +214,9 @@ public class Cadastro extends JFrame {
 		JButton btnCadastrar = new JButton("Cadastrar");
 		btnCadastrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
-				String sql = "INSERT INTO usuario (nome, email, senha, cpf, dataNascimento, sexo, fone, " +
-						"identidade, logradouro, complemento, bairro, cidade, uf) " +
-						"VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
-				ConexaoDB conexao = new ConexaoDB();
-				conexao.getConnection();
-				try {
-					PreparedStatement stm = conexao.conn.prepareStatement(sql);
-					
-					stm.setString(1, txtNome.getText());
-					stm.setString(2, txtEmail.getText());
-					stm.setString(3, getTxtSenha());
-					stm.setString(4, txtCpf.getText());
-					stm.setString(5, txtDataDeNascimento.getText());
-					stm.setString(6, txtSexo.getText());
-					stm.setString(7, txtFone.getText());
-					stm.setString(8, txtIdentidade.getText());
-					stm.setString(9, txtLogradouro.getText());
-					stm.setString(10, txtComplemento.getText());
-					stm.setString(11, txtBairro.getText());
-					stm.setString(12, txtCidade.getText());
-					stm.setString(13, txtUf.getText());
-					
-					
-					stm.executeUpdate();
-					
-					stm.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				
-				conexao.closeConnection();
+				new Cliente().cadastrarUsuario(txtNome.getText(),txtEmail.getText(),getTxtSenha(),txtCpf.getText(),
+						txtDataDeNascimento.getText(),txtSexo.getText(),txtFone.getText(),txtIdentidade.getText(),
+						txtLogradouro.getText(),txtComplemento.getText(),txtBairro.getText(),txtCidade.getText(),txtUf.getText());
 			}
 		});
 		
