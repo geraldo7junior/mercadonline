@@ -14,8 +14,6 @@ import javax.swing.JButton;
 import java.awt.Color;
 import javax.swing.ImageIcon;
 
-import Main.Logar;
-
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.ActionListener;
@@ -88,7 +86,7 @@ public class Principal extends JFrame {
 		JButton btnEntrar = new JButton("Entrar");
 		btnEntrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				new Logar(txtLogin.getText(), txtSenha.toString());
+				
 			}
 		});
 		btnEntrar.addMouseListener(new MouseAdapter() {
