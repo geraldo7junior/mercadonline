@@ -1,12 +1,12 @@
 package Main;
 
-import Interface.Principal;
+import Interface.Cadastro;
 
 class MercadoOnline {
 
 	public static void main(String[] args) {
-		Principal frame = new Principal();
-		frame.setVisible(true);
+		Cadastro cadastro = new Cadastro();
+		cadastro.setVisible(true);
 
 	}
 
