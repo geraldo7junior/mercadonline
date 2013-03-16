@@ -372,7 +372,7 @@ public class Cadastro extends JFrame {
 		txtConfirmarSenha.setColumns(10);
 		
 		JLabel lblFotoImg = new JLabel("");
-		lblFotoImg.setIcon(new ImageIcon("C:\\Users\\Gera3d6\\workspace\\MercadOnline\\imagem\\foto.png"));
+		lblFotoImg.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\foto.png"));
 		lblFotoImg.setBounds(26, 149, 117, 115);
 		contentPane.add(lblFotoImg);
 		
@@ -520,7 +520,7 @@ public class Cadastro extends JFrame {
 		contentPane.add(lblDadosDeAcesso);
 		
 		JLabel lblBackGround = new JLabel("");
-		lblBackGround.setIcon(new ImageIcon("C:\\Users\\Gera3d6\\workspace\\MercadOnline\\imagem\\BackGround.png"));
+		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setBounds(0, 0, 784, 562);
 		contentPane.add(lblBackGround);
 		
