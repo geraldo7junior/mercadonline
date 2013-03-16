@@ -14,7 +14,6 @@ import javax.swing.JButton;
 import java.awt.Color;
 import javax.swing.ImageIcon;
 
-import Main.Autenticar;
 import Main.Logar;
 
 import java.awt.event.MouseAdapter;
@@ -95,9 +94,6 @@ public class Principal extends JFrame {
 		btnEntrar.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				String login = txtLogin.toString();
-				String senha = txtSenha.toString();
-				new Autenticar(login, senha);
 			}
 		});
 		
