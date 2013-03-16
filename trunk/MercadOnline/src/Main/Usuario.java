@@ -6,8 +6,8 @@ public abstract class Usuario {
 	private String nome;
 	private String senha;
 	private String email;
-	private Date dataNascimento;
-	private char sexo;
+	private String dataNascimento;
+	private String sexo;
 	private String foto;
 	private String cpf;
 	private String login;
@@ -50,19 +50,19 @@ public abstract class Usuario {
 		this.email = email;
 	}
 
-	public Date getDataNascimento() {
+	public String getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 
-	public char getSexo() {
+	public String getSexo() {
 		return sexo;
 	}
 
-	public void setSexo(char sexo) {
+	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
 
