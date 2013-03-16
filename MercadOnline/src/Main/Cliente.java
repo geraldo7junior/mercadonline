@@ -63,4 +63,12 @@ public class Cliente extends Usuario {
 	public boolean deletarCadastro() {
 		return false;
 	}
+	
+	public Produto pesquisarProduto(){
+		return null;
+	}
+	
+	public void historicoCompra() {
+		
+	}
 }
