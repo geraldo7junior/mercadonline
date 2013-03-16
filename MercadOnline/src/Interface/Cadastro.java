@@ -333,7 +333,7 @@ public class Cadastro extends JFrame {
 		JLabel lblCadastro = new JLabel("CADASTRO");
 		lblCadastro.setFont(new Font("AR BONNIE", Font.BOLD, 16));
 		lblCadastro.setBackground(Color.WHITE);
-		lblCadastro.setBounds(394, 67, 57, 20);
+		lblCadastro.setBounds(396, 81, 57, 20);
 		contentPane.add(lblCadastro);
 		
 		JLabel lblTelefoneCelular = new JLabel("Telefone Celular*:");
@@ -455,10 +455,10 @@ public class Cadastro extends JFrame {
 		lblPromocao.setBounds(416, 11, 74, 20);
 		contentPane.add(lblPromocao);
 		
-		JLabel label_6 = new JLabel("sugeridos");
-		label_6.setFont(new Font("AR BONNIE", Font.BOLD, 16));
-		label_6.setBounds(509, 11, 59, 20);
-		contentPane.add(label_6);
+		JLabel lblSugeridos = new JLabel("sugeridos");
+		lblSugeridos.setFont(new Font("AR BONNIE", Font.BOLD, 16));
+		lblSugeridos.setBounds(509, 11, 59, 20);
+		contentPane.add(lblSugeridos);
 		
 		JLabel lblContato = new JLabel("contato");
 		lblContato.setFont(new Font("AR BONNIE", Font.BOLD, 16));
@@ -519,10 +519,10 @@ public class Cadastro extends JFrame {
 		lblDadosDeAcesso.setBounds(150, 384, 196, 14);
 		contentPane.add(lblDadosDeAcesso);
 		
-		JLabel lblSugeridos = new JLabel("");
-		lblSugeridos.setIcon(new ImageIcon("C:\\Users\\Gera3d6\\workspace\\MercadOnline\\imagem\\BackGround.png"));
-		lblSugeridos.setBounds(0, 0, 784, 562);
-		contentPane.add(lblSugeridos);
+		JLabel lblBackGround = new JLabel("");
+		lblBackGround.setIcon(new ImageIcon("C:\\Users\\Gera3d6\\workspace\\MercadOnline\\imagem\\BackGround.png"));
+		lblBackGround.setBounds(0, 0, 784, 562);
+		contentPane.add(lblBackGround);
 		
 		
 	}
