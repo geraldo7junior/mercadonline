@@ -34,6 +34,7 @@ CREATE TABLE `usuario` (
   `cpf` varchar(45) DEFAULT NULL,
   `identidade` varchar(45) DEFAULT NULL,
   `fone` varchar(45) DEFAULT NULL,
+  `celular` varchar(45) DEFAULT NULL,
   `tipo` varchar(45) DEFAULT NULL,
   `logradouro` varchar(45) DEFAULT NULL,
   `complemento` varchar(45) DEFAULT NULL,
@@ -62,4 +63,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-03-15 15:42:19
+-- Dump completed on 2013-03-15 23:50:32
