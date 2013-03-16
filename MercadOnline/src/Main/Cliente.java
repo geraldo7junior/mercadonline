@@ -3,6 +3,8 @@ package Main;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import javax.swing.JOptionPane;
+
 public class Cliente extends Usuario {
 
 	public static Produto pesquisarProduto(int id) {
@@ -50,6 +52,7 @@ public class Cliente extends Usuario {
 			
 			stm.close();
 			conexao.closeConnection();
+			JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");
 			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -8,6 +8,7 @@ import javax.swing.GroupLayout.Alignment;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
@@ -43,9 +44,9 @@ public class Cadastro extends JFrame {
 	private JTextField txtBairro;
 	private JTextField txtTelefoneCelular;
 	private JTextField txtCep;
-	private JTextField txtConfirmarSenha;
 	private JTextField txtLogin;
 	private JTextField txtSenhaLogin;
+	private JPasswordField txtConfirmarSenha;
 	
 	
 
@@ -88,6 +89,16 @@ public class Cadastro extends JFrame {
 
 	public void setTxtSenha(JPasswordField txtSenha) {
 		this.txtSenha = txtSenha;
+	}
+	
+
+	public String getTxtConfirmarSenha() {
+		String confirmarSenha = new String(txtConfirmarSenha.getPassword());
+		return confirmarSenha;
+	}
+
+	public void setTxtConfirmarSenha(JPasswordField txtConfirmarSenha) {
+		this.txtConfirmarSenha = txtConfirmarSenha;
 	}
 
 	public JTextField getTxtFone() {
@@ -217,10 +228,13 @@ public class Cadastro extends JFrame {
 		btnCadastrar.setBounds(300, 477, 153, 23);
 		btnCadastrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				new Cliente().cadastrarUsuario(txtNome.getText(),txtEmail.getText(),getTxtSenha(),txtCpf.getText(),
+				if (ConfirmaSenha()){
+					if (new Cliente().cadastrarUsuario(txtNome.getText(),txtEmail.getText(),getTxtSenha(),txtCpf.getText(),
 						txtDataDeNascimento.getText(),txtSexo.getText(),txtFone.getText(),txtTelefoneCelular.getText(),txtIdentidade.getText(),
-						txtLogradouro.getText(),txtComplemento.getText(),txtBairro.getText(),txtCidade.getText(),txtUf.getText(),txtCep.getText());
+						txtLogradouro.getText(),txtComplemento.getText(),txtBairro.getText(),txtCidade.getText(),txtUf.getText(),txtCep.getText()));{
+					LimparCampos();}}
 			}
+
 		});
 		
 		JLabel lblFone = new JLabel("Telefone Fixo*:");
@@ -364,11 +378,6 @@ public class Cadastro extends JFrame {
 		lblConfirmarSenha.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
 		lblConfirmarSenha.setBounds(358, 429, 125, 14);
 		panelCadastro.add(lblConfirmarSenha);
-		
-		txtConfirmarSenha = new JTextField();
-		txtConfirmarSenha.setBounds(479, 427, 103, 20);
-		panelCadastro.add(txtConfirmarSenha);
-		txtConfirmarSenha.setColumns(10);
 		
 		JLabel lblFotoImg = new JLabel("");
 		lblFotoImg.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\foto.png"));
@@ -516,6 +525,10 @@ public class Cadastro extends JFrame {
 		lblDadosDeAcesso.setBounds(150, 384, 196, 14);
 		panelCadastro.add(lblDadosDeAcesso);
 		
+		txtConfirmarSenha = new JPasswordField();
+		txtConfirmarSenha.setBounds(496, 427, 125, 20);
+		panelCadastro.add(txtConfirmarSenha);
+		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setBounds(0, 0, 784, 562);
@@ -523,4 +536,36 @@ public class Cadastro extends JFrame {
 		
 		
 	}
+	
+	private void LimparCampos() {
+		txtNome.setText("");
+		txtEmail.setText("");
+		txtSenha.setText("");
+		txtCpf.setText("");
+		txtDataDeNascimento.setText("");
+		txtSexo.setText("");
+		txtFone.setText("");
+		txtTelefoneCelular.setText("");
+		txtIdentidade.setText("");
+		txtLogradouro.setText("");
+		txtComplemento.setText("");
+		txtBairro.setText("");
+		txtCidade.setText("");
+		txtUf.setText("");
+		txtCep.setText("");
+		
+	}
+	
+	private boolean ConfirmaSenha() {
+		System.out.println(getTxtSenha());
+		System.out.println(getTxtConfirmarSenha());
+		if (getTxtSenha() == getTxtConfirmarSenha()) {
+			return true;
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "As senhas estão diferentes");
+			return false;
+			}
+	}
+	
 }
