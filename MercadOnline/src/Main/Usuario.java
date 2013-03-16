@@ -1,7 +1,5 @@
 package Main;
 
-import java.util.Date;
-
 public abstract class Usuario {
 	private String nome;
 	private String senha;
