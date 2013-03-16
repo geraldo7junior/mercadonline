@@ -19,10 +19,11 @@ public class Cliente extends Usuario {
 	}
 
 	public boolean cadastrarUsuario(String nome, String email, String senha, String cpf, String dataDeNascimento, String sexo,
-			 String fone, String identidade, String logradouro, String complemento, String bairro, String cidade, String uf) {
-		String sql = "INSERT INTO usuario (nome, email, senha, cpf, dataNascimento, sexo, fone, " +
-				"identidade, logradouro, complemento, bairro, cidade, uf) " +
-				"VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+			 String fone, String celular, String identidade, String logradouro, String complemento,
+			 String bairro, String cidade, String uf, String cep) {
+		String sql = "INSERT INTO usuario (nome, email, senha, cpf, dataNascimento, sexo, fone, celular, " +
+				"identidade, logradouro, complemento, bairro, cidade, uf, cep) " +
+				"VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		ConexaoDB conexao = new ConexaoDB();
 		conexao.getConnection();
 		try {
@@ -35,12 +36,14 @@ public class Cliente extends Usuario {
 			stm.setString(5, dataDeNascimento);
 			stm.setString(6, sexo);
 			stm.setString(7, fone);
-			stm.setString(8, identidade);
-			stm.setString(9, logradouro);
-			stm.setString(10, complemento);
-			stm.setString(11, bairro);
-			stm.setString(12, cidade);
-			stm.setString(13, uf);
+			stm.setString(8, celular);
+			stm.setString(9, identidade);
+			stm.setString(10, logradouro);
+			stm.setString(11, complemento);
+			stm.setString(12, bairro);
+			stm.setString(13, cidade);
+			stm.setString(14, uf);
+			stm.setString(15, cep);
 			
 			
 			stm.executeUpdate();
