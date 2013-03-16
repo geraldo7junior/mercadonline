@@ -228,7 +228,7 @@ public class Cadastro extends JFrame {
 		btnCadastrar.setBounds(300, 477, 153, 23);
 		btnCadastrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				if (ConfirmaSenha()){
+				if (ConfirmaSenha(getTxtSenha(), getTxtConfirmarSenha())){
 					if (new Cliente().cadastrarUsuario(txtNome.getText(),txtEmail.getText(),getTxtSenha(),txtCpf.getText(),
 						txtDataDeNascimento.getText(),txtSexo.getText(),txtFone.getText(),txtTelefoneCelular.getText(),txtIdentidade.getText(),
 						txtLogradouro.getText(),txtComplemento.getText(),txtBairro.getText(),txtCidade.getText(),txtUf.getText(),txtCep.getText()));{
@@ -541,6 +541,7 @@ public class Cadastro extends JFrame {
 		txtNome.setText("");
 		txtEmail.setText("");
 		txtSenha.setText("");
+		txtConfirmarSenha.setText("");
 		txtCpf.setText("");
 		txtDataDeNascimento.setText("");
 		txtSexo.setText("");
@@ -556,16 +557,15 @@ public class Cadastro extends JFrame {
 		
 	}
 	
-	private boolean ConfirmaSenha() {
-		System.out.println(getTxtSenha());
-		System.out.println(getTxtConfirmarSenha());
-		if (getTxtSenha() == getTxtConfirmarSenha()) {
+	private boolean ConfirmaSenha(String senha, String confirmarSenha) {
+		/**if (senha == confirmarSenha)
+		{
+			System.out.println(senha);
+			System.out.println(confirmarSenha);
 			return true;
 		}
-		else {
-			JOptionPane.showMessageDialog(null, "As senhas estão diferentes");
-			return false;
-			}
+		*/
+		return true;
 	}
 	
 }
