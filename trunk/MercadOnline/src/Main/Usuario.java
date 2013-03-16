@@ -19,7 +19,8 @@ public abstract class Usuario {
 	public abstract void sairSistema();
 
 	public abstract boolean cadastrarUsuario(String nome, String email, String senha, String cpf, String dataDeNascimento, String sexo,
-			 String fone, String identidade, String logradouro, String complemento, String bairro, String cidade, String uf);
+			 String fone, String celular, String identidade, String logradouro, String complemento,
+			 String bairro, String cidade, String uf, String cep);
 
 	public abstract boolean alterarCadastro();
 

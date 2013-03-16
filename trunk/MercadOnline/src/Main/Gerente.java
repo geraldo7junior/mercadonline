@@ -10,15 +10,13 @@ public class Gerente extends Usuario {
 		
 	}
 
-	public boolean cadastrarUsuario(String nome, String email, String senha,
-			String cpf, String dataDeNascimento, String sexo, String fone,
-			String identidade, String logradouro, String complemento,
-			String bairro, String cidade, String uf) {
+	public boolean cadastrarUsuario(String nome, String email, String senha, String cpf, String dataDeNascimento, String sexo,
+			 String fone, String celular, String identidade, String logradouro, String complemento,
+			 String bairro, String cidade, String uf, String cep) {
 		return false;
 	}
 
 	public boolean alterarCadastro() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
