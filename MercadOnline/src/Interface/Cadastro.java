@@ -18,6 +18,8 @@ import Utilitarios.LimitaNumeroCaracteres;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import java.awt.Color;
 
 public class Cadastro extends JFrame {
 
@@ -40,6 +42,11 @@ public class Cadastro extends JFrame {
 	private JTextField txtCidade;
 	private JTextField txtUf;
 	private JTextField txtBairro;
+	private JTextField txtTelefoneCelular;
+	private JTextField txtCep;
+	private JTextField txtConfirmarSenha;
+	private JTextField txtLogin;
+	private JTextField txtSenhaLogin;
 	
 	
 
@@ -167,34 +174,48 @@ public class Cadastro extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
-		JPanel panel = new JPanel();
+		JLabel lblNome = new JLabel("Nome*:");
+		lblNome.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblNome.setBounds(150, 155, 56, 14);
 		
-		JLabel lblNome = new JLabel("Nome:");
-		
-		JLabel lblEmail = new JLabel("E-mail:");
+		JLabel lblEmail = new JLabel("E-mail*:");
+		lblEmail.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblEmail.setBounds(150, 404, 56, 14);
 		
 		txtNome = new JTextField();
+		txtNome.setBounds(208, 149, 353, 20);
 		txtNome.setColumns(10);
 		txtNome.setDocument(new LimitaNumeroCaracteres(45));
 		
 		txtEmail = new JTextField();
+		txtEmail.setBounds(217, 402, 251, 20);
 		txtEmail.setColumns(10);
 		
-		JLabel lblCpf = new JLabel("CPF:");
+		JLabel lblCpf = new JLabel("CPF*:");
+		lblCpf.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblCpf.setBounds(324, 176, 41, 14);
 		
 		txtCpf = new JTextField();
+		txtCpf.setBounds(365, 174, 88, 20);
 		txtCpf.setColumns(10);
 		
-		JLabel lblIdentidade = new JLabel("Identidade:");
+		JLabel lblIdentidade = new JLabel("Identidade*:");
+		lblIdentidade.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblIdentidade.setBounds(150, 180, 81, 14);
 		
 		txtIdentidade = new JTextField();
+		txtIdentidade.setBounds(240, 174, 74, 20);
 		txtIdentidade.setColumns(10);
 		
 		txtSenha = new JPasswordField();
+		txtSenha.setBounds(215, 427, 125, 20);
 		
-		JLabel lblSenha = new JLabel("Senha:");
+		JLabel lblSenha = new JLabel("Senha*:");
+		lblSenha.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblSenha.setBounds(150, 429, 56, 14);
 		
-		JButton btnCadastrar = new JButton("Cadastrar");
+		JButton btnCadastrar = new JButton("Confirmar Cadastro");
+		btnCadastrar.setBounds(300, 477, 137, 23);
 		btnCadastrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				new Cliente().cadastrarUsuario(txtNome.getText(),txtEmail.getText(),getTxtSenha(),txtCpf.getText(),
@@ -203,193 +224,305 @@ public class Cadastro extends JFrame {
 			}
 		});
 		
-		JLabel lblFone = new JLabel("Fone:");
+		JLabel lblFone = new JLabel("Telefone Fixo*:");
+		lblFone.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblFone.setBounds(150, 230, 103, 14);
 		
-		JLabel lblSexo = new JLabel("Sexo:");
+		JLabel lblSexo = new JLabel("Sexo*:");
+		lblSexo.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblSexo.setBounds(400, 205, 53, 14);
 		
-		JLabel lblDataDeNascimento = new JLabel("Data de Nascimento:");
+		JLabel lblDataDeNascimento = new JLabel("Data de Nascimento*:");
+		lblDataDeNascimento.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblDataDeNascimento.setBounds(150, 205, 147, 14);
 		
-		JLabel lblLogradouro = new JLabel("Logradouro:");
+		JLabel lblLogradouro = new JLabel("Rua*:");
+		lblLogradouro.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblLogradouro.setBounds(150, 284, 41, 14);
 		
-		JLabel lblComplemento = new JLabel("Complemento:");
+		JLabel lblComplemento = new JLabel("Complemento*:");
+		lblComplemento.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblComplemento.setBounds(150, 309, 103, 14);
 		
-		JLabel lblNumero = new JLabel("Numero:");
+		JLabel lblNumero = new JLabel("N\u00BA*:");
+		lblNumero.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblNumero.setBounds(439, 284, 41, 14);
 		
-		JLabel lblCidade = new JLabel("Cidade:");
+		JLabel lblCidade = new JLabel("Cidade*:");
+		lblCidade.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblCidade.setBounds(150, 334, 64, 14);
 		
-		JLabel lblUf = new JLabel("UF:");
+		JLabel lblUf = new JLabel("UF*:");
+		lblUf.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblUf.setBounds(150, 359, 34, 14);
 		
 		txtFone = new JTextField();
+		txtFone.setBounds(258, 228, 100, 20);
 		txtFone.setColumns(10);
 		
 		txtSexo = new JTextField();
+		txtSexo.setBounds(457, 199, 23, 20);
 		txtSexo.setColumns(10);
 		
 		txtDataDeNascimento = new JTextField();
+		txtDataDeNascimento.setBounds(300, 199, 86, 20);
 		txtDataDeNascimento.setColumns(10);
 		
 		txtLogradouro = new JTextField();
+		txtLogradouro.setBounds(192, 282, 237, 20);
 		txtLogradouro.setColumns(10);
 		
 		txtComplemento = new JTextField();
+		txtComplemento.setBounds(255, 307, 34, 20);
 		txtComplemento.setText("");
 		txtComplemento.setColumns(10);
 		
 		txtNumero = new JTextField();
+		txtNumero.setBounds(467, 282, 64, 20);
 		txtNumero.setText("");
 		txtNumero.setColumns(10);
 		
 		txtCidade = new JTextField();
+		txtCidade.setBounds(216, 332, 252, 20);
 		txtCidade.setText("");
 		txtCidade.setColumns(10);
 		
 		txtUf = new JTextField();
+		txtUf.setBounds(185, 357, 34, 20);
 		txtUf.setText("");
 		txtUf.setColumns(10);
 		
-		JLabel lblBairro = new JLabel("Bairro:");
+		JLabel lblBairro = new JLabel("Bairro*:");
+		lblBairro.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblBairro.setBounds(295, 309, 51, 14);
 		
 		txtBairro = new JTextField();
+		txtBairro.setBounds(358, 307, 224, 20);
 		txtBairro.setColumns(10);
-		GroupLayout gl_contentPane = new GroupLayout(contentPane);
-		gl_contentPane.setHorizontalGroup(
-			gl_contentPane.createParallelGroup(Alignment.TRAILING)
-				.addComponent(panel, GroupLayout.DEFAULT_SIZE, 862, Short.MAX_VALUE)
-				.addGroup(gl_contentPane.createSequentialGroup()
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addContainerGap()
-							.addComponent(btnCadastrar))
-						.addGroup(gl_contentPane.createSequentialGroup()
-							.addGap(114)
-							.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-								.addComponent(lblFone)
-								.addComponent(lblEmail)
-								.addComponent(lblNome)
-								.addComponent(lblCpf)
-								.addComponent(lblIdentidade)
-								.addComponent(lblSenha)
-								.addComponent(lblSexo)
-								.addComponent(lblCidade)
-								.addComponent(lblDataDeNascimento)
-								.addComponent(lblUf)
-								.addComponent(lblLogradouro)
-								.addComponent(lblComplemento)
-								.addComponent(lblNumero)
-								.addComponent(lblBairro))
-							.addPreferredGap(ComponentPlacement.RELATED)
-							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-								.addComponent(txtBairro, GroupLayout.PREFERRED_SIZE, 237, GroupLayout.PREFERRED_SIZE)
-								.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-									.addComponent(txtNome, GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
-									.addGroup(gl_contentPane.createSequentialGroup()
-										.addGap(1)
-										.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-											.addComponent(txtEmail, GroupLayout.PREFERRED_SIZE, 251, GroupLayout.PREFERRED_SIZE)
-											.addGroup(gl_contentPane.createSequentialGroup()
-												.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-													.addComponent(txtSenha, Alignment.LEADING, GroupLayout.PREFERRED_SIZE, 125, GroupLayout.PREFERRED_SIZE)
-													.addComponent(txtIdentidade, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE))
-												.addGap(126))
-											.addGroup(gl_contentPane.createSequentialGroup()
-												.addComponent(txtCpf, GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
-												.addGap(92))))
-									.addGroup(gl_contentPane.createSequentialGroup()
-										.addComponent(txtDataDeNascimento)
-										.addGap(166))
-									.addComponent(txtLogradouro, GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
-									.addComponent(txtSexo, GroupLayout.PREFERRED_SIZE, 23, GroupLayout.PREFERRED_SIZE)
-									.addComponent(txtFone, GroupLayout.PREFERRED_SIZE, 147, GroupLayout.PREFERRED_SIZE)
-									.addComponent(txtComplemento, GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
-									.addComponent(txtNumero, GroupLayout.PREFERRED_SIZE, 64, GroupLayout.PREFERRED_SIZE)
-									.addComponent(txtCidade, GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
-									.addComponent(txtUf, GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)))))
-					.addGap(392))
-		);
-		gl_contentPane.setVerticalGroup(
-			gl_contentPane.createParallelGroup(Alignment.LEADING)
-				.addGroup(gl_contentPane.createSequentialGroup()
-					.addComponent(panel, GroupLayout.PREFERRED_SIZE, 54, GroupLayout.PREFERRED_SIZE)
-					.addGap(29)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(txtNome, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(lblNome))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(txtEmail, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(lblEmail))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(txtCpf, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(lblCpf))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(txtIdentidade, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(lblIdentidade))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(txtSenha, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(lblSenha))
-					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblFone)
-						.addComponent(txtFone, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblSexo)
-						.addComponent(txtSexo, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblDataDeNascimento)
-						.addComponent(txtDataDeNascimento, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblLogradouro)
-						.addComponent(txtLogradouro, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblComplemento)
-						.addComponent(txtComplemento, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblNumero)
-						.addComponent(txtNumero, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(txtBairro, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(lblBairro))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblCidade)
-						.addComponent(txtCidade, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblUf)
-						.addComponent(txtUf, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addGap(27)
-					.addComponent(btnCadastrar)
-					.addGap(77))
-		);
+		contentPane.setLayout(null);
+		contentPane.add(btnCadastrar);
+		contentPane.add(lblFone);
+		contentPane.add(lblEmail);
+		contentPane.add(lblNome);
+		contentPane.add(lblCpf);
+		contentPane.add(lblIdentidade);
+		contentPane.add(lblSenha);
+		contentPane.add(lblSexo);
+		contentPane.add(lblCidade);
+		contentPane.add(lblDataDeNascimento);
+		contentPane.add(lblUf);
+		contentPane.add(lblLogradouro);
+		contentPane.add(lblComplemento);
+		contentPane.add(lblNumero);
+		contentPane.add(lblBairro);
+		contentPane.add(txtBairro);
+		contentPane.add(txtNome);
+		contentPane.add(txtEmail);
+		contentPane.add(txtSenha);
+		contentPane.add(txtIdentidade);
+		contentPane.add(txtCpf);
+		contentPane.add(txtDataDeNascimento);
+		contentPane.add(txtLogradouro);
+		contentPane.add(txtSexo);
+		contentPane.add(txtFone);
+		contentPane.add(txtComplemento);
+		contentPane.add(txtNumero);
+		contentPane.add(txtCidade);
+		contentPane.add(txtUf);
 		
-		JLabel lblCadastro = new JLabel("Cadastro");
-		lblCadastro.setFont(new Font("Comic Sans MS", Font.BOLD, 30));
-		GroupLayout gl_panel = new GroupLayout(panel);
-		gl_panel.setHorizontalGroup(
-			gl_panel.createParallelGroup(Alignment.LEADING)
-				.addGroup(gl_panel.createSequentialGroup()
-					.addGap(344)
-					.addComponent(lblCadastro)
-					.addContainerGap(344, Short.MAX_VALUE))
+		JLabel lblCadastro = new JLabel("CADASTRO");
+		lblCadastro.setFont(new Font("AR BONNIE", Font.BOLD, 16));
+		lblCadastro.setBackground(Color.WHITE);
+		lblCadastro.setBounds(394, 67, 57, 20);
+		contentPane.add(lblCadastro);
+		
+		JLabel lblTelefoneCelular = new JLabel("Telefone Celular*:");
+		lblTelefoneCelular.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblTelefoneCelular.setBounds(365, 230, 125, 14);
+		contentPane.add(lblTelefoneCelular);
+		
+		txtTelefoneCelular = new JTextField();
+		txtTelefoneCelular.setBounds(496, 228, 86, 20);
+		contentPane.add(txtTelefoneCelular);
+		txtTelefoneCelular.setColumns(10);
+		
+		JLabel lblEndereco = new JLabel("Endere\u00E7o*:");
+		lblEndereco.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblEndereco.setBounds(150, 259, 81, 14);
+		contentPane.add(lblEndereco);
+		
+		JLabel lblCep = new JLabel("CEP*:");
+		lblCep.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblCep.setBounds(479, 334, 46, 14);
+		contentPane.add(lblCep);
+		
+		txtCep = new JTextField();
+		txtCep.setBounds(523, 332, 67, 20);
+		contentPane.add(txtCep);
+		txtCep.setColumns(10);
+		
+		JLabel lblConfirmarSenha = new JLabel("Confirmar Senha*:");
+		lblConfirmarSenha.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblConfirmarSenha.setBounds(358, 429, 125, 14);
+		contentPane.add(lblConfirmarSenha);
+		
+		txtConfirmarSenha = new JTextField();
+		txtConfirmarSenha.setBounds(479, 427, 103, 20);
+		contentPane.add(txtConfirmarSenha);
+		txtConfirmarSenha.setColumns(10);
+		
+		JLabel lblFotoImg = new JLabel("");
+		lblFotoImg.setIcon(new ImageIcon("C:\\Users\\Gera3d6\\workspace\\MercadOnline\\imagem\\foto.png"));
+		lblFotoImg.setBounds(26, 149, 117, 115);
+		contentPane.add(lblFotoImg);
+		
+		JLabel lblNewLabel = new JLabel("Foto*");
+		lblNewLabel.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblNewLabel.setBounds(65, 273, 41, 14);
+		contentPane.add(lblNewLabel);
+		
+		JPanel panelLogin = new JPanel();
+		panelLogin.setBackground(new Color(240, 230, 140));
+		panelLogin.setBounds(571, 110, 196, 109);
+		contentPane.add(panelLogin);
+		
+		JLabel lblLogin = new JLabel("Login:");
+		lblLogin.setFont(new Font("Arial", Font.BOLD, 11));
+		
+		txtLogin = new JTextField();
+		txtLogin.setColumns(10);
+		
+		JLabel lblSenhaLogin = new JLabel("Senha:");
+		lblSenhaLogin.setFont(new Font("Arial", Font.BOLD, 11));
+		
+		txtSenhaLogin = new JTextField();
+		txtSenhaLogin.setColumns(10);
+		
+		JButton btnEntrar = new JButton("Entrar");
+		GroupLayout gl_panelLogin = new GroupLayout(panelLogin);
+		gl_panelLogin.setHorizontalGroup(
+			gl_panelLogin.createParallelGroup(Alignment.LEADING)
+				.addGap(0, 196, Short.MAX_VALUE)
+				.addGroup(gl_panelLogin.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(gl_panelLogin.createParallelGroup(Alignment.LEADING)
+						.addGroup(gl_panelLogin.createSequentialGroup()
+							.addComponent(lblLogin)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(txtLogin, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))
+						.addGroup(gl_panelLogin.createSequentialGroup()
+							.addComponent(lblSenhaLogin)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(txtSenhaLogin, GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE))
+						.addComponent(btnEntrar, Alignment.TRAILING))
+					.addContainerGap())
 		);
-		gl_panel.setVerticalGroup(
-			gl_panel.createParallelGroup(Alignment.LEADING)
-				.addGroup(gl_panel.createSequentialGroup()
-					.addGap(6)
-					.addComponent(lblCadastro)
+		gl_panelLogin.setVerticalGroup(
+			gl_panelLogin.createParallelGroup(Alignment.LEADING)
+				.addGap(0, 109, Short.MAX_VALUE)
+				.addGroup(gl_panelLogin.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(gl_panelLogin.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lblLogin)
+						.addComponent(txtLogin, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+					.addGap(18)
+					.addGroup(gl_panelLogin.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lblSenhaLogin)
+						.addComponent(txtSenhaLogin, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addComponent(btnEntrar)
 					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 		);
-		panel.setLayout(gl_panel);
-		contentPane.setLayout(gl_contentPane);
+		panelLogin.setLayout(gl_panelLogin);
+		
+		JLabel lblHome = new JLabel("home");
+		lblHome.setFont(new Font("AR BONNIE", Font.BOLD, 16));
+		lblHome.setBounds(229, 11, 32, 20);
+		contentPane.add(lblHome);
+		
+		JLabel lblProdutos = new JLabel("produtos");
+		lblProdutos.setFont(new Font("AR BONNIE", Font.BOLD, 16));
+		lblProdutos.setBounds(276, 11, 64, 20);
+		contentPane.add(lblProdutos);
+		
+		JLabel lblCadastromenu = new JLabel("cadastro");
+		lblCadastromenu.setFont(new Font("AR BONNIE", Font.BOLD, 16));
+		lblCadastromenu.setBounds(349, 11, 57, 20);
+		contentPane.add(lblCadastromenu);
+		
+		JLabel lblPromocao = new JLabel("promo\u00E7\u00E3o");
+		lblPromocao.setFont(new Font("AR BONNIE", Font.BOLD, 16));
+		lblPromocao.setBounds(416, 11, 74, 20);
+		contentPane.add(lblPromocao);
+		
+		JLabel label_6 = new JLabel("sugeridos");
+		label_6.setFont(new Font("AR BONNIE", Font.BOLD, 16));
+		label_6.setBounds(509, 11, 59, 20);
+		contentPane.add(label_6);
+		
+		JLabel lblContato = new JLabel("contato");
+		lblContato.setFont(new Font("AR BONNIE", Font.BOLD, 16));
+		lblContato.setBounds(586, 11, 55, 20);
+		contentPane.add(lblContato);
+		
+		JLabel lblPaes = new JLabel("P\u00E3es e Bolos");
+		lblPaes.setFont(new Font("Calibri", Font.BOLD, 11));
+		lblPaes.setBounds(142, 42, 56, 14);
+		contentPane.add(lblPaes);
+		
+		JLabel lblFrutas = new JLabel("Frutas");
+		lblFrutas.setFont(new Font("Calibri", Font.BOLD, 11));
+		lblFrutas.setBounds(208, 42, 28, 14);
+		contentPane.add(lblFrutas);
+		
+		JLabel lblLegumes = new JLabel("Legumes e Verduras");
+		lblLegumes.setFont(new Font("Calibri", Font.BOLD, 11));
+		lblLegumes.setBounds(250, 42, 93, 14);
+		contentPane.add(lblLegumes);
+		
+		JLabel lblBebidas = new JLabel("Bebidas e Sucos");
+		lblBebidas.setFont(new Font("Calibri", Font.BOLD, 11));
+		lblBebidas.setBounds(357, 42, 72, 14);
+		contentPane.add(lblBebidas);
+		
+		JLabel lblFrios = new JLabel("Frios e Latic\u00EDnios");
+		lblFrios.setFont(new Font("Calibri", Font.BOLD, 11));
+		lblFrios.setBounds(441, 42, 76, 14);
+		contentPane.add(lblFrios);
+		
+		JLabel lblLimpeza = new JLabel("Limpeza");
+		lblLimpeza.setFont(new Font("Calibri", Font.BOLD, 11));
+		lblLimpeza.setBounds(534, 42, 38, 14);
+		contentPane.add(lblLimpeza);
+		
+		JLabel lblMercearia = new JLabel("Mercearia");
+		lblMercearia.setFont(new Font("Calibri", Font.BOLD, 11));
+		lblMercearia.setBounds(588, 42, 48, 14);
+		contentPane.add(lblMercearia);
+		
+		JLabel lblPerfume = new JLabel("Perfume e Higiene");
+		lblPerfume.setFont(new Font("Calibri", Font.BOLD, 11));
+		lblPerfume.setBounds(650, 42, 86, 14);
+		contentPane.add(lblPerfume);
+		
+		JLabel label_16 = new JLabel("");
+		label_16.setBounds(124, 41, 623, 14);
+		contentPane.add(label_16);
+		
+		JLabel lblDadosPessoais = new JLabel("Dados Pessoais*:");
+		lblDadosPessoais.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblDadosPessoais.setBounds(150, 130, 139, 14);
+		contentPane.add(lblDadosPessoais);
+		
+		JLabel lblDadosDeAcesso = new JLabel("Dados de acesso ao sistema*:");
+		lblDadosDeAcesso.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
+		lblDadosDeAcesso.setBounds(150, 384, 196, 14);
+		contentPane.add(lblDadosDeAcesso);
+		
+		JLabel lblSugeridos = new JLabel("");
+		lblSugeridos.setIcon(new ImageIcon("C:\\Users\\Gera3d6\\workspace\\MercadOnline\\imagem\\BackGround.png"));
+		lblSugeridos.setBounds(0, 0, 784, 562);
+		contentPane.add(lblSugeridos);
 		
 		
 	}
@@ -405,5 +538,4 @@ public class Cadastro extends JFrame {
         } 
         return F_Mascara;
         } 
-	
 }
