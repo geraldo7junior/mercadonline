@@ -24,4 +24,10 @@ public class Gerente extends Usuario {
 		return false;
 	}
 
+	@Override
+	public boolean entrarSistema(String email, String Senha) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

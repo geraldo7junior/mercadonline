@@ -14,7 +14,7 @@ public abstract class Usuario {
 	private String tipo;
 	private String endereço;
 
-	public abstract void entrarSistema();
+	public abstract boolean entrarSistema(String email, String Senha);
 
 	public abstract void sairSistema();
 
