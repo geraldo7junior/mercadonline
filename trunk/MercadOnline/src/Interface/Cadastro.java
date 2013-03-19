@@ -14,7 +14,7 @@ import javax.swing.JButton;
 
 import Main.Cliente;
 import Utilitarios.ApenasNum;
-import Utilitarios.LimitaNumeroCaracteres;
+import Utilitarios.ApenasStr;
 import Utilitarios.Mascara;
 
 import java.awt.event.ActionListener;
@@ -195,10 +195,9 @@ public class Cadastro extends JFrame {
 		lblEmail.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
 		lblEmail.setBounds(150, 404, 56, 14);
 		
-		txtNome = new JTextField();
+		txtNome = new JTextField(new ApenasStr(50), null, 0);
 		txtNome.setBounds(208, 149, 353, 20);
 		txtNome.setColumns(10);
-		txtNome.setDocument(new LimitaNumeroCaracteres(45));
 		
 		txtEmail = new JTextField();
 		txtEmail.setBounds(217, 402, 251, 20);
@@ -276,7 +275,7 @@ public class Cadastro extends JFrame {
 		txtFone.setBounds(258, 228, 100, 20);
 		txtFone.setColumns(10);
 		
-		txtSexo = new JTextField();
+		txtSexo = new JTextField(new ApenasStr(1), null, 0);
 		txtSexo.setBounds(457, 199, 23, 20);
 		txtSexo.setColumns(10);
 		
@@ -284,7 +283,7 @@ public class Cadastro extends JFrame {
 		txtDataDeNascimento.setBounds(300, 199, 74, 20);
 		txtDataDeNascimento.setColumns(10);
 		
-		txtLogradouro = new JTextField();
+		txtLogradouro = new JTextField(new ApenasStr(50), null, 0);
 		txtLogradouro.setBounds(192, 282, 237, 20);
 		txtLogradouro.setColumns(10);
 		
@@ -298,12 +297,12 @@ public class Cadastro extends JFrame {
 		txtNumero.setText("");
 		txtNumero.setColumns(10);
 		
-		txtCidade = new JTextField();
+		txtCidade = new JTextField(new ApenasStr(50), null, 0);
 		txtCidade.setBounds(216, 332, 252, 20);
 		txtCidade.setText("");
 		txtCidade.setColumns(10);
 		
-		txtUf = new JTextField();
+		txtUf = new JTextField(new ApenasStr(2), null, 0);
 		txtUf.setBounds(185, 357, 34, 20);
 		txtUf.setText("");
 		txtUf.setColumns(10);
@@ -312,9 +311,10 @@ public class Cadastro extends JFrame {
 		lblBairro.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
 		lblBairro.setBounds(295, 309, 51, 14);
 		
-		txtBairro = new JTextField();
+		txtBairro = new JTextField(new ApenasStr(50), null, 0);
 		txtBairro.setBounds(358, 307, 224, 20);
 		txtBairro.setColumns(10);
+		
 		panelCadastro.setLayout(null);
 		panelCadastro.add(btnCadastrar);
 		panelCadastro.add(lblFone);
