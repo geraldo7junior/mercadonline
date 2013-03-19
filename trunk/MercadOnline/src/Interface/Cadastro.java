@@ -13,7 +13,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JButton;
 
 import Main.Cliente;
-import Utilitarios.IntegerDocument;
+import Utilitarios.ApenasNum;
 import Utilitarios.LimitaNumeroCaracteres;
 import Utilitarios.Mascara;
 
@@ -216,7 +216,7 @@ public class Cadastro extends JFrame {
 		lblIdentidade.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
 		lblIdentidade.setBounds(150, 180, 81, 14);
 		
-		txtIdentidade = new JTextField(new IntegerDocument(10), null, 0);
+		txtIdentidade = new JTextField(new ApenasNum(10), null, 0);
 		txtIdentidade.setBounds(240, 174, 74, 20);
 		txtIdentidade.setColumns(10);
 		
@@ -293,7 +293,7 @@ public class Cadastro extends JFrame {
 		txtComplemento.setText("");
 		txtComplemento.setColumns(10);
 		
-		txtNumero = new JTextField(new IntegerDocument(5), null, 0);
+		txtNumero = new JTextField(new ApenasNum(5), null, 0);
 		txtNumero.setBounds(467, 282, 64, 20);
 		txtNumero.setText("");
 		txtNumero.setColumns(10);
