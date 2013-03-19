@@ -3,6 +3,7 @@ package Interface;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.text.MaskFormatter;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JLabel;
@@ -14,23 +15,27 @@ import javax.swing.JButton;
 
 import Main.Cliente;
 import Utilitarios.LimitaNumeroCaracteres;
+import Utilitarios.Mascara;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
 import java.awt.Color;
+import java.text.ParseException;
+
+import javax.swing.JFormattedTextField;
 
 public class Cadastro extends JFrame {
-
-	/**
-	 * 
-	 */
+	
+	
+	
+	
 	private static final long serialVersionUID = 1L;
 	private JPanel panelCadastro;
 	private JTextField txtNome;
 	private JTextField txtEmail;
 	private JTextField txtCpf;
-	private JTextField txtIdentidade;
+	private JFormattedTextField txtIdentidade;
 	private JPasswordField txtSenha;
 	private JTextField txtFone;
 	private JTextField txtSexo;
@@ -47,12 +52,12 @@ public class Cadastro extends JFrame {
 	private JTextField txtSenhaLogin;
 	private JPasswordField txtConfirmarSenha;
 	
-	
 
 	public JTextField getTxtNome() {
 		return txtNome;
 	}
 
+	
 	public void setTxtNome(JTextField txtNome) {
 		this.txtNome = txtNome;
 	}
@@ -78,7 +83,7 @@ public class Cadastro extends JFrame {
 	}
 
 	public void setTxtIdentidade(JTextField txtIdentidade) {
-		this.txtIdentidade = txtIdentidade;
+		this.txtIdentidade = (JFormattedTextField) txtIdentidade;
 	}
 
 	public String getTxtSenha() {
@@ -204,7 +209,7 @@ public class Cadastro extends JFrame {
 		lblCpf.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
 		lblCpf.setBounds(324, 176, 41, 14);
 		
-		txtCpf = new JTextField();
+		txtCpf = new JFormattedTextField(Mascara.ExecutaMascara("###.###.###-##"));
 		txtCpf.setBounds(365, 174, 88, 20);
 		txtCpf.setColumns(10);
 		
@@ -212,7 +217,7 @@ public class Cadastro extends JFrame {
 		lblIdentidade.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
 		lblIdentidade.setBounds(150, 180, 81, 14);
 		
-		txtIdentidade = new JTextField();
+		txtIdentidade = new JFormattedTextField(Mascara.ExecutaMascara("##########"));
 		txtIdentidade.setBounds(240, 174, 74, 20);
 		txtIdentidade.setColumns(10);
 		
@@ -268,7 +273,7 @@ public class Cadastro extends JFrame {
 		lblUf.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
 		lblUf.setBounds(150, 359, 34, 14);
 		
-		txtFone = new JTextField();
+		txtFone = new JFormattedTextField(Mascara.ExecutaMascara("(##)####-####"));
 		txtFone.setBounds(258, 228, 100, 20);
 		txtFone.setColumns(10);
 		
@@ -276,7 +281,7 @@ public class Cadastro extends JFrame {
 		txtSexo.setBounds(457, 199, 23, 20);
 		txtSexo.setColumns(10);
 		
-		txtDataDeNascimento = new JTextField();
+		txtDataDeNascimento = new JFormattedTextField(Mascara.ExecutaMascara("##/##/####"));
 		txtDataDeNascimento.setBounds(300, 199, 86, 20);
 		txtDataDeNascimento.setColumns(10);
 		
@@ -289,7 +294,7 @@ public class Cadastro extends JFrame {
 		txtComplemento.setText("");
 		txtComplemento.setColumns(10);
 		
-		txtNumero = new JTextField();
+		txtNumero = new JFormattedTextField(Mascara.ExecutaMascara("#####"));
 		txtNumero.setBounds(467, 282, 64, 20);
 		txtNumero.setText("");
 		txtNumero.setColumns(10);
@@ -353,7 +358,7 @@ public class Cadastro extends JFrame {
 		lblTelefoneCelular.setBounds(365, 230, 125, 14);
 		panelCadastro.add(lblTelefoneCelular);
 		
-		txtTelefoneCelular = new JTextField();
+		txtTelefoneCelular = new JFormattedTextField(Mascara.ExecutaMascara("(##)####-####"));;
 		txtTelefoneCelular.setBounds(496, 228, 86, 20);
 		panelCadastro.add(txtTelefoneCelular);
 		txtTelefoneCelular.setColumns(10);
@@ -368,7 +373,7 @@ public class Cadastro extends JFrame {
 		lblCep.setBounds(479, 334, 46, 14);
 		panelCadastro.add(lblCep);
 		
-		txtCep = new JTextField();
+		txtCep = new JFormattedTextField(Mascara.ExecutaMascara("##.###-###"));;
 		txtCep.setBounds(523, 332, 67, 20);
 		panelCadastro.add(txtCep);
 		txtCep.setColumns(10);
@@ -535,7 +540,7 @@ public class Cadastro extends JFrame {
 		
 		
 	}
-	
+
 	private void LimparCampos() {
 		txtNome.setText("");
 		txtEmail.setText("");
