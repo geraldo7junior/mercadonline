@@ -1,6 +1,7 @@
 package Main;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.swing.JOptionPane;
@@ -12,8 +13,28 @@ public class Cliente extends Usuario {
 		
 	}
 
-	public void entrarSistema() {
-		
+	public boolean entrarSistema(String email, String senha) {
+		String sql = "SELECT mercadondb.usuario.email FROM mercadondb.usuario Where email= '" + email + "' and senha= '" + senha + "'";
+		ConexaoDB conexao = new ConexaoDB();
+		conexao.getConnection();
+		try {
+			PreparedStatement stm = conexao.conn.prepareStatement(sql);			
+			
+			stm.executeQuery();
+			ResultSet a = stm.getResultSet(); //fazer receber o resultado. Ver como fazer isso.
+			
+			stm.close();
+			conexao.closeConnection();
+			
+			if (a.toString() == email){
+				return true;
+			}
+			return false;
+		} catch (SQLException e) {
+			e.printStackTrace();
+			conexao.closeConnection();
+			return false;
+		}	
 	}
 
 	public void sairSistema() {

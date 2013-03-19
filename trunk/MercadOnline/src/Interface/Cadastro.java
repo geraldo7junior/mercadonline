@@ -410,6 +410,12 @@ public class Cadastro extends JFrame {
 		txtSenhaLogin.setColumns(10);
 		
 		JButton btnEntrar = new JButton("Entrar");
+		btnEntrar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				if(new Cliente().entrarSistema(txtEmail.toString(), txtSenha.toString()) == true){
+					LimparCampos();
+			}
+		}});
 		GroupLayout gl_panelLogin = new GroupLayout(panelLogin);
 		gl_panelLogin.setHorizontalGroup(
 			gl_panelLogin.createParallelGroup(Alignment.LEADING)

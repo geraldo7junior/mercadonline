@@ -28,4 +28,10 @@ public class Caixa extends Usuario{
 		
 	}
 
+	@Override
+	public boolean entrarSistema(String email, String Senha) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
