@@ -293,7 +293,7 @@ public class Cadastro extends JFrame {
 		txtComplemento.setText("");
 		txtComplemento.setColumns(10);
 		
-		txtNumero = new JTextField(new ApenasNum(5), null, 0);
+		txtNumero = new JTextField(new ApenasNum(6), null, 0);
 		txtNumero.setBounds(467, 282, 64, 20);
 		txtNumero.setText("");
 		txtNumero.setColumns(10);
