@@ -210,7 +210,7 @@ public class Cadastro extends JFrame {
 		lblCpf.setBounds(324, 176, 41, 14);
 		
 		txtCpf = new JFormattedTextField(Mascara.ExecutaMascara("###.###.###-##"));
-		txtCpf.setBounds(365, 174, 88, 20);
+		txtCpf.setBounds(365, 174, 93, 20);
 		txtCpf.setColumns(10);
 		
 		JLabel lblIdentidade = new JLabel("Identidade*:");
@@ -257,7 +257,7 @@ public class Cadastro extends JFrame {
 		lblLogradouro.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
 		lblLogradouro.setBounds(150, 284, 41, 14);
 		
-		JLabel lblComplemento = new JLabel("Complemento*:");
+		JLabel lblComplemento = new JLabel("Complemento:");
 		lblComplemento.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
 		lblComplemento.setBounds(150, 309, 103, 14);
 		
@@ -282,7 +282,7 @@ public class Cadastro extends JFrame {
 		txtSexo.setColumns(10);
 		
 		txtDataDeNascimento = new JFormattedTextField(Mascara.ExecutaMascara("##/##/####"));
-		txtDataDeNascimento.setBounds(300, 199, 86, 20);
+		txtDataDeNascimento.setBounds(300, 199, 74, 20);
 		txtDataDeNascimento.setColumns(10);
 		
 		txtLogradouro = new JTextField();
@@ -359,7 +359,7 @@ public class Cadastro extends JFrame {
 		panelCadastro.add(lblTelefoneCelular);
 		
 		txtTelefoneCelular = new JFormattedTextField(Mascara.ExecutaMascara("(##)####-####"));;
-		txtTelefoneCelular.setBounds(496, 228, 86, 20);
+		txtTelefoneCelular.setBounds(496, 228, 93, 20);
 		panelCadastro.add(txtTelefoneCelular);
 		txtTelefoneCelular.setColumns(10);
 		
@@ -374,7 +374,7 @@ public class Cadastro extends JFrame {
 		panelCadastro.add(lblCep);
 		
 		txtCep = new JFormattedTextField(Mascara.ExecutaMascara("##.###-###"));;
-		txtCep.setBounds(523, 332, 67, 20);
+		txtCep.setBounds(523, 332, 74, 20);
 		panelCadastro.add(txtCep);
 		txtCep.setColumns(10);
 		
