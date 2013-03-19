@@ -3,10 +3,10 @@ package Utilitarios;
 import javax.swing.text.AttributeSet;   
 import javax.swing.text.BadLocationException;   
   
-public class IntegerDocument extends LimitaNumeroCaracteres {   
+public class ApenasNum extends LimitaNumeroCaracteres {   
 	private static final long serialVersionUID = 1L;
 
-	public IntegerDocument(int maxlen) {   
+	public ApenasNum(int maxlen) {   
         super(maxlen);   
     }   
   
