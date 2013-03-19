@@ -3,7 +3,6 @@ package Interface;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.text.MaskFormatter;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JLabel;
@@ -14,6 +13,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JButton;
 
 import Main.Cliente;
+import Utilitarios.IntegerDocument;
 import Utilitarios.LimitaNumeroCaracteres;
 import Utilitarios.Mascara;
 
@@ -21,7 +21,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
 import java.awt.Color;
-import java.text.ParseException;
 
 import javax.swing.JFormattedTextField;
 
@@ -35,7 +34,7 @@ public class Cadastro extends JFrame {
 	private JTextField txtNome;
 	private JTextField txtEmail;
 	private JTextField txtCpf;
-	private JFormattedTextField txtIdentidade;
+	private JTextField txtIdentidade;
 	private JPasswordField txtSenha;
 	private JTextField txtFone;
 	private JTextField txtSexo;
@@ -83,7 +82,7 @@ public class Cadastro extends JFrame {
 	}
 
 	public void setTxtIdentidade(JTextField txtIdentidade) {
-		this.txtIdentidade = (JFormattedTextField) txtIdentidade;
+		this.txtIdentidade = txtIdentidade;
 	}
 
 	public String getTxtSenha() {
@@ -217,7 +216,7 @@ public class Cadastro extends JFrame {
 		lblIdentidade.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
 		lblIdentidade.setBounds(150, 180, 81, 14);
 		
-		txtIdentidade = new JFormattedTextField(Mascara.ExecutaMascara("##########"));
+		txtIdentidade = new JTextField(new IntegerDocument(10), null, 0);
 		txtIdentidade.setBounds(240, 174, 74, 20);
 		txtIdentidade.setColumns(10);
 		
@@ -294,7 +293,7 @@ public class Cadastro extends JFrame {
 		txtComplemento.setText("");
 		txtComplemento.setColumns(10);
 		
-		txtNumero = new JFormattedTextField(Mascara.ExecutaMascara("#####"));
+		txtNumero = new JTextField(new IntegerDocument(5), null, 0);
 		txtNumero.setBounds(467, 282, 64, 20);
 		txtNumero.setText("");
 		txtNumero.setColumns(10);
