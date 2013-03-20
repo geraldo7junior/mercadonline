@@ -1,29 +1,30 @@
 package Interface;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.JLabel;
-import java.awt.Font;
-import javax.swing.LayoutStyle.ComponentPlacement;
-import javax.swing.JTextField;
-import javax.swing.JPasswordField;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.border.EmptyBorder;
 
 import Main.Cliente;
 import Utilitarios.ApenasNum;
 import Utilitarios.ApenasStr;
 import Utilitarios.Mascara;
-
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.ImageIcon;
-import java.awt.Color;
-
-import javax.swing.JFormattedTextField;
-import javax.swing.SwingConstants;
+import Utilitarios.VerificaPreenchimento;
 
 public class Cadastro extends JFrame {
 	
@@ -232,13 +233,25 @@ public class Cadastro extends JFrame {
 		btnCadastrar.setBounds(301, 502, 153, 23);
 		btnCadastrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				if (ConfirmaSenha(getTxtSenha(), getTxtConfirmarSenha())){
-					if (new Cliente().cadastrarUsuario(txtNome.getText(),txtEmail.getText(),getTxtSenha(),txtCpf.getText(),
-						txtDataDeNascimento.getText(),txtSexo.getText(),txtFone.getText(),txtTelefoneCelular.getText(),txtIdentidade.getText(),
-						txtLogradouro.getText(),txtComplemento.getText(),txtBairro.getText(),txtCidade.getText(),txtUf.getText(),txtCep.getText()));{
-					LimparCampos();}}
+				ArrayList<JTextField> lista = new ArrayList<JTextField>(
+						Arrays.asList(new JTextField[]{
+								txtNome,txtEmail,txtCpf,txtDataDeNascimento,txtSexo,txtFone,txtIdentidade,txtLogradouro,txtBairro,txtCidade,txtUf,txtCep
+						})
+				);
+				
+				
+				if (new VerificaPreenchimento().Verifica(lista)){
+					
+					if (ConfirmaSenha(getTxtSenha(), getTxtConfirmarSenha())){
+						
+						if (new Cliente().cadastrarUsuario(txtNome.getText(),txtEmail.getText(),getTxtSenha(),txtCpf.getText(),
+							txtDataDeNascimento.getText(),txtSexo.getText(),txtFone.getText(),txtTelefoneCelular.getText(),txtIdentidade.getText(),
+							txtLogradouro.getText(),txtComplemento.getText(),txtBairro.getText(),txtCidade.getText(),txtUf.getText(),txtCep.getText()));{
+								LimparCampos();
+						}
+					}
+				}
 			}
-
 		});
 		
 		JLabel lblFone = new JLabel("Telefone Fixo*:");
