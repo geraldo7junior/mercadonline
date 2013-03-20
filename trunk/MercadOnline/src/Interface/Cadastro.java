@@ -199,10 +199,12 @@ public class Cadastro extends JFrame {
 		lblEmail.setBounds(151, 429, 56, 14);
 		
 		txtNome = new JTextField(new ApenasStr(50), null, 0);
+		txtNome.setName("txtNome");
 		txtNome.setBounds(209, 174, 353, 20);
 		txtNome.setColumns(10);
 		
 		txtEmail = new JTextField();
+		txtEmail.setName("txtEmail");
 		txtEmail.setBounds(218, 427, 251, 20);
 		txtEmail.setColumns(10);
 		
@@ -211,6 +213,7 @@ public class Cadastro extends JFrame {
 		lblCpf.setBounds(325, 201, 41, 14);
 		
 		txtCpf = new JFormattedTextField(Mascara.ExecutaMascara("###.###.###-##"));
+		txtCpf.setName("txtCpf");
 		txtCpf.setBounds(366, 199, 93, 20);
 		txtCpf.setColumns(10);
 		
@@ -219,10 +222,12 @@ public class Cadastro extends JFrame {
 		lblIdentidade.setBounds(151, 205, 81, 14);
 		
 		txtIdentidade = new JTextField(new ApenasNum(10), null, 0);
+		txtIdentidade.setName("txtIdentidade");
 		txtIdentidade.setBounds(241, 199, 74, 20);
 		txtIdentidade.setColumns(10);
 		
 		txtSenha = new JPasswordField();
+		txtSenha.setName("txtSenha");
 		txtSenha.setBounds(216, 452, 125, 20);
 		
 		JLabel lblSenha = new JLabel("Senha*:");
@@ -286,37 +291,45 @@ public class Cadastro extends JFrame {
 		lblUf.setBounds(151, 384, 34, 14);
 		
 		txtFone = new JFormattedTextField(Mascara.ExecutaMascara("(##)####-####"));
+		txtFone.setName("txtFone");
 		txtFone.setBounds(259, 253, 100, 20);
 		txtFone.setColumns(10);
 		
 		txtSexo = new JTextField(new ApenasStr(1), null, 0);
+		txtSexo.setName("txtSexo");
 		txtSexo.setBounds(458, 224, 23, 20);
 		txtSexo.setColumns(10);
 		
 		txtDataDeNascimento = new JFormattedTextField(Mascara.ExecutaMascara("##/##/####"));
+		txtDataDeNascimento.setName("txtDataDeNascimento");
 		txtDataDeNascimento.setBounds(301, 224, 74, 20);
 		txtDataDeNascimento.setColumns(10);
 		
 		txtLogradouro = new JTextField(new ApenasStr(50), null, 0);
+		txtLogradouro.setName("txtLogradouro");
 		txtLogradouro.setBounds(193, 307, 237, 20);
 		txtLogradouro.setColumns(10);
 		
 		txtComplemento = new JTextField();
+		txtComplemento.setName("txtComplemento");
 		txtComplemento.setBounds(256, 332, 34, 20);
 		txtComplemento.setText("");
 		txtComplemento.setColumns(10);
 		
 		txtNumero = new JTextField(new ApenasNum(6), null, 0);
+		txtNumero.setName("txtNumero");
 		txtNumero.setBounds(468, 307, 64, 20);
 		txtNumero.setText("");
 		txtNumero.setColumns(10);
 		
 		txtCidade = new JTextField(new ApenasStr(50), null, 0);
+		txtCidade.setName("txtCidade");
 		txtCidade.setBounds(217, 357, 252, 20);
 		txtCidade.setText("");
 		txtCidade.setColumns(10);
 		
 		txtUf = new JTextField(new ApenasStr(2), null, 0);
+		txtUf.setName("txtUf");
 		txtUf.setBounds(186, 382, 34, 20);
 		txtUf.setText("");
 		txtUf.setColumns(10);
@@ -326,6 +339,7 @@ public class Cadastro extends JFrame {
 		lblBairro.setBounds(296, 334, 51, 14);
 		
 		txtBairro = new JTextField(new ApenasStr(50), null, 0);
+		txtBairro.setName("txtBairro");
 		txtBairro.setBounds(359, 332, 224, 20);
 		txtBairro.setColumns(10);
 		
@@ -373,6 +387,7 @@ public class Cadastro extends JFrame {
 		panelCadastro.add(lblTelefoneCelular);
 		
 		txtTelefoneCelular = new JFormattedTextField(Mascara.ExecutaMascara("(##)####-####"));;
+		txtTelefoneCelular.setName("txtTelefoneCelular");
 		txtTelefoneCelular.setBounds(497, 253, 93, 20);
 		panelCadastro.add(txtTelefoneCelular);
 		txtTelefoneCelular.setColumns(10);
@@ -389,6 +404,7 @@ public class Cadastro extends JFrame {
 		panelCadastro.add(lblCep);
 		
 		txtCep = new JFormattedTextField(Mascara.ExecutaMascara("##.###-###"));;
+		txtCep.setName("txtCep");
 		txtCep.setBounds(524, 357, 74, 20);
 		panelCadastro.add(txtCep);
 		txtCep.setColumns(10);
@@ -418,12 +434,14 @@ public class Cadastro extends JFrame {
 		lblLogin.setFont(new Font("Arial", Font.BOLD, 11));
 		
 		txtLogin = new JTextField();
+		txtLogin.setName("txtLogin");
 		txtLogin.setColumns(10);
 		
 		JLabel lblSenhaLogin = new JLabel("Senha:");
 		lblSenhaLogin.setFont(new Font("Arial", Font.BOLD, 11));
 		
 		txtSenhaLogin = new JTextField();
+		txtSenhaLogin.setName("txtSenhaLogin");
 		txtSenhaLogin.setColumns(10);
 		
 		JButton btnEntrar = new JButton("Entrar");
@@ -565,6 +583,7 @@ public class Cadastro extends JFrame {
 		panelCadastro.add(lblDadosDeAcesso);
 		
 		txtConfirmarSenha = new JPasswordField();
+		txtConfirmarSenha.setName("txtConfirmaSenha");
 		txtConfirmarSenha.setBounds(492, 452, 125, 20);
 		panelCadastro.add(txtConfirmarSenha);
 		
