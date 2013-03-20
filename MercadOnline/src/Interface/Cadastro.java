@@ -238,8 +238,7 @@ public class Cadastro extends JFrame {
 								txtNome,txtEmail,txtCpf,txtDataDeNascimento,txtSexo,txtFone,txtIdentidade,txtLogradouro,txtBairro,txtCidade,txtUf,txtCep
 						})
 				);
-				
-				
+			
 				if (new VerificaPreenchimento().Verifica(lista)){
 					
 					if (ConfirmaSenha(getTxtSenha(), getTxtConfirmarSenha())){
