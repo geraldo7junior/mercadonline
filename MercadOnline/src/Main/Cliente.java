@@ -15,7 +15,7 @@ public class Cliente extends Usuario {
 	}
 
 	public boolean entrarSistema(String email, String senha) {
-		String sql = "SELECT * FROM usuario Where email= '" + email + "' AND senha= '" + senha + "'";
+		String sql = "SELECT * FROM mercadondb.usuario Where email= '" + email + "' AND senha= '" + senha + "'";
 		ConexaoDB conexao = new ConexaoDB();
 		conexao.getConnection();
 		try {
@@ -23,8 +23,10 @@ public class Cliente extends Usuario {
 			
 			ResultSet rs = stm.executeQuery(); //fazer receber o resultado. Ver como fazer isso.
 			
+			String emailSql;
 			while (rs.next()) {
-				System.out.println("nome: " + rs.getString("nome"));
+				emailSql = rs.getString(3);
+				System.out.println(emailSql);
 			}
 			
 			stm.close();
