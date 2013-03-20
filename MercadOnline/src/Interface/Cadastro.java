@@ -23,6 +23,7 @@ import javax.swing.ImageIcon;
 import java.awt.Color;
 
 import javax.swing.JFormattedTextField;
+import javax.swing.SwingConstants;
 
 public class Cadastro extends JFrame {
 	
@@ -354,7 +355,7 @@ public class Cadastro extends JFrame {
 		lblCadastro.setBounds(359, 112, 71, 20);
 		panelCadastro.add(lblCadastro);
 		
-		JLabel lblTelefoneCelular = new JLabel("Telefone Celular*:");
+		JLabel lblTelefoneCelular = new JLabel("Telefone Celular:");
 		lblTelefoneCelular.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
 		lblTelefoneCelular.setBounds(366, 255, 125, 14);
 		panelCadastro.add(lblTelefoneCelular);
@@ -596,6 +597,26 @@ public class Cadastro extends JFrame {
 		label_6.setFont(new Font("Folks", Font.BOLD, 15));
 		label_6.setBounds(646, 64, 4, 14);
 		panelCadastro.add(label_6);
+		
+		JLabel lblAstNumero = new JLabel("*");
+		lblAstNumero.setForeground(Color.RED);
+		lblAstNumero.setBounds(536, 310, 10, 10);
+		panelCadastro.add(lblAstNumero);
+		
+		JLabel lblAstNome = new JLabel("*");
+		lblAstNome.setForeground(Color.RED);
+		lblAstNome.setBounds(563, 175, 10, 10);
+		panelCadastro.add(lblAstNome);
+		
+		JLabel lblAstIdentidade = new JLabel("*");
+		lblAstIdentidade.setForeground(Color.RED);
+		lblAstIdentidade.setBounds(316, 200, 10, 10);
+		panelCadastro.add(lblAstIdentidade);
+		
+		JLabel lblAstCpf = new JLabel("*");
+		lblAstCpf.setForeground(Color.RED);
+		lblAstCpf.setBounds(460, 199, 10, 10);
+		panelCadastro.add(lblAstCpf);
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
