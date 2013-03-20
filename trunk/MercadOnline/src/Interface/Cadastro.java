@@ -189,45 +189,45 @@ public class Cadastro extends JFrame {
 		
 		JLabel lblNome = new JLabel("Nome*:");
 		lblNome.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblNome.setBounds(150, 155, 56, 14);
+		lblNome.setBounds(151, 180, 56, 14);
 		
 		JLabel lblEmail = new JLabel("E-mail*:");
 		lblEmail.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblEmail.setBounds(150, 404, 56, 14);
+		lblEmail.setBounds(151, 429, 56, 14);
 		
 		txtNome = new JTextField(new ApenasStr(50), null, 0);
-		txtNome.setBounds(208, 149, 353, 20);
+		txtNome.setBounds(209, 174, 353, 20);
 		txtNome.setColumns(10);
 		
 		txtEmail = new JTextField();
-		txtEmail.setBounds(217, 402, 251, 20);
+		txtEmail.setBounds(218, 427, 251, 20);
 		txtEmail.setColumns(10);
 		
 		JLabel lblCpf = new JLabel("CPF*:");
 		lblCpf.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblCpf.setBounds(324, 176, 41, 14);
+		lblCpf.setBounds(325, 201, 41, 14);
 		
 		txtCpf = new JFormattedTextField(Mascara.ExecutaMascara("###.###.###-##"));
-		txtCpf.setBounds(365, 174, 93, 20);
+		txtCpf.setBounds(366, 199, 93, 20);
 		txtCpf.setColumns(10);
 		
 		JLabel lblIdentidade = new JLabel("Identidade*:");
 		lblIdentidade.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblIdentidade.setBounds(150, 180, 81, 14);
+		lblIdentidade.setBounds(151, 205, 81, 14);
 		
 		txtIdentidade = new JTextField(new ApenasNum(10), null, 0);
-		txtIdentidade.setBounds(240, 174, 74, 20);
+		txtIdentidade.setBounds(241, 199, 74, 20);
 		txtIdentidade.setColumns(10);
 		
 		txtSenha = new JPasswordField();
-		txtSenha.setBounds(215, 427, 125, 20);
+		txtSenha.setBounds(216, 452, 125, 20);
 		
 		JLabel lblSenha = new JLabel("Senha*:");
 		lblSenha.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblSenha.setBounds(150, 429, 56, 14);
+		lblSenha.setBounds(151, 454, 56, 14);
 		
 		JButton btnCadastrar = new JButton("Confirmar Cadastro");
-		btnCadastrar.setBounds(300, 477, 153, 23);
+		btnCadastrar.setBounds(301, 502, 153, 23);
 		btnCadastrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if (ConfirmaSenha(getTxtSenha(), getTxtConfirmarSenha())){
@@ -241,78 +241,78 @@ public class Cadastro extends JFrame {
 		
 		JLabel lblFone = new JLabel("Telefone Fixo*:");
 		lblFone.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblFone.setBounds(150, 230, 103, 14);
+		lblFone.setBounds(151, 255, 103, 14);
 		
 		JLabel lblSexo = new JLabel("Sexo*:");
 		lblSexo.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblSexo.setBounds(400, 205, 53, 14);
+		lblSexo.setBounds(401, 230, 53, 14);
 		
 		JLabel lblDataDeNascimento = new JLabel("Data de Nascimento*:");
 		lblDataDeNascimento.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblDataDeNascimento.setBounds(150, 205, 147, 14);
+		lblDataDeNascimento.setBounds(151, 230, 147, 14);
 		
 		JLabel lblLogradouro = new JLabel("Rua*:");
 		lblLogradouro.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblLogradouro.setBounds(150, 284, 41, 14);
+		lblLogradouro.setBounds(151, 309, 41, 14);
 		
 		JLabel lblComplemento = new JLabel("Complemento:");
 		lblComplemento.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblComplemento.setBounds(150, 309, 103, 14);
+		lblComplemento.setBounds(151, 334, 103, 14);
 		
 		JLabel lblNumero = new JLabel("N\u00BA*:");
 		lblNumero.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblNumero.setBounds(439, 284, 41, 14);
+		lblNumero.setBounds(440, 309, 41, 14);
 		
 		JLabel lblCidade = new JLabel("Cidade*:");
 		lblCidade.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblCidade.setBounds(150, 334, 64, 14);
+		lblCidade.setBounds(151, 359, 64, 14);
 		
 		JLabel lblUf = new JLabel("UF*:");
 		lblUf.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblUf.setBounds(150, 359, 34, 14);
+		lblUf.setBounds(151, 384, 34, 14);
 		
 		txtFone = new JFormattedTextField(Mascara.ExecutaMascara("(##)####-####"));
-		txtFone.setBounds(258, 228, 100, 20);
+		txtFone.setBounds(259, 253, 100, 20);
 		txtFone.setColumns(10);
 		
 		txtSexo = new JTextField(new ApenasStr(1), null, 0);
-		txtSexo.setBounds(457, 199, 23, 20);
+		txtSexo.setBounds(458, 224, 23, 20);
 		txtSexo.setColumns(10);
 		
 		txtDataDeNascimento = new JFormattedTextField(Mascara.ExecutaMascara("##/##/####"));
-		txtDataDeNascimento.setBounds(300, 199, 74, 20);
+		txtDataDeNascimento.setBounds(301, 224, 74, 20);
 		txtDataDeNascimento.setColumns(10);
 		
 		txtLogradouro = new JTextField(new ApenasStr(50), null, 0);
-		txtLogradouro.setBounds(192, 282, 237, 20);
+		txtLogradouro.setBounds(193, 307, 237, 20);
 		txtLogradouro.setColumns(10);
 		
 		txtComplemento = new JTextField();
-		txtComplemento.setBounds(255, 307, 34, 20);
+		txtComplemento.setBounds(256, 332, 34, 20);
 		txtComplemento.setText("");
 		txtComplemento.setColumns(10);
 		
 		txtNumero = new JTextField(new ApenasNum(6), null, 0);
-		txtNumero.setBounds(467, 282, 64, 20);
+		txtNumero.setBounds(468, 307, 64, 20);
 		txtNumero.setText("");
 		txtNumero.setColumns(10);
 		
 		txtCidade = new JTextField(new ApenasStr(50), null, 0);
-		txtCidade.setBounds(216, 332, 252, 20);
+		txtCidade.setBounds(217, 357, 252, 20);
 		txtCidade.setText("");
 		txtCidade.setColumns(10);
 		
 		txtUf = new JTextField(new ApenasStr(2), null, 0);
-		txtUf.setBounds(185, 357, 34, 20);
+		txtUf.setBounds(186, 382, 34, 20);
 		txtUf.setText("");
 		txtUf.setColumns(10);
 		
 		JLabel lblBairro = new JLabel("Bairro*:");
 		lblBairro.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblBairro.setBounds(295, 309, 51, 14);
+		lblBairro.setBounds(296, 334, 51, 14);
 		
 		txtBairro = new JTextField(new ApenasStr(50), null, 0);
-		txtBairro.setBounds(358, 307, 224, 20);
+		txtBairro.setBounds(359, 332, 224, 20);
 		txtBairro.setColumns(10);
 		
 		panelCadastro.setLayout(null);
@@ -347,53 +347,55 @@ public class Cadastro extends JFrame {
 		panelCadastro.add(txtUf);
 		
 		JLabel lblCadastro = new JLabel("CADASTRO");
-		lblCadastro.setFont(new Font("AR BONNIE", Font.BOLD, 16));
+		lblCadastro.setForeground(new Color(255, 153, 0));
+		lblCadastro.setFont(new Font("AR BONNIE", Font.BOLD, 20));
 		lblCadastro.setBackground(Color.WHITE);
-		lblCadastro.setBounds(396, 81, 57, 20);
+		lblCadastro.setBounds(359, 112, 71, 20);
 		panelCadastro.add(lblCadastro);
 		
 		JLabel lblTelefoneCelular = new JLabel("Telefone Celular*:");
 		lblTelefoneCelular.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblTelefoneCelular.setBounds(365, 230, 125, 14);
+		lblTelefoneCelular.setBounds(366, 255, 125, 14);
 		panelCadastro.add(lblTelefoneCelular);
 		
 		txtTelefoneCelular = new JFormattedTextField(Mascara.ExecutaMascara("(##)####-####"));;
-		txtTelefoneCelular.setBounds(496, 228, 93, 20);
+		txtTelefoneCelular.setBounds(497, 253, 93, 20);
 		panelCadastro.add(txtTelefoneCelular);
 		txtTelefoneCelular.setColumns(10);
 		
-		JLabel lblEndereco = new JLabel("Endere\u00E7o*:");
+		JLabel lblEndereco = new JLabel("Endere\u00E7o:");
+		lblEndereco.setForeground(new Color(255, 153, 0));
 		lblEndereco.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblEndereco.setBounds(150, 259, 81, 14);
+		lblEndereco.setBounds(151, 284, 81, 14);
 		panelCadastro.add(lblEndereco);
 		
 		JLabel lblCep = new JLabel("CEP*:");
 		lblCep.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblCep.setBounds(479, 334, 46, 14);
+		lblCep.setBounds(480, 359, 46, 14);
 		panelCadastro.add(lblCep);
 		
 		txtCep = new JFormattedTextField(Mascara.ExecutaMascara("##.###-###"));;
-		txtCep.setBounds(523, 332, 74, 20);
+		txtCep.setBounds(524, 357, 74, 20);
 		panelCadastro.add(txtCep);
 		txtCep.setColumns(10);
 		
 		JLabel lblConfirmarSenha = new JLabel("Confirmar Senha*:");
 		lblConfirmarSenha.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblConfirmarSenha.setBounds(358, 429, 125, 14);
+		lblConfirmarSenha.setBounds(359, 454, 125, 14);
 		panelCadastro.add(lblConfirmarSenha);
 		
 		JLabel lblFotoImg = new JLabel("");
 		lblFotoImg.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\foto.png"));
-		lblFotoImg.setBounds(26, 149, 117, 115);
+		lblFotoImg.setBounds(27, 174, 117, 115);
 		panelCadastro.add(lblFotoImg);
 		
 		JLabel lblNewLabel = new JLabel("Foto*");
 		lblNewLabel.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblNewLabel.setBounds(65, 273, 41, 14);
+		lblNewLabel.setBounds(66, 298, 41, 14);
 		panelCadastro.add(lblNewLabel);
 		
 		JPanel panelLogin = new JPanel();
-		panelLogin.setBackground(new Color(240, 230, 140));
+		panelLogin.setBackground(new Color(255, 204, 153));
 		panelLogin.setBounds(571, 110, 196, 109);
 		panelCadastro.add(panelLogin);
 		
@@ -451,96 +453,146 @@ public class Cadastro extends JFrame {
 		panelLogin.setLayout(gl_panelLogin);
 		
 		JLabel lblHome = new JLabel("home");
-		lblHome.setFont(new Font("AR BONNIE", Font.BOLD, 16));
-		lblHome.setBounds(229, 11, 32, 20);
+		lblHome.setForeground(Color.WHITE);
+		lblHome.setFont(new Font("Folks", Font.BOLD, 16));
+		lblHome.setBounds(236, 11, 53, 20);
 		panelCadastro.add(lblHome);
 		
 		JLabel lblProdutos = new JLabel("produtos");
-		lblProdutos.setFont(new Font("AR BONNIE", Font.BOLD, 16));
-		lblProdutos.setBounds(276, 11, 64, 20);
+		lblProdutos.setForeground(Color.WHITE);
+		lblProdutos.setFont(new Font("Folks", Font.BOLD, 16));
+		lblProdutos.setBounds(291, 11, 74, 20);
 		panelCadastro.add(lblProdutos);
 		
 		JLabel lblCadastromenu = new JLabel("cadastro");
-		lblCadastromenu.setFont(new Font("AR BONNIE", Font.BOLD, 16));
-		lblCadastromenu.setBounds(349, 11, 57, 20);
+		lblCadastromenu.setForeground(Color.WHITE);
+		lblCadastromenu.setFont(new Font("Folks", Font.BOLD, 16));
+		lblCadastromenu.setBounds(371, 11, 74, 20);
 		panelCadastro.add(lblCadastromenu);
 		
 		JLabel lblPromocao = new JLabel("promo\u00E7\u00E3o");
-		lblPromocao.setFont(new Font("AR BONNIE", Font.BOLD, 16));
-		lblPromocao.setBounds(416, 11, 74, 20);
+		lblPromocao.setForeground(Color.WHITE);
+		lblPromocao.setFont(new Font("Folks", Font.BOLD, 16));
+		lblPromocao.setBounds(455, 11, 86, 20);
 		panelCadastro.add(lblPromocao);
 		
 		JLabel lblSugeridos = new JLabel("sugeridos");
-		lblSugeridos.setFont(new Font("AR BONNIE", Font.BOLD, 16));
-		lblSugeridos.setBounds(509, 11, 59, 20);
+		lblSugeridos.setForeground(Color.WHITE);
+		lblSugeridos.setFont(new Font("Folks", Font.BOLD, 16));
+		lblSugeridos.setBounds(551, 11, 81, 20);
 		panelCadastro.add(lblSugeridos);
 		
 		JLabel lblContato = new JLabel("contato");
-		lblContato.setFont(new Font("AR BONNIE", Font.BOLD, 16));
-		lblContato.setBounds(586, 11, 55, 20);
+		lblContato.setForeground(Color.WHITE);
+		lblContato.setFont(new Font("Folks", Font.BOLD, 16));
+		lblContato.setBounds(642, 11, 64, 20);
 		panelCadastro.add(lblContato);
 		
 		JLabel lblPaes = new JLabel("P\u00E3es e Bolos");
-		lblPaes.setFont(new Font("Calibri", Font.BOLD, 11));
-		lblPaes.setBounds(142, 42, 56, 14);
+		lblPaes.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblPaes.setBounds(10, 66, 74, 14);
 		panelCadastro.add(lblPaes);
 		
 		JLabel lblFrutas = new JLabel("Frutas");
-		lblFrutas.setFont(new Font("Calibri", Font.BOLD, 11));
-		lblFrutas.setBounds(208, 42, 28, 14);
+		lblFrutas.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblFrutas.setBounds(97, 66, 41, 14);
 		panelCadastro.add(lblFrutas);
 		
 		JLabel lblLegumes = new JLabel("Legumes e Verduras");
-		lblLegumes.setFont(new Font("Calibri", Font.BOLD, 11));
-		lblLegumes.setBounds(250, 42, 93, 14);
+		lblLegumes.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblLegumes.setBounds(151, 66, 123, 14);
 		panelCadastro.add(lblLegumes);
 		
 		JLabel lblBebidas = new JLabel("Bebidas e Sucos");
-		lblBebidas.setFont(new Font("Calibri", Font.BOLD, 11));
-		lblBebidas.setBounds(357, 42, 72, 14);
+		lblBebidas.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblBebidas.setBounds(288, 66, 99, 14);
 		panelCadastro.add(lblBebidas);
 		
 		JLabel lblFrios = new JLabel("Frios e Latic\u00EDnios");
-		lblFrios.setFont(new Font("Calibri", Font.BOLD, 11));
-		lblFrios.setBounds(441, 42, 76, 14);
+		lblFrios.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblFrios.setBounds(400, 66, 100, 14);
 		panelCadastro.add(lblFrios);
 		
 		JLabel lblLimpeza = new JLabel("Limpeza");
-		lblLimpeza.setFont(new Font("Calibri", Font.BOLD, 11));
-		lblLimpeza.setBounds(534, 42, 38, 14);
+		lblLimpeza.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblLimpeza.setBounds(515, 66, 51, 14);
 		panelCadastro.add(lblLimpeza);
 		
 		JLabel lblMercearia = new JLabel("Mercearia");
-		lblMercearia.setFont(new Font("Calibri", Font.BOLD, 11));
-		lblMercearia.setBounds(588, 42, 48, 14);
+		lblMercearia.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblMercearia.setBounds(581, 66, 64, 14);
 		panelCadastro.add(lblMercearia);
 		
 		JLabel lblPerfume = new JLabel("Perfume e Higiene");
-		lblPerfume.setFont(new Font("Calibri", Font.BOLD, 11));
-		lblPerfume.setBounds(650, 42, 86, 14);
+		lblPerfume.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblPerfume.setBounds(656, 66, 117, 14);
 		panelCadastro.add(lblPerfume);
 		
 		JLabel label_16 = new JLabel("");
 		label_16.setBounds(124, 41, 623, 14);
 		panelCadastro.add(label_16);
 		
-		JLabel lblDadosPessoais = new JLabel("Dados Pessoais*:");
+		JLabel lblDadosPessoais = new JLabel("Dados Pessoais:");
+		lblDadosPessoais.setForeground(new Color(255, 153, 0));
 		lblDadosPessoais.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblDadosPessoais.setBounds(150, 130, 139, 14);
+		lblDadosPessoais.setBounds(151, 155, 139, 14);
 		panelCadastro.add(lblDadosPessoais);
 		
-		JLabel lblDadosDeAcesso = new JLabel("Dados de acesso ao sistema*:");
+		JLabel lblDadosDeAcesso = new JLabel("Dados de acesso ao sistema:");
+		lblDadosDeAcesso.setForeground(new Color(255, 153, 0));
 		lblDadosDeAcesso.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblDadosDeAcesso.setBounds(150, 384, 196, 14);
+		lblDadosDeAcesso.setBounds(151, 409, 196, 14);
 		panelCadastro.add(lblDadosDeAcesso);
 		
 		txtConfirmarSenha = new JPasswordField();
-		txtConfirmarSenha.setBounds(496, 427, 125, 20);
+		txtConfirmarSenha.setBounds(492, 452, 125, 20);
 		panelCadastro.add(txtConfirmarSenha);
+		
+		JLabel lblI = new JLabel("I");
+		lblI.setForeground(new Color(255, 153, 0));
+		lblI.setFont(new Font("Folks", Font.BOLD, 15));
+		lblI.setBounds(87, 64, 4, 14);
+		panelCadastro.add(lblI);
+		
+		JLabel label_1 = new JLabel("I");
+		label_1.setForeground(new Color(255, 153, 0));
+		label_1.setFont(new Font("Folks", Font.BOLD, 15));
+		label_1.setBounds(141, 64, 4, 14);
+		panelCadastro.add(label_1);
+		
+		JLabel label_2 = new JLabel("I");
+		label_2.setForeground(new Color(255, 153, 0));
+		label_2.setFont(new Font("Folks", Font.BOLD, 15));
+		label_2.setBounds(278, 64, 4, 14);
+		panelCadastro.add(label_2);
+		
+		JLabel label_3 = new JLabel("I");
+		label_3.setForeground(new Color(255, 153, 0));
+		label_3.setFont(new Font("Folks", Font.BOLD, 15));
+		label_3.setBounds(390, 64, 4, 14);
+		panelCadastro.add(label_3);
+		
+		JLabel label_4 = new JLabel("I");
+		label_4.setForeground(new Color(255, 153, 0));
+		label_4.setFont(new Font("Folks", Font.BOLD, 15));
+		label_4.setBounds(505, 64, 4, 14);
+		panelCadastro.add(label_4);
+		
+		JLabel label_5 = new JLabel("I");
+		label_5.setForeground(new Color(255, 153, 0));
+		label_5.setFont(new Font("Folks", Font.BOLD, 15));
+		label_5.setBounds(571, 64, 4, 14);
+		panelCadastro.add(label_5);
+		
+		JLabel label_6 = new JLabel("I");
+		label_6.setForeground(new Color(255, 153, 0));
+		label_6.setFont(new Font("Folks", Font.BOLD, 15));
+		label_6.setBounds(646, 64, 4, 14);
+		panelCadastro.add(label_6);
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
-		lblBackGround.setBounds(0, 0, 784, 562);
+		lblBackGround.setBounds(0, 0, 800, 600);
 		panelCadastro.add(lblBackGround);
 		
 		
@@ -576,5 +628,4 @@ public class Cadastro extends JFrame {
 		*/
 		return true;
 	}
-	
 }
