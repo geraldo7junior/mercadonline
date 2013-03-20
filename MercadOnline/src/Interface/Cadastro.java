@@ -414,7 +414,7 @@ public class Cadastro extends JFrame {
 		JButton btnEntrar = new JButton("Entrar");
 		btnEntrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				if(new Cliente().entrarSistema(txtEmail.toString(), txtSenha.toString()) == true){
+				if(new Cliente().entrarSistema(txtEmail.toString(), txtSenha.toString())){
 					LimparCampos();
 			}
 		}});
@@ -615,6 +615,8 @@ public class Cadastro extends JFrame {
 		txtCidade.setText("");
 		txtUf.setText("");
 		txtCep.setText("");
+		txtLogin.setText("");
+		txtSenhaLogin.setText("");
 		
 	}
 	

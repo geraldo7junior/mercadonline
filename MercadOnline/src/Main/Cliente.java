@@ -8,28 +8,28 @@ import javax.swing.JOptionPane;
 
 public class Cliente extends Usuario {
 
+
 	public static Produto pesquisarProduto(int id) {
 		return null;
 		
 	}
 
 	public boolean entrarSistema(String email, String senha) {
-		String sql = "SELECT mercadondb.usuario.email FROM mercadondb.usuario Where email= '" + email + "' and senha= '" + senha + "'";
+		String sql = "SELECT * FROM usuario Where email= '" + email + "' AND senha= '" + senha + "'";
 		ConexaoDB conexao = new ConexaoDB();
 		conexao.getConnection();
 		try {
 			PreparedStatement stm = conexao.conn.prepareStatement(sql);			
 			
-			stm.executeQuery();
-			ResultSet a = stm.getResultSet(); //fazer receber o resultado. Ver como fazer isso.
+			ResultSet rs = stm.executeQuery(); //fazer receber o resultado. Ver como fazer isso.
+			
+			while (rs.next()) {
+				System.out.println("nome: " + rs.getString("nome"));
+			}
 			
 			stm.close();
 			conexao.closeConnection();
-			
-			if (a.toString() == email){
-				return true;
-			}
-			return false;
+			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();
 			conexao.closeConnection();
