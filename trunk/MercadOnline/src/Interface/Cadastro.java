@@ -628,13 +628,8 @@ public class Cadastro extends JFrame {
 	}
 	
 	private boolean ConfirmaSenha(String senha, String confirmarSenha) {
-		/**if (senha == confirmarSenha)
-		{
-			System.out.println(senha);
-			System.out.println(confirmarSenha);
-			return true;
-		}
-		*/
-		return true;
+		if (senha == confirmarSenha)
+			return true; 
+		return false;
 	}
 }
