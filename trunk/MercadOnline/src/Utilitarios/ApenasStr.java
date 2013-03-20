@@ -1,7 +1,7 @@
 package Utilitarios;
 
-import javax.swing.text.AttributeSet;   
-import javax.swing.text.BadLocationException;   
+import javax.swing.text.AttributeSet;
+import javax.swing.text.BadLocationException;
   
 public class ApenasStr extends LimitaNumeroCaracteres {   
 	private static final long serialVersionUID = 1L;
