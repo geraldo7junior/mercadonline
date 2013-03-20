@@ -181,6 +181,7 @@ public class Cadastro extends JFrame {
 	 * Create the frame.
 	 */
 	public Cadastro() {
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 800, 600);
 		panelCadastro = new JPanel();
@@ -395,6 +396,7 @@ public class Cadastro extends JFrame {
 		panelCadastro.add(lblNewLabel);
 		
 		JPanel panelLogin = new JPanel();
+		panelLogin.setBorder(null);
 		panelLogin.setBackground(new Color(255, 204, 153));
 		panelLogin.setBounds(571, 110, 196, 109);
 		panelCadastro.add(panelLogin);
@@ -414,10 +416,12 @@ public class Cadastro extends JFrame {
 		JButton btnEntrar = new JButton("Entrar");
 		btnEntrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				if(new Cliente().entrarSistema(txtEmail.toString(), txtSenha.toString())){
+				if(new Cliente().entrarSistema(txtLogin.getText(), txtSenhaLogin.getText())){
 					LimparCampos();
 			}
 		}});
+		
+		JLabel lblLogado = new JLabel("New label");
 		GroupLayout gl_panelLogin = new GroupLayout(panelLogin);
 		gl_panelLogin.setHorizontalGroup(
 			gl_panelLogin.createParallelGroup(Alignment.LEADING)
@@ -425,20 +429,23 @@ public class Cadastro extends JFrame {
 					.addContainerGap()
 					.addGroup(gl_panelLogin.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_panelLogin.createSequentialGroup()
-							.addComponent(lblLogin)
-							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(txtLogin, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))
-						.addGroup(gl_panelLogin.createSequentialGroup()
 							.addComponent(lblSenhaLogin)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(txtSenhaLogin, GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE))
-						.addComponent(btnEntrar, Alignment.TRAILING))
+						.addComponent(btnEntrar, Alignment.TRAILING)
+						.addGroup(gl_panelLogin.createSequentialGroup()
+							.addGroup(gl_panelLogin.createParallelGroup(Alignment.TRAILING)
+								.addComponent(lblLogado)
+								.addComponent(lblLogin))
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(txtLogin, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)))
 					.addContainerGap())
 		);
 		gl_panelLogin.setVerticalGroup(
 			gl_panelLogin.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_panelLogin.createSequentialGroup()
-					.addContainerGap()
+					.addComponent(lblLogado)
+					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_panelLogin.createParallelGroup(Alignment.BASELINE)
 						.addComponent(lblLogin)
 						.addComponent(txtLogin, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
