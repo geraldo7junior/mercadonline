@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
 public class Cliente extends Usuario {
+	
+	String emailSql;
 
 
 	public static Produto pesquisarProduto(int id) {
@@ -23,15 +25,16 @@ public class Cliente extends Usuario {
 			
 			ResultSet rs = stm.executeQuery(); //fazer receber o resultado. Ver como fazer isso.
 			
-			String emailSql;
 			while (rs.next()) {
 				emailSql = rs.getString(3);
-				System.out.println(emailSql);
 			}
 			
 			stm.close();
 			conexao.closeConnection();
-			return true;
+			
+			if (emailSql != null) 
+				return true;
+			return false;
 		} catch (SQLException e) {
 			e.printStackTrace();
 			conexao.closeConnection();
