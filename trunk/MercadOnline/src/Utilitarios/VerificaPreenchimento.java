@@ -20,10 +20,11 @@ public class VerificaPreenchimento {
 		}
 		
 		else{
-			String nome = lista.get(0).getName();
-			String eu = nome.replace("txt", "lblAst");
+			String txt = lista.get(0).getName();
+			String lblAst = txt.replace("txt", "lblAst");
+			
 			controle = "false";
-			System.out.println(eu);
+			System.out.println(lblAst);
 			VerTamanho(lista);
 		}
 		
