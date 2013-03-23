@@ -1,24 +1,26 @@
 package Interface;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JLabel;
-import java.awt.Font;
-import javax.swing.ImageIcon;
 import java.awt.Color;
-import javax.swing.JTextField;
-import javax.swing.JPasswordField;
-import javax.swing.JButton;
+import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.SystemColor;
-import javax.swing.JScrollPane;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
 
 public class CarrinhoCompras extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField txtLogin;
 	private JPasswordField txtSenhaLogin;
@@ -306,7 +308,7 @@ public class CarrinhoCompras extends JFrame {
 		label_43.setBounds(935, 82, 63, 14);
 		contentPane.add(label_43);
 		
-		JList list = new JList();
+		JList<String> list = new JList<String>();
 		list.setBounds(277, 319, 444, 200);
 		contentPane.add(list);
 		
