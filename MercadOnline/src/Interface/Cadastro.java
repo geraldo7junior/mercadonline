@@ -7,8 +7,6 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
@@ -17,7 +15,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
-import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 
 import Main.Cliente;
@@ -25,7 +23,6 @@ import Utilitarios.ApenasNum;
 import Utilitarios.ApenasStr;
 import Utilitarios.Mascara;
 import Utilitarios.VerificaPreenchimento;
-import javax.swing.UIManager;
 
 public class Cadastro extends JFrame {
 	
@@ -177,6 +174,15 @@ public class Cadastro extends JFrame {
 
 	public void setTxtBairro(JTextField txtBairro) {
 		this.txtBairro = txtBairro;
+	}
+	
+	public String getTxtSenhaLogin() {
+		String senha = new String(txtSenhaLogin.getPassword());
+		return senha;
+	}
+
+	public void setTxtSenhaLogin(JPasswordField txtSenha) {
+		this.txtSenhaLogin = txtSenha;
 	}
 
 
@@ -637,7 +643,7 @@ public class Cadastro extends JFrame {
 		panelCadastro.add(lblBackGround);
 		btnEntrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				if(new Cliente().entrarSistema(txtLogin.getText(), txtSenhaLogin.getText())){
+				if(new Cliente().entrarSistema(txtLogin.getText(), getTxtSenhaLogin())){
 					LimparCampos();
 			}
 		}});
