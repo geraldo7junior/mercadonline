@@ -22,9 +22,9 @@ public abstract class Usuario {
 			 String fone, String celular, String identidade, String logradouro, String complemento,
 			 String bairro, String cidade, String uf, String cep);
 
-	public abstract boolean alterarCadastro();
+	public abstract boolean alterarCadastro(String email);
 
-	public abstract boolean deletarCadastro();
+	public abstract boolean deletarCadastro(String email);
 
 	public String getNome() {
 		return nome;

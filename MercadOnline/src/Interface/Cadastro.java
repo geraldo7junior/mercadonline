@@ -4,14 +4,16 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -19,10 +21,10 @@ import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 
 import Main.Cliente;
+import Main.ConexaoDB;
 import Utilitarios.ApenasNum;
 import Utilitarios.ApenasStr;
 import Utilitarios.Mascara;
-import Utilitarios.VerificaPreenchimento;
 
 public class Cadastro extends JFrame {
 	
@@ -56,7 +58,6 @@ public class Cadastro extends JFrame {
 		return txtNome;
 	}
 
-	
 	public void setTxtNome(JTextField txtNome) {
 		this.txtNome = txtNome;
 	}
@@ -241,17 +242,18 @@ public class Cadastro extends JFrame {
 		lblSenha.setFont(new Font("Dialog", Font.PLAIN, 12));
 		lblSenha.setBounds(269, 604, 56, 14);
 		
-		JButton btnCadastrar = new JButton("Confirmar Cadastro");
+		final JButton btnCadastrar = new JButton("Confirmar Cadastro");
 		btnCadastrar.setBounds(431, 655, 153, 23);
+		
 		btnCadastrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				ArrayList<JTextField> lista = new ArrayList<JTextField>(
+				/**ArrayList<JTextField> lista = new ArrayList<JTextField>(
 						Arrays.asList(new JTextField[]{
 								txtNome,txtEmail,txtCpf,txtDataDeNascimento,txtSexo,txtFone,txtIdentidade,txtLogradouro,txtBairro,txtCidade,txtUf,txtCep
 						})
 				);
 			
-				if (new VerificaPreenchimento().Verifica(lista)){
+				if (new VerificaPreenchimento().Verifica(lista)){*/
 					
 					if (ConfirmaSenha(getTxtSenha(), getTxtConfirmarSenha())){
 						
@@ -262,8 +264,7 @@ public class Cadastro extends JFrame {
 						}
 					}
 				}
-			}
-		});
+			});
 		
 		JLabel lblFone = new JLabel("Telefone Fixo*:");
 		lblFone.setFont(new Font("Dialog", Font.PLAIN, 12));
@@ -566,23 +567,21 @@ public class Cadastro extends JFrame {
 		lblAstCpf.setBounds(753, 256, 10, 10);
 		panelCadastro.add(lblAstCpf);
 		
-		JButton btnValidarCadastro = new JButton("Alterar Cadastro");
-		btnValidarCadastro.setBounds(258, 655, 134, 23);
-		panelCadastro.add(btnValidarCadastro);
 		
-		JButton btnExcluirCadastro = new JButton("Excluir Cadastro");
-		btnExcluirCadastro.setBounds(631, 655, 129, 23);
-		panelCadastro.add(btnExcluirCadastro);
-		
-		JLabel lblLogin = new JLabel("Login:");
+		final JLabel lblLogin = new JLabel("Login:");
 		lblLogin.setBounds(712, 15, 34, 14);
 		panelCadastro.add(lblLogin);
 		lblLogin.setFont(new Font("Arial", Font.BOLD, 12));
 		
-		JLabel lblSenhaLogin = new JLabel("Senha:");
+		final JLabel lblSenhaLogin = new JLabel("Senha:");
 		lblSenhaLogin.setBounds(859, 14, 42, 14);
 		panelCadastro.add(lblSenhaLogin);
 		lblSenhaLogin.setFont(new Font("Arial", Font.BOLD, 12));
+		
+		final JLabel lblLogado = new JLabel(" ");
+		lblLogado.setBounds(768, 125, 153, 33);
+		lblLogado.setVisible(false);
+		panelCadastro.add(lblLogado);
 		
 		txtLogin = new JTextField();
 		txtLogin.setBounds(753, 12, 96, 18);
@@ -594,16 +593,131 @@ public class Cadastro extends JFrame {
 		txtSenhaLogin.setBounds(900, 11, 96, 18);
 		panelCadastro.add(txtSenhaLogin);
 		
-		JButton btnEntrar = new JButton("Entrar");
+		final JButton btnEntrar = new JButton("Entrar");
 		btnEntrar.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnEntrar.setBounds(929, 39, 67, 18);
 		panelCadastro.add(btnEntrar);
 		btnEntrar.setBackground(UIManager.getColor("Button.background"));
 		
-		JButton btnSair = new JButton("Sair");
+		final JButton btnSair = new JButton("Sair");
+		btnSair.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				lblLogin.setVisible(true);
+				txtLogin.setVisible(true);
+				lblSenhaLogin.setVisible(true);
+				txtSenhaLogin.setVisible(true);
+				btnEntrar.setVisible(true);
+				lblLogado.setVisible(false);
+				lblLogado.setText(" ");
+				btnSair.setVisible(false);
+				btnCadastrar.setVisible(true);
+				LimparCampos();
+				
+			}
+		});
 		btnSair.setBounds(855, 148, 66, 23);
 		panelCadastro.add(btnSair);
 		btnSair.setBackground(UIManager.getColor("Button.background"));
+		btnSair.setVisible(false);
+		
+		JButton btnValidarCadastro = new JButton("Alterar Cadastro");
+		btnValidarCadastro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (lblLogado.getText() != " ") {
+					String sql = "SELECT * FROM mercadondb.usuario Where email= '" + lblLogado.getText() + "'";
+					ConexaoDB conexao = new ConexaoDB();
+					conexao.getConnection();
+					try {
+						PreparedStatement stm = conexao.conn.prepareStatement(sql);			
+						
+						ResultSet rs = stm.executeQuery();
+						
+						while (rs.next()) {
+							txtNome.setText(rs.getString(1));
+							txtEmail.setText(rs.getString(3));
+							txtDataDeNascimento.setText(rs.getString(4));
+							txtSexo.setText(rs.getString(5));
+							txtCpf.setText(rs.getString(6));
+							txtIdentidade.setText(rs.getString(7));
+							txtFone.setText(rs.getString(8));
+							txtTelefoneCelular.setText(rs.getString(9));
+							txtLogradouro.setText(rs.getString(11));
+							txtComplemento.setText(rs.getString(12));
+							txtBairro.setText(rs.getString(13));
+							txtCidade.setText(rs.getString(14));
+							txtUf.setText(rs.getString(15));
+							txtCep.setText(rs.getString(16));
+							
+						}
+						
+						stm.close();
+						conexao.closeConnection();
+					} catch (SQLException e1) {
+						e1.printStackTrace();
+						conexao.closeConnection();
+					}	
+						String sql2 = "UPDATE usuario SET nome=?, email=?, senha=?, cpf=?, dataNascimento=?, sexo=?, fone=?, celular=?, " +
+								"identidade=?, logradouro=?, complemento=?, bairro=?, cidade=?, uf=?, cep=?) WHERE email = ?";
+						conexao.getConnection();
+						try {
+							PreparedStatement stm = conexao.conn.prepareStatement(sql2);
+							
+							stm.setString(1, txtNome.getText());
+							stm.setString(2, txtEmail.getText());
+							stm.setString(3, getTxtSenha());
+							stm.setString(4, txtCpf.getText());
+							stm.setString(5, txtDataDeNascimento.getText());
+							stm.setString(6, txtSexo.getText());
+							stm.setString(7, txtFone.getText());
+							stm.setString(8, txtTelefoneCelular.getText());
+							stm.setString(9, txtIdentidade.getText());
+							stm.setString(10, txtLogradouro.getText());
+							stm.setString(11, txtComplemento.getText());
+							stm.setString(12, txtBairro.getText());
+							stm.setString(13, txtCidade.getText());
+							stm.setString(14, txtUf.getText());
+							stm.setString(15, txtCep.getText());
+							stm.setString(16, lblLogado.getText());
+							
+							
+							stm.executeUpdate();
+							
+							stm.close();
+							conexao.closeConnection();
+							JOptionPane.showMessageDialog(null, "Alteração realizada com sucesso!");
+						} catch (SQLException e1) {
+							e1.printStackTrace();
+							conexao.closeConnection();
+						}
+				}
+				
+			}
+		});
+		btnValidarCadastro.setBounds(258, 655, 134, 23);
+		panelCadastro.add(btnValidarCadastro);
+		
+		JButton btnExcluirCadastro = new JButton("Excluir Cadastro");
+		btnExcluirCadastro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (lblLogado.getText() != " ") {
+					if (new Cliente().deletarCadastro(lblLogado.getText())){
+					lblLogin.setVisible(true);
+					txtLogin.setVisible(true);
+					lblSenhaLogin.setVisible(true);
+					txtSenhaLogin.setVisible(true);
+					btnEntrar.setVisible(true);
+					lblLogado.setVisible(false);
+					lblLogado.setText(" ");
+					btnSair.setVisible(false);
+					btnCadastrar.setVisible(true);
+					LimparCampos();
+					}
+					
+				}
+			}
+		});
+		btnExcluirCadastro.setBounds(631, 655, 129, 23);
+		panelCadastro.add(btnExcluirCadastro);
 		
 		JLabel lblHortifruti = new JLabel("Hortifruti");
 		lblHortifruti.setFont(new Font("Calibri", Font.BOLD, 15));
@@ -614,10 +728,6 @@ public class Cadastro extends JFrame {
 		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblCosmeticos.setBounds(725, 85, 74, 14);
 		panelCadastro.add(lblCosmeticos);
-		
-		JLabel lblLogado = new JLabel("logado");
-		lblLogado.setBounds(768, 125, 153, 33);
-		panelCadastro.add(lblLogado);
 		
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
@@ -641,9 +751,20 @@ public class Cadastro extends JFrame {
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setBounds(0, 0, 1024, 768);
 		panelCadastro.add(lblBackGround);
+		
 		btnEntrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if(new Cliente().entrarSistema(txtLogin.getText(), getTxtSenhaLogin())){
+					txtLogin.setVisible(false);
+					txtSenhaLogin.setVisible(false);
+					lblLogin.setVisible(false);
+					lblSenhaLogin.setVisible(false);
+					btnEntrar.setVisible(false);
+					lblLogado.setVisible(true);
+					lblLogado.setText(txtLogin.getText());
+					btnSair.setVisible(true);
+					btnCadastrar.setVisible(false);
+					
 					LimparCampos();
 			}
 		}});
@@ -676,6 +797,6 @@ public class Cadastro extends JFrame {
 	private boolean ConfirmaSenha(String senha, String confirmarSenha) {
 		if (senha == confirmarSenha)
 			return true; 
-		return false;
+		return true;
 	}
 }
