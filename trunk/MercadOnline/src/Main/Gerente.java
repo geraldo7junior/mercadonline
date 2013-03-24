@@ -16,11 +16,11 @@ public class Gerente extends Usuario {
 		return false;
 	}
 
-	public boolean alterarCadastro() {
+	public boolean alterarCadastro(String email) {
 		return false;
 	}
 
-	public boolean deletarCadastro() {
+	public boolean deletarCadastro(String email) {
 		return false;
 	}
 

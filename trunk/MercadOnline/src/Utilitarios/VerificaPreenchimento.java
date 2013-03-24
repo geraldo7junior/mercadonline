@@ -29,7 +29,7 @@ public class VerificaPreenchimento {
 		}
 		
 		if (controle == "false")
-			return false;
+			return true;
 		return true;
 	}
 	

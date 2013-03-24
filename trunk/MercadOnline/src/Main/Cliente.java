@@ -7,8 +7,6 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
 public class Cliente extends Usuario {
-	
-	String emailSql;
 
 
 	public static Produto pesquisarProduto(int id) {
@@ -17,13 +15,14 @@ public class Cliente extends Usuario {
 	}
 
 	public boolean entrarSistema(String email, String senha) {
+		String emailSql = null;
 		String sql = "SELECT * FROM mercadondb.usuario Where email= '" + email + "' AND senha= '" + senha + "'";
 		ConexaoDB conexao = new ConexaoDB();
 		conexao.getConnection();
 		try {
 			PreparedStatement stm = conexao.conn.prepareStatement(sql);			
 			
-			ResultSet rs = stm.executeQuery(); //fazer receber o resultado. Ver como fazer isso.
+			ResultSet rs = stm.executeQuery();
 			
 			while (rs.next()) {
 				emailSql = rs.getString(3);
@@ -88,12 +87,53 @@ public class Cliente extends Usuario {
 		
 	}
 
-	public boolean alterarCadastro() {
-		return false;
+	public boolean alterarCadastro(String email) {
+		String emailSql = null;
+		String sql = "SELECT * FROM mercadondb.usuario Where email= '" + email + "'";
+		ConexaoDB conexao = new ConexaoDB();
+		conexao.getConnection();
+		try {
+			PreparedStatement stm = conexao.conn.prepareStatement(sql);			
+			
+			ResultSet rs = stm.executeQuery();
+			
+			while (rs.next()) {
+				emailSql = rs.getString("email");
+			}
+			
+			stm.close();
+			conexao.closeConnection();
+			
+			if (emailSql != null) 
+				return true;
+			return false;
+		} catch (SQLException e) {
+			e.printStackTrace();
+			conexao.closeConnection();
+			return false;
+		}	
 	}
 
-	public boolean deletarCadastro() {
-		return false;
+	public boolean deletarCadastro(String email) {
+		String sql = "DELETE FROM mercadondb.usuario WHERE email = ?;";
+		ConexaoDB conexao = new ConexaoDB();
+		conexao.getConnection();
+		try {
+			PreparedStatement stm = conexao.conn.prepareStatement(sql);
+			
+			stm.setString(1, email);
+			
+			stm.executeUpdate();
+			
+			stm.close();
+			conexao.closeConnection();
+			JOptionPane.showMessageDialog(null, "Cadastro Deletado com sucesso!");
+			return true;
+		} catch (SQLException e) {
+			e.printStackTrace();
+			conexao.closeConnection();
+			return false;
+		}
 	}
 	
 	public Produto pesquisarProduto(){
