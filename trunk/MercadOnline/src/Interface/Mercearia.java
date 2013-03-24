@@ -192,10 +192,10 @@ public class Mercearia extends JFrame {
 		lblHortifruti.setBounds(122, 85, 64, 14);
 		contentPane.add(lblHortifruti);
 		
-		JLabel lblComesmeticos = new JLabel("Cosm\u00E9ticos");
-		lblComesmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblComesmeticos.setBounds(727, 85, 74, 14);
-		contentPane.add(lblComesmeticos);
+		JLabel lblCosmeticos = new JLabel("Cosm\u00E9ticos");
+		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
+		lblCosmeticos.setBounds(727, 85, 74, 14);
+		contentPane.add(lblCosmeticos);
 		
 		JLabel label_15 = new JLabel("Carrinho");
 		label_15.setForeground(new Color(255, 153, 0));
