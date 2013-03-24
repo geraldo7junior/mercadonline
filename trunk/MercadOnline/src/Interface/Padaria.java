@@ -309,7 +309,103 @@ public class Padaria extends JFrame {
 		lblNewLabel_11.setBounds(841, 573, 88, 116);
 		contentPane.add(lblNewLabel_11);
 		
-		JLabel lblBackGround = new JLabel("");
+		JLabel lblPaoFrancesKg = new JLabel("P\u00E3o Franc\u00EAs Kg");
+		lblPaoFrancesKg.setBounds(115, 330, 74, 14);
+		contentPane.add(lblPaoFrancesKg);
+		
+		JLabel lblR = new JLabel("R$ 9,50");
+		lblR.setBounds(130, 345, 42, 14);
+		contentPane.add(lblR);
+		
+		JLabel lblPaoDeForma = new JLabel("P\u00E3o de Forma Pct");
+		lblPaoDeForma.setBounds(841, 330, 88, 14);
+		contentPane.add(lblPaoDeForma);
+		
+		JLabel lblPaesDiversosUnd = new JLabel("P\u00E3es Diversos Und");
+		lblPaesDiversosUnd.setBounds(313, 330, 95, 14);
+		contentPane.add(lblPaesDiversosUnd);
+		
+		JLabel lblR_1 = new JLabel("R$ 4,60");
+		lblR_1.setBounds(861, 345, 42, 14);
+		contentPane.add(lblR_1);
+		
+		JLabel lblR_2 = new JLabel("R$ 1,00");
+		lblR_2.setBounds(337, 345, 42, 14);
+		contentPane.add(lblR_2);
+		
+		JLabel lblPaoParaHD = new JLabel("P\u00E3o para Hot Dog Pct");
+		lblPaoParaHD.setBounds(550, 330, 103, 14);
+		contentPane.add(lblPaoParaHD);
+		
+		JLabel lblR_3 = new JLabel("R$ 5,20");
+		lblR_3.setBounds(578, 345, 42, 14);
+		contentPane.add(lblR_3);
+		
+		JLabel lblTortaDeMorango = new JLabel("Torta de Morango Kg");
+		lblTortaDeMorango.setBounds(313, 513, 105, 14);
+		contentPane.add(lblTortaDeMorango);
+		
+		JLabel lblR_4 = new JLabel("R$ 28,00");
+		lblR_4.setBounds(339, 527, 50, 14);
+		contentPane.add(lblR_4);
+		
+		JLabel lblR_5 = new JLabel("R$ 42,00");
+		lblR_5.setBounds(127, 527, 50, 14);
+		contentPane.add(lblR_5);
+		
+		JLabel lblTortaDeChocolate = new JLabel("Torta de Chocolate Kg");
+		lblTortaDeChocolate.setBounds(102, 513, 107, 14);
+		contentPane.add(lblTortaDeChocolate);
+		
+		JLabel lblR_6 = new JLabel("R$ 2,70");
+		lblR_6.setBounds(570, 527, 42, 14);
+		contentPane.add(lblR_6);
+		
+		JLabel lblTortinhaUnd = new JLabel("Tortinha Und");
+		lblTortinhaUnd.setBounds(560, 513, 71, 14);
+		contentPane.add(lblTortinhaUnd);
+		
+		JLabel lblR_7 = new JLabel("R$ 11,00");
+		lblR_7.setBounds(861, 527, 49, 14);
+		contentPane.add(lblR_7);
+		
+		JLabel lblBoloTradicionalKg = new JLabel("Bolo Tradicional Kg");
+		lblBoloTradicionalKg.setBounds(841, 514, 96, 14);
+		contentPane.add(lblBoloTradicionalKg);
+		
+		JLabel lblR_8 = new JLabel("R$ 2,50");
+		lblR_8.setBounds(129, 700, 42, 14);
+		contentPane.add(lblR_8);
+		
+		JLabel lblPastelUnd = new JLabel("Pastel Und");
+		lblPastelUnd.setBounds(124, 688, 53, 14);
+		contentPane.add(lblPastelUnd);
+		
+		JLabel lblR_9 = new JLabel("R$ 0,70");
+		lblR_9.setBounds(337, 700, 42, 14);
+		contentPane.add(lblR_9);
+		
+		JLabel lblBolinhoBacalhau = new JLabel("Bolinho de Bacalhau Und");
+		lblBolinhoBacalhau.setBounds(298, 688, 121, 14);
+		contentPane.add(lblBolinhoBacalhau);
+		
+		JLabel lblR_10 = new JLabel("R$ 3,00");
+		lblR_10.setBounds(578, 700, 42, 14);
+		contentPane.add(lblR_10);
+		
+		JLabel lblCoxinhaUnd = new JLabel("Coxinha Und");
+		lblCoxinhaUnd.setBounds(563, 688, 64, 14);
+		contentPane.add(lblCoxinhaUnd);
+		
+		JLabel lblR_11 = new JLabel("R$ 2,40");
+		lblR_11.setBounds(866, 700, 42, 14);
+		contentPane.add(lblR_11);
+		
+		JLabel lblEmpadinhaUnd = new JLabel("Empadinha Und");
+		lblEmpadinhaUnd.setBounds(846, 688, 81, 14);
+		contentPane.add(lblEmpadinhaUnd);
+		
+		JLabel lblBackGround = new JLabel("R$ 28,00");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
 		lblBackGround.setBounds(0, 0, 1024, 768);
