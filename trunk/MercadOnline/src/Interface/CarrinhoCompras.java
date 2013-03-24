@@ -14,6 +14,9 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.JScrollPane;
 
 public class CarrinhoCompras extends JFrame {
 
@@ -24,6 +27,7 @@ public class CarrinhoCompras extends JFrame {
 	private JPanel contentPane;
 	private JTextField txtLogin;
 	private JPasswordField txtSenhaLogin;
+	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -308,16 +312,26 @@ public class CarrinhoCompras extends JFrame {
 		label_43.setBounds(935, 82, 63, 14);
 		contentPane.add(label_43);
 		
-		JList<String> list = new JList<String>();
-		list.setBounds(277, 319, 444, 200);
-		contentPane.add(list);
-		
 		JLabel lblCarrinhoDeCompras = new JLabel("Carrinho de Compras");
 		lblCarrinhoDeCompras.setForeground(Color.BLACK);
 		lblCarrinhoDeCompras.setFont(new Font("AR BONNIE", Font.BOLD, 24));
 		lblCarrinhoDeCompras.setBackground(Color.WHITE);
 		lblCarrinhoDeCompras.setBounds(432, 144, 190, 20);
 		contentPane.add(lblCarrinhoDeCompras);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(277, 222, 475, 255);
+		contentPane.add(scrollPane);
+		
+		table = new JTable();
+		scrollPane.setViewportView(table);
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+			},
+			new String[] {
+				"Produto:", "Pre\u00E7o:"
+			}
+		));
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
