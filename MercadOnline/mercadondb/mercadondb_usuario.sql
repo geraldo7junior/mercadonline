@@ -30,7 +30,6 @@ CREATE TABLE `usuario` (
   `email` varchar(45) DEFAULT NULL,
   `dataNascimento` varchar(45) DEFAULT NULL,
   `sexo` varchar(45) DEFAULT NULL,
-  `foto` varchar(45) DEFAULT NULL,
   `cpf` varchar(45) DEFAULT NULL,
   `identidade` varchar(45) DEFAULT NULL,
   `fone` varchar(45) DEFAULT NULL,
@@ -63,4 +62,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-03-15 23:50:32
+-- Dump completed on 2013-03-24 14:58:48
