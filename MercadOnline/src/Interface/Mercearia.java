@@ -310,10 +310,12 @@ public class Mercearia extends JFrame {
 		contentPane.add(label);
 		
 		JLabel label_1 = new JLabel("New label");
+		label_1.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\feijao4.png"));
 		label_1.setBounds(841, 213, 88, 116);
 		contentPane.add(label_1);
 		
 		JLabel label_2 = new JLabel("New label");
+		label_2.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\arroz 4.png"));
 		label_2.setBounds(841, 398, 88, 116);
 		contentPane.add(label_2);
 		
@@ -328,6 +330,7 @@ public class Mercearia extends JFrame {
 		contentPane.add(label_4);
 		
 		JLabel label_5 = new JLabel("New label");
+		label_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarrao 4 copy.png"));
 		label_5.setBounds(841, 573, 88, 116);
 		contentPane.add(label_5);
 		
