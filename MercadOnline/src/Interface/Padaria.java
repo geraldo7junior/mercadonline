@@ -243,57 +243,69 @@ public class Padaria extends JFrame {
 		label_2.setBounds(47, 548, 913, 14);
 		contentPane.add(label_2);
 		
-		JLabel lblNoSei = new JLabel("N\u00E3o sei");
+		JLabel lblNoSei = new JLabel("Salgados");
 		lblNoSei.setForeground(new Color(255, 153, 0));
 		lblNoSei.setFont(new Font("Calibri", Font.BOLD, 14));
 		lblNoSei.setBounds(47, 536, 67, 14);
 		contentPane.add(lblNoSei);
 		
 		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\pao frances.png"));
 		lblNewLabel.setBounds(108, 209, 88, 116);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\p\u00E3o criolo.png"));
 		lblNewLabel_1.setBounds(313, 213, 88, 116);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("New label");
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\bolacha.png"));
 		lblNewLabel_2.setBounds(550, 213, 88, 116);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("New label");
+		lblNewLabel_3.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\pao de caixa.png"));
 		lblNewLabel_3.setBounds(841, 213, 88, 116);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("New label");
+		lblNewLabel_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\floresta negra.png"));
 		lblNewLabel_4.setBounds(102, 393, 88, 116);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("New label");
+		lblNewLabel_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\Torta de morango.png"));
 		lblNewLabel_5.setBounds(313, 398, 88, 116);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("New label");
+		lblNewLabel_6.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\Modelo de tamanho de produtos.png"));
 		lblNewLabel_6.setBounds(550, 398, 88, 116);
 		contentPane.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_7 = new JLabel("New label");
+		lblNewLabel_7.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\formigueiro.png"));
 		lblNewLabel_7.setBounds(841, 398, 88, 116);
 		contentPane.add(lblNewLabel_7);
 		
 		JLabel lblNewLabel_8 = new JLabel("New label");
+		lblNewLabel_8.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\pastel.png"));
 		lblNewLabel_8.setBounds(108, 573, 88, 116);
 		contentPane.add(lblNewLabel_8);
 		
 		JLabel lblNewLabel_9 = new JLabel("New label");
+		lblNewLabel_9.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\bolinho.png"));
 		lblNewLabel_9.setBounds(313, 573, 88, 116);
 		contentPane.add(lblNewLabel_9);
 		
 		JLabel lblNewLabel_10 = new JLabel("New label");
+		lblNewLabel_10.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\coxinha.png"));
 		lblNewLabel_10.setBounds(550, 573, 88, 116);
 		contentPane.add(lblNewLabel_10);
 		
 		JLabel lblNewLabel_11 = new JLabel("New label");
+		lblNewLabel_11.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\Empada.png"));
 		lblNewLabel_11.setBounds(841, 573, 88, 116);
 		contentPane.add(lblNewLabel_11);
 		
