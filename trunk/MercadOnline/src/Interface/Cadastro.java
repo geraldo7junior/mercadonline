@@ -25,6 +25,7 @@ import Main.ConexaoDB;
 import Utilitarios.ApenasNum;
 import Utilitarios.ApenasStr;
 import Utilitarios.Mascara;
+import javax.swing.SwingConstants;
 
 public class Cadastro extends JFrame {
 	
@@ -242,8 +243,35 @@ public class Cadastro extends JFrame {
 		lblSenha.setFont(new Font("Dialog", Font.PLAIN, 12));
 		lblSenha.setBounds(269, 604, 56, 14);
 		
+		final JButton btnEntrar = new JButton("Entrar");
+		btnEntrar.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		btnEntrar.setBounds(929, 39, 67, 18);
+		panelCadastro.add(btnEntrar);
+		btnEntrar.setBackground(UIManager.getColor("Button.background"));
+		
 		final JButton btnCadastrar = new JButton("Confirmar Cadastro");
-		btnCadastrar.setBounds(431, 655, 153, 23);
+		btnCadastrar.setBounds(429, 655, 153, 23);
+		
+		final JButton btnSair = new JButton("Sair");
+		btnSair.setBounds(930, 21, 66, 23);
+		panelCadastro.add(btnSair);
+		btnSair.setBackground(UIManager.getColor("Button.background"));
+		btnSair.setVisible(false);
+		
+		final JButton btnExcluirCadastro = new JButton("Excluir Cadastro");
+		btnExcluirCadastro.setBounds(631, 655, 129, 23);
+		btnExcluirCadastro.setVisible(false);
+		panelCadastro.add(btnExcluirCadastro);
+		
+		final JButton btnConfirmaAlteracao = new JButton("Confirmar Altera\u00E7\u00E3o");
+		btnConfirmaAlteracao.setBounds(430, 656, 153, 23);
+		btnConfirmaAlteracao.setVisible(false);
+		panelCadastro.add(btnConfirmaAlteracao);
+		
+		final JButton btnAlterarCadastro = new JButton("Alterar Cadastro");
+		btnAlterarCadastro.setBounds(258, 655, 134, 23);
+		btnAlterarCadastro.setVisible(false);
+		panelCadastro.add(btnAlterarCadastro);
 		
 		btnCadastrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -579,7 +607,8 @@ public class Cadastro extends JFrame {
 		lblSenhaLogin.setFont(new Font("Arial", Font.BOLD, 12));
 		
 		final JLabel lblLogado = new JLabel(" ");
-		lblLogado.setBounds(768, 125, 153, 33);
+		lblLogado.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblLogado.setBounds(776, 15, 153, 33);
 		lblLogado.setVisible(false);
 		panelCadastro.add(lblLogado);
 		
@@ -593,13 +622,6 @@ public class Cadastro extends JFrame {
 		txtSenhaLogin.setBounds(900, 11, 96, 18);
 		panelCadastro.add(txtSenhaLogin);
 		
-		final JButton btnEntrar = new JButton("Entrar");
-		btnEntrar.setFont(new Font("Tahoma", Font.PLAIN, 9));
-		btnEntrar.setBounds(929, 39, 67, 18);
-		panelCadastro.add(btnEntrar);
-		btnEntrar.setBackground(UIManager.getColor("Button.background"));
-		
-		final JButton btnSair = new JButton("Sair");
 		btnSair.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				lblLogin.setVisible(true);
@@ -611,92 +633,17 @@ public class Cadastro extends JFrame {
 				lblLogado.setText(" ");
 				btnSair.setVisible(false);
 				btnCadastrar.setVisible(true);
+				btnConfirmaAlteracao.setVisible(false);
+				btnExcluirCadastro.setVisible(false);
+				btnAlterarCadastro.setVisible(false);
+		
 				LimparCampos();
 				
 			}
 		});
-		btnSair.setBounds(855, 148, 66, 23);
-		panelCadastro.add(btnSair);
-		btnSair.setBackground(UIManager.getColor("Button.background"));
-		btnSair.setVisible(false);
 		
-		JButton btnValidarCadastro = new JButton("Alterar Cadastro");
-		btnValidarCadastro.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				if (lblLogado.getText() != " ") {
-					String sql = "SELECT * FROM mercadondb.usuario Where email= '" + lblLogado.getText() + "'";
-					ConexaoDB conexao = new ConexaoDB();
-					conexao.getConnection();
-					try {
-						PreparedStatement stm = conexao.conn.prepareStatement(sql);			
-						
-						ResultSet rs = stm.executeQuery();
-						
-						while (rs.next()) {
-							txtNome.setText(rs.getString(1));
-							txtEmail.setText(rs.getString(3));
-							txtDataDeNascimento.setText(rs.getString(4));
-							txtSexo.setText(rs.getString(5));
-							txtCpf.setText(rs.getString(6));
-							txtIdentidade.setText(rs.getString(7));
-							txtFone.setText(rs.getString(8));
-							txtTelefoneCelular.setText(rs.getString(9));
-							txtLogradouro.setText(rs.getString(11));
-							txtComplemento.setText(rs.getString(12));
-							txtBairro.setText(rs.getString(13));
-							txtCidade.setText(rs.getString(14));
-							txtUf.setText(rs.getString(15));
-							txtCep.setText(rs.getString(16));
-							
-						}
-						
-						stm.close();
-						conexao.closeConnection();
-					} catch (SQLException e1) {
-						e1.printStackTrace();
-						conexao.closeConnection();
-					}	
-						String sql2 = "UPDATE usuario SET nome=?, email=?, senha=?, cpf=?, dataNascimento=?, sexo=?, fone=?, celular=?, " +
-								"identidade=?, logradouro=?, complemento=?, bairro=?, cidade=?, uf=?, cep=?) WHERE email = ?";
-						conexao.getConnection();
-						try {
-							PreparedStatement stm = conexao.conn.prepareStatement(sql2);
-							
-							stm.setString(1, txtNome.getText());
-							stm.setString(2, txtEmail.getText());
-							stm.setString(3, getTxtSenha());
-							stm.setString(4, txtCpf.getText());
-							stm.setString(5, txtDataDeNascimento.getText());
-							stm.setString(6, txtSexo.getText());
-							stm.setString(7, txtFone.getText());
-							stm.setString(8, txtTelefoneCelular.getText());
-							stm.setString(9, txtIdentidade.getText());
-							stm.setString(10, txtLogradouro.getText());
-							stm.setString(11, txtComplemento.getText());
-							stm.setString(12, txtBairro.getText());
-							stm.setString(13, txtCidade.getText());
-							stm.setString(14, txtUf.getText());
-							stm.setString(15, txtCep.getText());
-							stm.setString(16, lblLogado.getText());
-							
-							
-							stm.executeUpdate();
-							
-							stm.close();
-							conexao.closeConnection();
-							JOptionPane.showMessageDialog(null, "Alteração realizada com sucesso!");
-						} catch (SQLException e1) {
-							e1.printStackTrace();
-							conexao.closeConnection();
-						}
-				}
-				
-			}
-		});
-		btnValidarCadastro.setBounds(258, 655, 134, 23);
-		panelCadastro.add(btnValidarCadastro);
 		
-		JButton btnExcluirCadastro = new JButton("Excluir Cadastro");
+		
 		btnExcluirCadastro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (lblLogado.getText() != " ") {
@@ -716,8 +663,111 @@ public class Cadastro extends JFrame {
 				}
 			}
 		});
-		btnExcluirCadastro.setBounds(631, 655, 129, 23);
-		panelCadastro.add(btnExcluirCadastro);
+		
+		btnAlterarCadastro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (lblLogado.getText() != " ") {
+					btnCadastrar.setVisible(false);
+					String sql = "SELECT * FROM mercadondb.usuario Where email= '" + lblLogado.getText() + "'";
+					ConexaoDB conexao = new ConexaoDB();
+					conexao.getConnection();
+					try {
+						PreparedStatement stm = conexao.conn.prepareStatement(sql);			
+						
+						ResultSet rs = stm.executeQuery();
+						
+						while (rs.next()) {
+							txtNome.setText(rs.getString(1));
+							txtSenha.setText(rs.getString(2));
+							txtConfirmarSenha.setText(rs.getString(2));
+							txtEmail.setText(rs.getString(3));
+							txtDataDeNascimento.setText(rs.getString(4));
+							txtSexo.setText(rs.getString(5));
+							txtCpf.setText(rs.getString(6));
+							txtIdentidade.setText(rs.getString(7));
+							txtFone.setText(rs.getString(8));
+							txtTelefoneCelular.setText(rs.getString(9));
+							txtLogradouro.setText(rs.getString(11));
+							txtComplemento.setText(rs.getString(12));
+							txtBairro.setText(rs.getString(13));
+							txtCidade.setText(rs.getString(14));
+							txtUf.setText(rs.getString(15));
+							txtCep.setText(rs.getString(16));
+							
+						}
+						
+						stm.close();
+						conexao.closeConnection();
+						btnConfirmaAlteracao.setVisible(true);
+					} catch (SQLException e1) {
+						e1.printStackTrace();
+						conexao.closeConnection();
+					}	
+						
+				}
+				
+			}
+		});
+		
+		
+		btnConfirmaAlteracao.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				String sql = "UPDATE usuario SET nome = ?, email = ?, senha = ?, cpf = ?, dataNascimento = ?, sexo = ?, fone = ?, celular = ?, " +
+						"identidade = ?, logradouro = ?, complemento = ?, bairro = ?, cidade = ?, uf = ?, cep = ? WHERE email = ?";
+				ConexaoDB conexao = new ConexaoDB();
+				conexao.getConnection();
+				try {
+					PreparedStatement stm = conexao.conn.prepareStatement(sql);
+					
+					stm.setString(1, txtNome.getText());
+					stm.setString(2, txtEmail.getText());
+					stm.setString(3, getTxtSenha());
+					stm.setString(4, txtCpf.getText());
+					stm.setString(5, txtDataDeNascimento.getText());
+					stm.setString(6, txtSexo.getText());
+					stm.setString(7, txtFone.getText());
+					stm.setString(8, txtTelefoneCelular.getText());
+					stm.setString(9, txtIdentidade.getText());
+					stm.setString(10, txtLogradouro.getText());
+					stm.setString(11, txtComplemento.getText());
+					stm.setString(12, txtBairro.getText());
+					stm.setString(13, txtCidade.getText());
+					stm.setString(14, txtUf.getText());
+					stm.setString(15, txtCep.getText());
+					stm.setString(16, lblLogado.getText());
+					
+					
+					stm.executeUpdate();
+					
+					stm.close();
+					conexao.closeConnection();
+					JOptionPane.showMessageDialog(null, "Alteração realizada com sucesso!");
+				} catch (SQLException e1) {
+					e1.printStackTrace();
+					conexao.closeConnection();
+				}
+			}
+		});
+		
+		
+		btnEntrar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				if(new Cliente().entrarSistema(txtLogin.getText(), getTxtSenhaLogin())){
+					txtLogin.setVisible(false);
+					txtSenhaLogin.setVisible(false);
+					lblLogin.setVisible(false);
+					lblSenhaLogin.setVisible(false);
+					btnEntrar.setVisible(false);
+					lblLogado.setVisible(true);
+					lblLogado.setText(txtLogin.getText());
+					btnSair.setVisible(true);
+					btnCadastrar.setVisible(false);
+					btnAlterarCadastro.setVisible(true);
+					btnExcluirCadastro.setVisible(true);
+					
+					LimparCampos();
+			}
+		}});
 		
 		JLabel lblHortifruti = new JLabel("Hortifruti");
 		lblHortifruti.setFont(new Font("Calibri", Font.BOLD, 15));
@@ -751,23 +801,6 @@ public class Cadastro extends JFrame {
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setBounds(0, 0, 1024, 768);
 		panelCadastro.add(lblBackGround);
-		
-		btnEntrar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				if(new Cliente().entrarSistema(txtLogin.getText(), getTxtSenhaLogin())){
-					txtLogin.setVisible(false);
-					txtSenhaLogin.setVisible(false);
-					lblLogin.setVisible(false);
-					lblSenhaLogin.setVisible(false);
-					btnEntrar.setVisible(false);
-					lblLogado.setVisible(true);
-					lblLogado.setText(txtLogin.getText());
-					btnSair.setVisible(true);
-					btnCadastrar.setVisible(false);
-					
-					LimparCampos();
-			}
-		}});
 		
 		
 	}
