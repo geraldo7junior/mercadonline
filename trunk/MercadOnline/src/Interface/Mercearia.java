@@ -233,7 +233,7 @@ public class Mercearia extends JFrame {
 		contentPane.add(lblLinha1);
 		
 		JLabel lblTurquesa = new JLabel("New label");
-		lblTurquesa.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\feijao.png"));
+		lblTurquesa.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\feijao.png"));
 		lblTurquesa.setBounds(108, 209, 88, 116);
 		contentPane.add(lblTurquesa);
 		
@@ -270,7 +270,7 @@ public class Mercearia extends JFrame {
 		contentPane.add(lblLinha);
 		
 		JLabel lblArrozemocoes = new JLabel("ArrozEmocoes");
-		lblArrozemocoes.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\arroz.png"));
+		lblArrozemocoes.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\arroz.png"));
 		lblArrozemocoes.setBounds(102, 393, 88, 116);
 		contentPane.add(lblArrozemocoes);
 		
@@ -285,7 +285,7 @@ public class Mercearia extends JFrame {
 		contentPane.add(lblArrozEmoeskg);
 		
 		JLabel lblMacarraovitarela = new JLabel("MacarraoVitarela");
-		lblMacarraovitarela.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\macarrao.png"));
+		lblMacarraovitarela.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarrao.png"));
 		lblMacarraovitarela.setBounds(108, 573, 88, 116);
 		contentPane.add(lblMacarraovitarela);
 		
@@ -300,12 +300,12 @@ public class Mercearia extends JFrame {
 		contentPane.add(lblR_2);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\feijao2.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\feijao2.png"));
 		lblNewLabel.setBounds(313, 213, 88, 116);
 		contentPane.add(lblNewLabel);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\feijao3.png"));
+		label.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\feijao3.png"));
 		label.setBounds(550, 213, 88, 116);
 		contentPane.add(label);
 		
@@ -318,12 +318,12 @@ public class Mercearia extends JFrame {
 		contentPane.add(label_2);
 		
 		JLabel label_3 = new JLabel("");
-		label_3.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\arroz2.png"));
+		label_3.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\arroz2.png"));
 		label_3.setBounds(313, 398, 88, 116);
 		contentPane.add(label_3);
 		
 		JLabel label_4 = new JLabel("");
-		label_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\arroz3.png"));
+		label_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\arroz3.png"));
 		label_4.setBounds(550, 398, 88, 116);
 		contentPane.add(label_4);
 		
@@ -332,12 +332,12 @@ public class Mercearia extends JFrame {
 		contentPane.add(label_5);
 		
 		JLabel label_13 = new JLabel("");
-		label_13.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\macarr\u00E3o2.png"));
+		label_13.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarr\u00E3o2.png"));
 		label_13.setBounds(313, 573, 88, 116);
 		contentPane.add(label_13);
 		
 		JLabel label_14 = new JLabel("");
-		label_14.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\macarrao3.png"));
+		label_14.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarrao3.png"));
 		label_14.setBounds(550, 573, 88, 116);
 		contentPane.add(label_14);
 		
