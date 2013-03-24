@@ -387,7 +387,7 @@ public class Mercearia extends JFrame {
 		JLabel lblMacarroPilarpct = new JLabel("Macarr\u00E3o Pilar 1pct");
 		lblMacarroPilarpct.setVerticalAlignment(SwingConstants.TOP);
 		lblMacarroPilarpct.setHorizontalAlignment(SwingConstants.LEFT);
-		lblMacarroPilarpct.setBounds(310, 687, 96, 11);
+		lblMacarroPilarpct.setBounds(310, 687, 96, 14);
 		contentPane.add(lblMacarroPilarpct);
 		
 		JLabel lblR_7 = new JLabel("R$ 1,83");
@@ -403,6 +403,22 @@ public class Mercearia extends JFrame {
 		JLabel lblR_8 = new JLabel("R$ 3,20");
 		lblR_8.setBounds(579, 700, 42, 14);
 		contentPane.add(lblR_8);
+		
+		JLabel lblR_9 = new JLabel("R$ 2,20");
+		lblR_9.setBounds(869, 528, 42, 14);
+		contentPane.add(lblR_9);
+		
+		JLabel lblArrozTioJoo = new JLabel("Arroz Tio Jo\u00E3o 1Kg");
+		lblArrozTioJoo.setBounds(841, 513, 96, 14);
+		contentPane.add(lblArrozTioJoo);
+		
+		JLabel lblR_10 = new JLabel("R$ 3,50");
+		lblR_10.setBounds(868, 345, 42, 14);
+		contentPane.add(lblR_10);
+		
+		JLabel lblFeijoPretoUrbano = new JLabel("Feij\u00E3o Preto Urbano 1Kg");
+		lblFeijoPretoUrbano.setBounds(829, 330, 117, 14);
+		contentPane.add(lblFeijoPretoUrbano);
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
