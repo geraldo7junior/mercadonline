@@ -420,6 +420,14 @@ public class Mercearia extends JFrame {
 		lblFeijoPretoUrbano.setBounds(829, 330, 117, 14);
 		contentPane.add(lblFeijoPretoUrbano);
 		
+		JLabel lblR_11 = new JLabel("R$ 1,89");
+		lblR_11.setBounds(868, 700, 42, 14);
+		contentPane.add(lblR_11);
+		
+		JLabel lblMacarroPetybo = new JLabel("Macarr\u00E3o Petybon 1pct");
+		lblMacarroPetybo.setBounds(829, 688, 121, 14);
+		contentPane.add(lblMacarroPetybo);
+		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));

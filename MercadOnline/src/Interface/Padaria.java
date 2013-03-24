@@ -353,9 +353,9 @@ public class Padaria extends JFrame {
 		lblR_5.setBounds(127, 527, 50, 14);
 		contentPane.add(lblR_5);
 		
-		JLabel lblTortaDeChocolate = new JLabel("Torta de Chocolate Kg");
-		lblTortaDeChocolate.setBounds(102, 513, 107, 14);
-		contentPane.add(lblTortaDeChocolate);
+		JLabel lblTortaFlorestaNegra = new JLabel("Torta Floresta Negra Kg");
+		lblTortaFlorestaNegra.setBounds(89, 513, 121, 14);
+		contentPane.add(lblTortaFlorestaNegra);
 		
 		JLabel lblR_6 = new JLabel("R$ 2,70");
 		lblR_6.setBounds(570, 527, 42, 14);
