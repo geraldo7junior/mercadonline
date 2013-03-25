@@ -59,6 +59,11 @@ public class CadastroProduto extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		JLabel lblPadaria = new JLabel("Padaria");
+		lblPadaria.setFont(new Font("Calibri", Font.BOLD, 15));
+		lblPadaria.setBounds(43, 87, 53, 14);
+		contentPane.add(lblPadaria);
+		
 		JLabel lblProdutos = new JLabel("produtos");
 		lblProdutos.setForeground(Color.WHITE);
 		lblProdutos.setFont(new Font("Folks", Font.BOLD, 16));
@@ -120,11 +125,6 @@ public class CadastroProduto extends JFrame {
 		btnEntrar.setBackground(SystemColor.menu);
 		btnEntrar.setBounds(931, 39, 67, 18);
 		contentPane.add(btnEntrar);
-		
-		JLabel lblPadaria = new JLabel("Padaria");
-		lblPadaria.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblPadaria.setBounds(43, 87, 53, 14);
-		contentPane.add(lblPadaria);
 		
 		JLabel lblBebidas = new JLabel("Bebidas");
 		lblBebidas.setFont(new Font("Calibri", Font.BOLD, 15));
@@ -198,10 +198,10 @@ public class CadastroProduto extends JFrame {
 		lblHortifruti.setBounds(122, 87, 64, 14);
 		contentPane.add(lblHortifruti);
 		
-		JLabel lblCosméticos = new JLabel("Cosm\u00E9ticos");
-		lblCosméticos.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblCosméticos.setBounds(727, 87, 74, 14);
-		contentPane.add(lblCosméticos);
+		JLabel lblCosmeticos = new JLabel("Cosm\u00E9ticos");
+		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
+		lblCosmeticos.setBounds(727, 87, 74, 14);
+		contentPane.add(lblCosmeticos);
 		
 		JLabel label_23 = new JLabel("Padaria");
 		label_23.setFont(new Font("Calibri", Font.BOLD, 15));
@@ -402,5 +402,15 @@ public class CadastroProduto extends JFrame {
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
 		lblBackGround.setBounds(0, 0, 1024, 768);
 		contentPane.add(lblBackGround);
+		
+		//links dos menus
+		new Utilitarios.Frame().Abrir(new Padaria(), lblPadaria);
+		new Utilitarios.Frame().Abrir(new Hortifruti(), lblHortifruti);
+		new Utilitarios.Frame().Abrir(new Bebidas(), lblBebidas);
+		//new Utilitarios.Frame().Abrir(new FriosECongelados(), lblFrios);
+		//new Utilitarios.Frame().Abrir(new Limpeza(), lblLimpeza);
+		new Utilitarios.Frame().Abrir(new Mercearia(), lblMercearia);
+		//new Utilitarios.Frame().Abrir(new Higiene(), lblHigiene);
+		//new Utilitarios.Frame().Abrir(new Cosmeticos(), lblCosmeticos);
 	}
 }
