@@ -303,7 +303,7 @@ public class Pedidos extends JFrame {
 		lblPedidos.setForeground(Color.BLACK);
 		lblPedidos.setFont(new Font("AR BONNIE", Font.BOLD, 24));
 		lblPedidos.setBackground(Color.WHITE);
-		lblPedidos.setBounds(482, 144, 81, 20);
+		lblPedidos.setBounds(482, 144, 74, 20);
 		contentPane.add(lblPedidos);
 		
 		JScrollPane scrollPanePedidos = new JScrollPane();
