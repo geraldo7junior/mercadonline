@@ -348,7 +348,7 @@ public class Cadastro extends JFrame {
 		
 		txtComplemento = new JTextField();
 		txtComplemento.setName("txtComplemento");
-		txtComplemento.setBounds(360, 448, 34, 20);
+		txtComplemento.setBounds(360, 448, 63, 20);
 		txtComplemento.setText("");
 		txtComplemento.setColumns(10);
 		
