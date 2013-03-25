@@ -240,7 +240,7 @@ public class Mercearia extends JFrame {
 		JLabel lblFeijaoCariocaTurquesa = new JLabel("Feij\u00E3o Carioca Turquesa 1Kg");
 		lblFeijaoCariocaTurquesa.setVerticalAlignment(SwingConstants.TOP);
 		lblFeijaoCariocaTurquesa.setHorizontalAlignment(SwingConstants.LEFT);
-		lblFeijaoCariocaTurquesa.setBounds(82, 330, 137, 20);
+		lblFeijaoCariocaTurquesa.setBounds(82, 330, 174, 20);
 		contentPane.add(lblFeijaoCariocaTurquesa);
 		
 		JLabel lblR = new JLabel("R$ 5,00");
@@ -281,7 +281,7 @@ public class Mercearia extends JFrame {
 		JLabel lblArrozEmoeskg = new JLabel("Arroz Emo\u00E7\u00F5es 1Kg");
 		lblArrozEmoeskg.setVerticalAlignment(SwingConstants.TOP);
 		lblArrozEmoeskg.setHorizontalAlignment(SwingConstants.LEFT);
-		lblArrozEmoeskg.setBounds(108, 510, 96, 20);
+		lblArrozEmoeskg.setBounds(108, 510, 133, 20);
 		contentPane.add(lblArrozEmoeskg);
 		
 		JLabel lblMacarraovitarela = new JLabel("MacarraoVitarela");
@@ -292,7 +292,7 @@ public class Mercearia extends JFrame {
 		JLabel lblMacarroVitarelapct = new JLabel("Macarr\u00E3o Vitarela 1pct");
 		lblMacarroVitarelapct.setVerticalAlignment(SwingConstants.TOP);
 		lblMacarroVitarelapct.setHorizontalAlignment(SwingConstants.LEFT);
-		lblMacarroVitarelapct.setBounds(95, 684, 108, 14);
+		lblMacarroVitarelapct.setBounds(95, 684, 146, 14);
 		contentPane.add(lblMacarroVitarelapct);
 		
 		JLabel lblR_2 = new JLabel("R$ 1,20");
@@ -347,7 +347,7 @@ public class Mercearia extends JFrame {
 		JLabel lblArrozNamoradokg = new JLabel("Arroz Namorado 1Kg");
 		lblArrozNamoradokg.setVerticalAlignment(SwingConstants.TOP);
 		lblArrozNamoradokg.setHorizontalAlignment(SwingConstants.LEFT);
-		lblArrozNamoradokg.setBounds(312, 513, 99, 20);
+		lblArrozNamoradokg.setBounds(312, 513, 144, 20);
 		contentPane.add(lblArrozNamoradokg);
 		
 		JLabel lblR_3 = new JLabel("R$ 2,00");
@@ -357,7 +357,7 @@ public class Mercearia extends JFrame {
 		JLabel lblArrozCamilkg = new JLabel("Arroz Camil 1Kg");
 		lblArrozCamilkg.setVerticalAlignment(SwingConstants.TOP);
 		lblArrozCamilkg.setHorizontalAlignment(SwingConstants.LEFT);
-		lblArrozCamilkg.setBounds(555, 513, 76, 14);
+		lblArrozCamilkg.setBounds(555, 513, 127, 14);
 		contentPane.add(lblArrozCamilkg);
 		
 		JLabel lblR_4 = new JLabel("R$ 2,45");
@@ -367,7 +367,7 @@ public class Mercearia extends JFrame {
 		JLabel lblFeijoPretoMximo = new JLabel("Feij\u00E3o Preto M\u00E1ximo 1Kg");
 		lblFeijoPretoMximo.setVerticalAlignment(SwingConstants.TOP);
 		lblFeijoPretoMximo.setHorizontalAlignment(SwingConstants.LEFT);
-		lblFeijoPretoMximo.setBounds(303, 330, 121, 20);
+		lblFeijoPretoMximo.setBounds(303, 330, 169, 20);
 		contentPane.add(lblFeijoPretoMximo);
 		
 		JLabel lblR_5 = new JLabel("R$ 3,50");
@@ -377,7 +377,7 @@ public class Mercearia extends JFrame {
 		JLabel lblFeijoMacassarKicaldo = new JLabel("Feij\u00E3o Macassar Kicaldo 1Kg");
 		lblFeijoMacassarKicaldo.setVerticalAlignment(SwingConstants.TOP);
 		lblFeijoMacassarKicaldo.setHorizontalAlignment(SwingConstants.LEFT);
-		lblFeijoMacassarKicaldo.setBounds(529, 330, 137, 20);
+		lblFeijoMacassarKicaldo.setBounds(529, 330, 182, 20);
 		contentPane.add(lblFeijoMacassarKicaldo);
 		
 		JLabel lblR_6 = new JLabel("R$ 3,75");
@@ -387,7 +387,7 @@ public class Mercearia extends JFrame {
 		JLabel lblMacarroPilarpct = new JLabel("Macarr\u00E3o Pilar 1pct");
 		lblMacarroPilarpct.setVerticalAlignment(SwingConstants.TOP);
 		lblMacarroPilarpct.setHorizontalAlignment(SwingConstants.LEFT);
-		lblMacarroPilarpct.setBounds(310, 687, 96, 14);
+		lblMacarroPilarpct.setBounds(310, 687, 146, 14);
 		contentPane.add(lblMacarroPilarpct);
 		
 		JLabel lblR_7 = new JLabel("R$ 1,83");
@@ -397,7 +397,7 @@ public class Mercearia extends JFrame {
 		JLabel lblMacarroDonaBenta = new JLabel("Macarr\u00E3o Dona Benta 1pct");
 		lblMacarroDonaBenta.setVerticalAlignment(SwingConstants.TOP);
 		lblMacarroDonaBenta.setHorizontalAlignment(SwingConstants.LEFT);
-		lblMacarroDonaBenta.setBounds(542, 688, 128, 14);
+		lblMacarroDonaBenta.setBounds(542, 688, 169, 14);
 		contentPane.add(lblMacarroDonaBenta);
 		
 		JLabel lblR_8 = new JLabel("R$ 3,20");
@@ -409,7 +409,7 @@ public class Mercearia extends JFrame {
 		contentPane.add(lblR_9);
 		
 		JLabel lblArrozTioJoo = new JLabel("Arroz Tio Jo\u00E3o 1Kg");
-		lblArrozTioJoo.setBounds(841, 513, 96, 14);
+		lblArrozTioJoo.setBounds(841, 513, 134, 14);
 		contentPane.add(lblArrozTioJoo);
 		
 		JLabel lblR_10 = new JLabel("R$ 3,50");
@@ -417,7 +417,7 @@ public class Mercearia extends JFrame {
 		contentPane.add(lblR_10);
 		
 		JLabel lblFeijoPretoUrbano = new JLabel("Feij\u00E3o Preto Urbano 1Kg");
-		lblFeijoPretoUrbano.setBounds(829, 330, 117, 14);
+		lblFeijoPretoUrbano.setBounds(829, 330, 146, 14);
 		contentPane.add(lblFeijoPretoUrbano);
 		
 		JLabel lblR_11 = new JLabel("R$ 1,89");
@@ -425,7 +425,7 @@ public class Mercearia extends JFrame {
 		contentPane.add(lblR_11);
 		
 		JLabel lblMacarroPetybo = new JLabel("Macarr\u00E3o Petybon 1pct");
-		lblMacarroPetybo.setBounds(829, 688, 121, 14);
+		lblMacarroPetybo.setBounds(822, 688, 153, 14);
 		contentPane.add(lblMacarroPetybo);
 		
 		JLabel lblBackGround = new JLabel("");

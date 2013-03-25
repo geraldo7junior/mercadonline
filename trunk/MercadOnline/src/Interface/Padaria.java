@@ -314,7 +314,7 @@ public class Padaria extends JFrame {
 		contentPane.add(lblNewLabel_11);
 		
 		JLabel lblPaoFrancesKg = new JLabel("P\u00E3o Franc\u00EAs Kg");
-		lblPaoFrancesKg.setBounds(115, 330, 74, 14);
+		lblPaoFrancesKg.setBounds(115, 330, 112, 14);
 		contentPane.add(lblPaoFrancesKg);
 		
 		JLabel lblR = new JLabel("R$ 9,50");
@@ -322,11 +322,11 @@ public class Padaria extends JFrame {
 		contentPane.add(lblR);
 		
 		JLabel lblPaoDeForma = new JLabel("P\u00E3o de Forma Pct");
-		lblPaoDeForma.setBounds(841, 330, 88, 14);
+		lblPaoDeForma.setBounds(841, 330, 119, 14);
 		contentPane.add(lblPaoDeForma);
 		
 		JLabel lblPaesDiversosUnd = new JLabel("P\u00E3es Diversos Und");
-		lblPaesDiversosUnd.setBounds(313, 330, 95, 14);
+		lblPaesDiversosUnd.setBounds(313, 330, 123, 14);
 		contentPane.add(lblPaesDiversosUnd);
 		
 		JLabel lblR_1 = new JLabel("R$ 4,60");
@@ -338,7 +338,7 @@ public class Padaria extends JFrame {
 		contentPane.add(lblR_2);
 		
 		JLabel lblPaoParaHD = new JLabel("P\u00E3o para Hot Dog Pct");
-		lblPaoParaHD.setBounds(550, 330, 103, 14);
+		lblPaoParaHD.setBounds(550, 330, 154, 14);
 		contentPane.add(lblPaoParaHD);
 		
 		JLabel lblR_3 = new JLabel("R$ 5,20");
@@ -346,7 +346,7 @@ public class Padaria extends JFrame {
 		contentPane.add(lblR_3);
 		
 		JLabel lblTortaDeMorango = new JLabel("Torta de Morango Kg");
-		lblTortaDeMorango.setBounds(313, 513, 105, 14);
+		lblTortaDeMorango.setBounds(313, 513, 159, 14);
 		contentPane.add(lblTortaDeMorango);
 		
 		JLabel lblR_4 = new JLabel("R$ 28,00");
@@ -358,7 +358,7 @@ public class Padaria extends JFrame {
 		contentPane.add(lblR_5);
 		
 		JLabel lblTortaFlorestaNegra = new JLabel("Torta Floresta Negra Kg");
-		lblTortaFlorestaNegra.setBounds(89, 513, 121, 14);
+		lblTortaFlorestaNegra.setBounds(89, 513, 170, 14);
 		contentPane.add(lblTortaFlorestaNegra);
 		
 		JLabel lblR_6 = new JLabel("R$ 2,70");
@@ -366,7 +366,7 @@ public class Padaria extends JFrame {
 		contentPane.add(lblR_6);
 		
 		JLabel lblTortinhaUnd = new JLabel("Tortinha Und");
-		lblTortinhaUnd.setBounds(560, 513, 71, 14);
+		lblTortinhaUnd.setBounds(560, 513, 121, 14);
 		contentPane.add(lblTortinhaUnd);
 		
 		JLabel lblR_7 = new JLabel("R$ 11,00");
@@ -374,7 +374,7 @@ public class Padaria extends JFrame {
 		contentPane.add(lblR_7);
 		
 		JLabel lblBoloTradicionalKg = new JLabel("Bolo Tradicional Kg");
-		lblBoloTradicionalKg.setBounds(841, 514, 96, 14);
+		lblBoloTradicionalKg.setBounds(841, 514, 129, 14);
 		contentPane.add(lblBoloTradicionalKg);
 		
 		JLabel lblR_8 = new JLabel("R$ 2,50");
@@ -382,7 +382,7 @@ public class Padaria extends JFrame {
 		contentPane.add(lblR_8);
 		
 		JLabel lblPastelUnd = new JLabel("Pastel Und");
-		lblPastelUnd.setBounds(124, 688, 53, 14);
+		lblPastelUnd.setBounds(124, 688, 72, 14);
 		contentPane.add(lblPastelUnd);
 		
 		JLabel lblR_9 = new JLabel("R$ 0,70");
@@ -390,7 +390,7 @@ public class Padaria extends JFrame {
 		contentPane.add(lblR_9);
 		
 		JLabel lblBolinhoBacalhau = new JLabel("Bolinho de Bacalhau Und");
-		lblBolinhoBacalhau.setBounds(298, 688, 121, 14);
+		lblBolinhoBacalhau.setBounds(298, 688, 174, 14);
 		contentPane.add(lblBolinhoBacalhau);
 		
 		JLabel lblR_10 = new JLabel("R$ 3,00");
@@ -398,7 +398,7 @@ public class Padaria extends JFrame {
 		contentPane.add(lblR_10);
 		
 		JLabel lblCoxinhaUnd = new JLabel("Coxinha Und");
-		lblCoxinhaUnd.setBounds(563, 688, 64, 14);
+		lblCoxinhaUnd.setBounds(563, 688, 118, 14);
 		contentPane.add(lblCoxinhaUnd);
 		
 		JLabel lblR_11 = new JLabel("R$ 2,40");
@@ -406,7 +406,7 @@ public class Padaria extends JFrame {
 		contentPane.add(lblR_11);
 		
 		JLabel lblEmpadinhaUnd = new JLabel("Empadinha Und");
-		lblEmpadinhaUnd.setBounds(846, 688, 81, 14);
+		lblEmpadinhaUnd.setBounds(846, 688, 124, 14);
 		contentPane.add(lblEmpadinhaUnd);
 		
 		JLabel lblBackGround = new JLabel("R$ 28,00");
