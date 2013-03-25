@@ -318,12 +318,12 @@ public class CarrinhoCompras extends JFrame {
 		lblCarrinhoDeCompras.setBounds(432, 144, 190, 20);
 		contentPane.add(lblCarrinhoDeCompras);
 		
-		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(277, 222, 475, 255);
-		contentPane.add(scrollPane);
+		JScrollPane scrollPaneCarrinhoCompras = new JScrollPane();
+		scrollPaneCarrinhoCompras.setBounds(277, 222, 475, 255);
+		contentPane.add(scrollPaneCarrinhoCompras);
 		
 		table = new JTable();
-		scrollPane.setViewportView(table);
+		scrollPaneCarrinhoCompras.setViewportView(table);
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
 			},
