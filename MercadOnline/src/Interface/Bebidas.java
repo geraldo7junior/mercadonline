@@ -316,5 +316,15 @@ public class Bebidas extends JFrame {
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
 		contentPane.add(lblBackGround);
+		
+		//links dos menus
+				new Utilitarios.Frame().Abrir(new Padaria(), lblPadaria);
+				new Utilitarios.Frame().Abrir(new Hortifruti(), lblHortifruti);
+				new Utilitarios.Frame().Abrir(new Bebidas(), lblBebidas);
+				//new Utilitarios.Frame().Abrir(new FriosECongelados(), lblFrios);
+				//new Utilitarios.Frame().Abrir(new Limpeza(), lblLimpeza);
+				new Utilitarios.Frame().Abrir(new Mercearia(), lblMercearia);
+				//new Utilitarios.Frame().Abrir(new Higiene(), lblHigiene);
+				//new Utilitarios.Frame().Abrir(new Cosmeticos(), lblCosmeticos);
 	}
 }
