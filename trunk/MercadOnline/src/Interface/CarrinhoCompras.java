@@ -15,7 +15,10 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+//<<<<<<< .mine
+//=======
 import javax.swing.table.DefaultTableModel;
+//>>>>>>> .r194
 
 public class CarrinhoCompras extends JFrame {
 
