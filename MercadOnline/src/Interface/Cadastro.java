@@ -575,26 +575,6 @@ public class Cadastro extends JFrame {
 		label_6.setBounds(705, 83, 4, 14);
 		panelCadastro.add(label_6);
 		
-		JLabel lblAstNumero = new JLabel("*");
-		lblAstNumero.setForeground(Color.RED);
-		lblAstNumero.setBounds(758, 412, 10, 10);
-		panelCadastro.add(lblAstNumero);
-		
-		JLabel lblAstNome = new JLabel("*");
-		lblAstNome.setForeground(Color.RED);
-		lblAstNome.setBounds(753, 216, 10, 10);
-		panelCadastro.add(lblAstNome);
-		
-		JLabel lblAstIdentidade = new JLabel("*");
-		lblAstIdentidade.setForeground(Color.RED);
-		lblAstIdentidade.setBounds(431, 256, 10, 10);
-		panelCadastro.add(lblAstIdentidade);
-		
-		JLabel lblAstCpf = new JLabel("*");
-		lblAstCpf.setForeground(Color.RED);
-		lblAstCpf.setBounds(753, 256, 10, 10);
-		panelCadastro.add(lblAstCpf);
-		
 		
 		final JLabel lblLogin = new JLabel("Login:");
 		lblLogin.setBounds(712, 15, 34, 14);
