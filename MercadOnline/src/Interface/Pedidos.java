@@ -14,19 +14,16 @@ import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
 import java.awt.SystemColor;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
-public class CadastroProduto extends JFrame {
+public class Pedidos extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtLogin;
 	private JPasswordField txtSenhaLogin;
-	private JTextField txtIdProduto;
-	private JTextField txtNomeProduto;
-	private JTextField txtMarca;
-	private JTextField txtCategoria;
-	private JTextField txtPeso;
-	private JTextField txtValidade;
-	private JTextField txtPreco;
+	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -35,7 +32,7 @@ public class CadastroProduto extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					CadastroProduto frame = new CadastroProduto();
+					Pedidos frame = new Pedidos();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -47,7 +44,7 @@ public class CadastroProduto extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public CadastroProduto() {
+	public Pedidos() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1024, 768);
@@ -62,11 +59,11 @@ public class CadastroProduto extends JFrame {
 		lblProdutos.setBounds(313, 25, 74, 20);
 		contentPane.add(lblProdutos);
 		
-		JLabel lblcadastro = new JLabel("cadastro");
-		lblcadastro.setForeground(Color.WHITE);
-		lblcadastro.setFont(new Font("Folks", Font.BOLD, 16));
-		lblcadastro.setBounds(388, 25, 68, 20);
-		contentPane.add(lblcadastro);
+		JLabel lblCadastro = new JLabel("cadastro");
+		lblCadastro.setForeground(Color.WHITE);
+		lblCadastro.setFont(new Font("Folks", Font.BOLD, 16));
+		lblCadastro.setBounds(388, 25, 68, 20);
+		contentPane.add(lblCadastro);
 		
 		JLabel lblPromocao = new JLabel("promo\u00E7\u00E3o");
 		lblPromocao.setForeground(Color.WHITE);
@@ -128,10 +125,10 @@ public class CadastroProduto extends JFrame {
 		lblBebidas.setBounds(212, 87, 56, 14);
 		contentPane.add(lblBebidas);
 		
-		JLabel lblFrios = new JLabel("Frios e Congelados");
-		lblFrios.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblFrios.setBounds(297, 87, 121, 14);
-		contentPane.add(lblFrios);
+		JLabel lblfrios = new JLabel("Frios e Congelados");
+		lblfrios.setFont(new Font("Calibri", Font.BOLD, 15));
+		lblfrios.setBounds(297, 87, 121, 14);
+		contentPane.add(lblfrios);
 		
 		JLabel lblLimpeza = new JLabel("Limpeza");
 		lblLimpeza.setFont(new Font("Calibri", Font.BOLD, 15));
@@ -195,10 +192,10 @@ public class CadastroProduto extends JFrame {
 		lblHortifruti.setBounds(122, 87, 64, 14);
 		contentPane.add(lblHortifruti);
 		
-		JLabel lblCosméticos = new JLabel("Cosm\u00E9ticos");
-		lblCosméticos.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblCosméticos.setBounds(727, 87, 74, 14);
-		contentPane.add(lblCosméticos);
+		JLabel lblCosmeticos = new JLabel("Cosm\u00E9ticos");
+		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
+		lblCosmeticos.setBounds(727, 87, 74, 14);
+		contentPane.add(lblCosmeticos);
 		
 		JLabel label_23 = new JLabel("Padaria");
 		label_23.setFont(new Font("Calibri", Font.BOLD, 15));
@@ -299,105 +296,32 @@ public class CadastroProduto extends JFrame {
 		label_40.setBounds(935, 82, 63, 14);
 		contentPane.add(label_40);
 		
-		JLabel lblCadastroDeProduto = new JLabel("CADASTRO DE PRODUTO");
-		lblCadastroDeProduto.setForeground(Color.BLACK);
-		lblCadastroDeProduto.setFont(new Font("AR BONNIE", Font.BOLD, 24));
-		lblCadastroDeProduto.setBackground(Color.WHITE);
-		lblCadastroDeProduto.setBounds(432, 145, 199, 20);
-		contentPane.add(lblCadastroDeProduto);
+		JLabel lblPedidos = new JLabel("PEDIDOS");
+		lblPedidos.setForeground(Color.BLACK);
+		lblPedidos.setFont(new Font("AR BONNIE", Font.BOLD, 24));
+		lblPedidos.setBackground(Color.WHITE);
+		lblPedidos.setBounds(482, 144, 81, 20);
+		contentPane.add(lblPedidos);
 		
-		JLabel lblInformaesDoProduto = new JLabel("Informa\u00E7\u00F5es do Produto:");
-		lblInformaesDoProduto.setForeground(new Color(255, 153, 0));
-		lblInformaesDoProduto.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
-		lblInformaesDoProduto.setBounds(336, 214, 157, 14);
-		contentPane.add(lblInformaesDoProduto);
+		JScrollPane scrollPanePedidos = new JScrollPane();
+		scrollPanePedidos.setBounds(228, 221, 565, 332);
+		contentPane.add(scrollPanePedidos);
 		
-		JLabel lblIdproduto = new JLabel("IdProduto*:");
-		lblIdproduto.setFont(new Font("Dialog", Font.PLAIN, 12));
-		lblIdproduto.setBounds(335, 259, 68, 14);
-		contentPane.add(lblIdproduto);
+		table = new JTable();
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+			},
+			new String[] {
+				"IdPedido:", "Status:"
+			}
+		));
+		scrollPanePedidos.setViewportView(table);
 		
-		JLabel lblNome = new JLabel("Nome*:");
-		lblNome.setFont(new Font("Dialog", Font.PLAIN, 12));
-		lblNome.setBounds(335, 303, 51, 14);
-		contentPane.add(lblNome);
-		
-		JLabel lblCategoria = new JLabel("Categoria*:");
-		lblCategoria.setFont(new Font("Dialog", Font.PLAIN, 12));
-		lblCategoria.setBounds(335, 391, 68, 14);
-		contentPane.add(lblCategoria);
-		
-		JLabel lblValidade = new JLabel("Validade*:");
-		lblValidade.setFont(new Font("Dialog", Font.PLAIN, 12));
-		lblValidade.setBounds(335, 479, 68, 14);
-		contentPane.add(lblValidade);
-		
-		JLabel lblMarca = new JLabel("Marca*:");
-		lblMarca.setFont(new Font("Dialog", Font.PLAIN, 12));
-		lblMarca.setBounds(335, 347, 51, 14);
-		contentPane.add(lblMarca);
-		
-		JLabel lblPeso = new JLabel("Peso*:");
-		lblPeso.setFont(new Font("Dialog", Font.PLAIN, 12));
-		lblPeso.setBounds(335, 435, 51, 14);
-		contentPane.add(lblPeso);
-		
-		JLabel lblPreo = new JLabel("Pre\u00E7o*:");
-		lblPreo.setFont(new Font("Dialog", Font.PLAIN, 12));
-		lblPreo.setBounds(335, 523, 51, 14);
-		contentPane.add(lblPreo);
-		
-		txtIdProduto = new JTextField();
-		txtIdProduto.setBounds(431, 257, 114, 20);
-		contentPane.add(txtIdProduto);
-		txtIdProduto.setColumns(10);
-		
-		txtNomeProduto = new JTextField();
-		txtNomeProduto.setBounds(431, 301, 219, 20);
-		contentPane.add(txtNomeProduto);
-		txtNomeProduto.setColumns(10);
-		
-		txtMarca = new JTextField();
-		txtMarca.setBounds(431, 345, 219, 20);
-		contentPane.add(txtMarca);
-		txtMarca.setColumns(10);
-		
-		txtCategoria = new JTextField();
-		txtCategoria.setBounds(431, 389, 219, 20);
-		contentPane.add(txtCategoria);
-		txtCategoria.setColumns(10);
-		
-		txtPeso = new JTextField();
-		txtPeso.setBounds(431, 433, 86, 20);
-		contentPane.add(txtPeso);
-		txtPeso.setColumns(10);
-		
-		txtValidade = new JTextField();
-		txtValidade.setBounds(431, 477, 86, 20);
-		contentPane.add(txtValidade);
-		txtValidade.setColumns(10);
-		
-		txtPreco = new JTextField();
-		txtPreco.setBounds(431, 521, 86, 20);
-		contentPane.add(txtPreco);
-		txtPreco.setColumns(10);
-		
-		JButton btnCadastrarProduto = new JButton("Cadastrar Produto");
-		btnCadastrarProduto.setBounds(420, 580, 149, 23);
-		contentPane.add(btnCadastrarProduto);
-		
-		JButton btnAlterarProduto = new JButton("Alterar Produto");
-		btnAlterarProduto.setBounds(277, 580, 121, 23);
-		contentPane.add(btnAlterarProduto);
-		
-		JButton btnExcluirProduto = new JButton("Excluir Produto");
-		btnExcluirProduto.setBounds(592, 580, 135, 23);
-		contentPane.add(btnExcluirProduto);
-		
-		JLabel lblBackGround = new JLabel("");
-		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
-		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
-		lblBackGround.setBounds(0, 0, 1024, 768);
-		contentPane.add(lblBackGround);
+		JLabel lblBackground = new JLabel("");
+		lblBackground.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
+		lblBackground.setFont(new Font("Dialog", Font.PLAIN, 12));
+		lblBackground.setBounds(0, 0, 1024, 768);
+		contentPane.add(lblBackground);
 	}
+
 }
