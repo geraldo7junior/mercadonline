@@ -1,9 +1,10 @@
 package Interface;
 
 import java.awt.Color;
-import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.SystemColor;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -24,26 +25,8 @@ public class Hortifruti extends JFrame {
 	private JTextField txtLogin;
 	private JPasswordField txtSenhaLogin;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Hortifruti frame = new Hortifruti();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
-	public Hortifruti() {
+	
+		public Hortifruti() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1024, 768);
@@ -317,14 +300,16 @@ public class Hortifruti extends JFrame {
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
 		contentPane.add(lblBackGround);
 		
-		//links dos menus
-				new Utilitarios.Frame().Abrir(new Padaria(), lblPadaria);
-				new Utilitarios.Frame().Abrir(new Hortifruti(), lblHortifruti);
-				new Utilitarios.Frame().Abrir(new Bebidas(), lblBebidas);
-				//new Utilitarios.Frame().Abrir(new FriosECongelados(), lblFrios);
-				//new Utilitarios.Frame().Abrir(new Limpeza(), lblLimpeza);
-				new Utilitarios.Frame().Abrir(new Mercearia(), lblMercearia);
-				//new Utilitarios.Frame().Abrir(new Higiene(), lblHigiene);
-				//new Utilitarios.Frame().Abrir(new Cosmeticos(), lblCosmeticos);
+		
+}
+
+public void Abrir(final JFrame tela, JLabel label){
+
+label.addMouseListener(new MouseAdapter() {
+	public void mouseClicked(MouseEvent arg0) {
+		tela.setVisible(true);
 	}
+});
+}
+	
 }

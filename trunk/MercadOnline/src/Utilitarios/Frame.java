@@ -8,11 +8,11 @@ import javax.swing.JLabel;
 
 public class Frame {
 	
-	public void Abrir(final JFrame tela, JLabel label){
+	public void Abrir(final JFrame telaAbrir, JLabel label){
 	
 		label.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent arg0) {
-				tela.setVisible(true);
+				telaAbrir.setVisible(true);
 			}
 		});
 	}

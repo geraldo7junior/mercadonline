@@ -1,7 +1,6 @@
 package Interface;
 
 import java.awt.Color;
-import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.SystemColor;
 
@@ -15,9 +14,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import javax.swing.table.DefaultTableModel;
 //<<<<<<< .mine
 //=======
-import javax.swing.table.DefaultTableModel;
 //>>>>>>> .r194
 
 public class CarrinhoCompras extends JFrame {
@@ -31,25 +30,7 @@ public class CarrinhoCompras extends JFrame {
 	private JPasswordField txtSenhaLogin;
 	private JTable table;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					CarrinhoCompras frame = new CarrinhoCompras();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
+	
 	public CarrinhoCompras() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -341,14 +322,6 @@ public class CarrinhoCompras extends JFrame {
 		lblBackGround.setBounds(0, 0, 1024, 768);
 		contentPane.add(lblBackGround);
 		
-		//links dos menus
-				new Utilitarios.Frame().Abrir(new Padaria(), lblPadaria);
-				new Utilitarios.Frame().Abrir(new Hortifruti(), lblHortifruti);
-				new Utilitarios.Frame().Abrir(new Bebidas(), lblBebidas);
-				//new Utilitarios.Frame().Abrir(new FriosECongelados(), lblFrios);
-				//new Utilitarios.Frame().Abrir(new Limpeza(), lblLimpeza);
-				new Utilitarios.Frame().Abrir(new Mercearia(), lblMercearia);
-				//new Utilitarios.Frame().Abrir(new Higiene(), lblHigiene);
-				//new Utilitarios.Frame().Abrir(new Cosmeticos(), lblCosmeticos);
+		
 	}
 }
