@@ -1,7 +1,6 @@
 package Interface;
 
 import java.awt.Color;
-import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.SystemColor;
 
@@ -25,25 +24,6 @@ public class Mercearia extends JFrame {
 	private JTextField txtLogin;
 	private JPasswordField txtSenhaLogin;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Mercearia frame = new Mercearia();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
 	public Mercearia() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -434,14 +414,6 @@ public class Mercearia extends JFrame {
 		lblBackGround.setBounds(0, 0, 1024, 768);
 		contentPane.add(lblBackGround);
 		
-		//links dos menus
-				new Utilitarios.Frame().Abrir(new Padaria(), lblPadaria);
-				new Utilitarios.Frame().Abrir(new Hortifruti(), lblHortifruti);
-				new Utilitarios.Frame().Abrir(new Bebidas(), lblBebidas);
-				//new Utilitarios.Frame().Abrir(new FriosECongelados(), lblFrios);
-				//new Utilitarios.Frame().Abrir(new Limpeza(), lblLimpeza);
-				new Utilitarios.Frame().Abrir(new Mercearia(), lblMercearia);
-				//new Utilitarios.Frame().Abrir(new Higiene(), lblHigiene);
-				//new Utilitarios.Frame().Abrir(new Cosmeticos(), lblCosmeticos);
+		
 	}
 }
