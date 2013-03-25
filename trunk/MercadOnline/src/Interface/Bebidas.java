@@ -253,22 +253,22 @@ public class Bebidas extends JFrame {
 		
 		JLabel lblNewLabel_4 = new JLabel("New label");
 		lblNewLabel_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\ades.png"));
-		lblNewLabel_4.setBounds(102, 396, 88, 116);
+		lblNewLabel_4.setBounds(103, 392, 88, 116);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("New label");
 		lblNewLabel_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\delvalle.png"));
-		lblNewLabel_5.setBounds(343, 396, 88, 116);
+		lblNewLabel_5.setBounds(343, 392, 88, 116);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("New label");
 		lblNewLabel_6.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\pessego.png"));
-		lblNewLabel_6.setBounds(591, 396, 88, 116);
+		lblNewLabel_6.setBounds(591, 392, 88, 116);
 		contentPane.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_7 = new JLabel("New label");
 		lblNewLabel_7.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\tampico.png"));
-		lblNewLabel_7.setBounds(841, 396, 88, 116);
+		lblNewLabel_7.setBounds(841, 392, 88, 116);
 		contentPane.add(lblNewLabel_7);
 		
 		JLabel lblNewLabel_8 = new JLabel("New label");
@@ -283,13 +283,109 @@ public class Bebidas extends JFrame {
 		
 		JLabel lblNewLabel_10 = new JLabel("New label");
 		lblNewLabel_10.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\sprite.png"));
-		lblNewLabel_10.setBounds(591, 570, 88, 116);
+		lblNewLabel_10.setBounds(592, 570, 88, 116);
 		contentPane.add(lblNewLabel_10);
 		
 		JLabel lblNewLabel_11 = new JLabel("New label");
 		lblNewLabel_11.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\coca 3.png"));
 		lblNewLabel_11.setBounds(841, 570, 88, 116);
 		contentPane.add(lblNewLabel_11);
+		
+		JLabel lblSkolLata = new JLabel("Skol lata 350 ml");
+		lblSkolLata.setBounds(114, 333, 96, 14);
+		contentPane.add(lblSkolLata);
+		
+		JLabel lblR = new JLabel("R$ 1,62");
+		lblR.setBounds(136, 348, 51, 14);
+		contentPane.add(lblR);
+		
+		JLabel lblHeinekenGarrafa = new JLabel("Heineken Garrafa 355 ml");
+		lblHeinekenGarrafa.setBounds(333, 332, 144, 14);
+		contentPane.add(lblHeinekenGarrafa);
+		
+		JLabel lblR_1 = new JLabel("R$ 2,30");
+		lblR_1.setBounds(367, 348, 51, 14);
+		contentPane.add(lblR_1);
+		
+		JLabel lblR_2 = new JLabel("R$ 6,90");
+		lblR_2.setBounds(617, 348, 51, 14);
+		contentPane.add(lblR_2);
+		
+		JLabel lblVinhoTintoChalise = new JLabel("Vinho Tinto Chalise");
+		lblVinhoTintoChalise.setBounds(592, 333, 114, 14);
+		contentPane.add(lblVinhoTintoChalise);
+		
+		JLabel lblR_3 = new JLabel("R$ 750,00");
+		lblR_3.setBounds(859, 348, 66, 14);
+		contentPane.add(lblR_3);
+		
+		JLabel lblWhyski = new JLabel("Whisky Blue Label");
+		lblWhyski.setBounds(841, 333, 109, 14);
+		contentPane.add(lblWhyski);
+		
+		JLabel lblR_4 = new JLabel("R$ 4,59");
+		lblR_4.setBounds(131, 524, 51, 14);
+		contentPane.add(lblR_4);
+		
+		JLabel lblAdesLaranja = new JLabel("Ades Laranja 1L");
+		lblAdesLaranja.setBounds(122, 510, 109, 14);
+		contentPane.add(lblAdesLaranja);
+		
+		JLabel lblR_5 = new JLabel("R$ 5,50");
+		lblR_5.setBounds(372, 524, 51, 14);
+		contentPane.add(lblR_5);
+		
+		JLabel lblDellValeUva = new JLabel("Del Valle Uva 1L");
+		lblDellValeUva.setBounds(355, 510, 109, 14);
+		contentPane.add(lblDellValeUva);
+		
+		JLabel lblDelVallePessego = new JLabel("Del Valle P\u00EAssego Lata");
+		lblDelVallePessego.setBounds(584, 510, 129, 14);
+		contentPane.add(lblDelVallePessego);
+		
+		JLabel lblR_6 = new JLabel("R$ 3,80");
+		lblR_6.setBounds(618, 524, 51, 14);
+		contentPane.add(lblR_6);
+		
+		JLabel lblR_9 = new JLabel("R$ 1,49");
+		lblR_9.setBounds(864, 524, 51, 14);
+		contentPane.add(lblR_9);
+		
+		JLabel lblTampico = new JLabel("Tampico Frutas C\u00EDtricas");
+		lblTampico.setBounds(824, 510, 138, 14);
+		contentPane.add(lblTampico);
+		
+		JLabel lblR_7 = new JLabel("R$ 1,43");
+		lblR_7.setBounds(126, 700, 51, 14);
+		contentPane.add(lblR_7);
+		
+		JLabel lblCocacolaLata = new JLabel("Coca Cola lata 350 ml");
+		lblCocacolaLata.setBounds(100, 686, 129, 14);
+		contentPane.add(lblCocacolaLata);
+		
+		JLabel lblR_8 = new JLabel("R$ 1,15");
+		lblR_8.setBounds(375, 700, 51, 14);
+		contentPane.add(lblR_8);
+		
+		JLabel lblGuaranAntarcticaLata = new JLabel("Guaran\u00E1 Antarctica lata 350 ml");
+		lblGuaranAntarcticaLata.setBounds(316, 686, 179, 14);
+		contentPane.add(lblGuaranAntarcticaLata);
+		
+		JLabel lblR_10 = new JLabel("R$ 1,50");
+		lblR_10.setBounds(620, 700, 51, 14);
+		contentPane.add(lblR_10);
+		
+		JLabel lblSprite = new JLabel("Sprite Lata 350 ml");
+		lblSprite.setBounds(589, 686, 129, 14);
+		contentPane.add(lblSprite);
+		
+		JLabel lblR_11 = new JLabel("R$ 5,15");
+		lblR_11.setBounds(875, 700, 51, 14);
+		contentPane.add(lblR_11);
+		
+		JLabel lblCocaCola = new JLabel("Coca Cola 3L");
+		lblCocaCola.setBounds(864, 686, 82, 14);
+		contentPane.add(lblCocaCola);
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setBounds(10, 0, 1024, 768);
