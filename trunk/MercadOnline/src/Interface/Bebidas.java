@@ -44,6 +44,7 @@ public class Bebidas extends JFrame {
 	 * Create the frame.
 	 */
 	public Bebidas() {
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1024, 768);
 		contentPane = new JPanel();
