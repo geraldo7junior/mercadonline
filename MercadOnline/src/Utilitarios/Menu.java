@@ -16,6 +16,7 @@ import Interface.Produtos;
 import Interface.Promocao;
 import Interface.Sugeridos;
 
+
 public class Menu extends JFrame {
 	
 	private static final long serialVersionUID = 1L;
