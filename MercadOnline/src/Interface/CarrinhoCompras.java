@@ -17,9 +17,6 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-//<<<<<<< .mine
-//=======
-//>>>>>>> .r194
 
 public class CarrinhoCompras extends JFrame {
 
