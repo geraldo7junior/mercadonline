@@ -12,6 +12,8 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class CadastroProduto extends JFrame {
 
@@ -41,6 +43,13 @@ public class CadastroProduto extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblPadaria = new JLabel("Padaria");
+		lblPadaria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblPadaria.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Padaria().setVisible(true);
+			}
+		});
 		lblPadaria.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblPadaria.setBounds(43, 87, 53, 14);
 		contentPane.add(lblPadaria);
@@ -118,16 +127,37 @@ public class CadastroProduto extends JFrame {
 		contentPane.add(lblFrios);
 		
 		JLabel lblLimpeza = new JLabel("Limpeza");
+		lblLimpeza.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblLimpeza.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Limpeza().setVisible(true);
+			}
+		});
 		lblLimpeza.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblLimpeza.setBounds(452, 87, 51, 14);
 		contentPane.add(lblLimpeza);
 		
 		JLabel lblMercearia = new JLabel("Mercearia");
+		lblMercearia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblMercearia.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Mercearia().setVisible(true);
+			}
+		});
 		lblMercearia.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblMercearia.setBounds(542, 87, 64, 14);
 		contentPane.add(lblMercearia);
 		
 		JLabel lblHigiene = new JLabel("Higiene");
+		lblHigiene.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblHigiene.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Higiene().setVisible(true);
+			}
+		});
 		lblHigiene.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblHigiene.setBounds(642, 87, 56, 14);
 		contentPane.add(lblHigiene);
@@ -175,11 +205,25 @@ public class CadastroProduto extends JFrame {
 		contentPane.add(label_20);
 		
 		JLabel lblHortifruti = new JLabel("Hortifruti");
+		lblHortifruti.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblHortifruti.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Hortifruti().setVisible(true);
+			}
+		});
 		lblHortifruti.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblHortifruti.setBounds(122, 87, 64, 14);
 		contentPane.add(lblHortifruti);
 		
 		JLabel lblCosmeticos = new JLabel("Cosm\u00E9ticos");
+		lblCosmeticos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCosmeticos.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Cosmeticos().setVisible(true);
+			}
+		});
 		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblCosmeticos.setBounds(727, 87, 74, 14);
 		contentPane.add(lblCosmeticos);
@@ -190,11 +234,25 @@ public class CadastroProduto extends JFrame {
 		contentPane.add(label_23);
 		
 		JLabel label_24 = new JLabel("Bebidas");
+		lblBebidas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblBebidas.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Bebidas().setVisible(true);
+			}
+		});
 		label_24.setFont(new Font("Calibri", Font.BOLD, 15));
 		label_24.setBounds(212, 87, 56, 14);
 		contentPane.add(label_24);
 		
 		JLabel label_25 = new JLabel("Frios e Congelados");
+		lblFrios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblFrios.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Frios().setVisible(true);
+			}
+		});
 		label_25.setFont(new Font("Calibri", Font.BOLD, 15));
 		label_25.setBounds(297, 87, 121, 14);
 		contentPane.add(label_25);

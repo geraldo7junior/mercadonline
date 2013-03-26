@@ -13,6 +13,8 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Frios extends JFrame {
 
@@ -110,11 +112,25 @@ public class Frios extends JFrame {
 		contentPane.add(btnEntrar);
 		
 		JLabel lblPadaria = new JLabel("Padaria");
+		lblPadaria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblPadaria.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Padaria().setVisible(true);
+			}
+		});
 		lblPadaria.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblPadaria.setBounds(48, 85, 53, 14);
 		contentPane.add(lblPadaria);
 		
 		JLabel lblBebidas = new JLabel("Bebidas");
+		lblBebidas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblBebidas.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Bebidas().setVisible(true);
+			}
+		});
 		lblBebidas.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblBebidas.setBounds(217, 85, 56, 14);
 		contentPane.add(lblBebidas);
@@ -125,16 +141,37 @@ public class Frios extends JFrame {
 		contentPane.add(lblFrios);
 		
 		JLabel lblLimpeza = new JLabel("Limpeza");
+		lblLimpeza.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblLimpeza.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Limpeza().setVisible(true);
+			}
+		});
 		lblLimpeza.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblLimpeza.setBounds(457, 85, 51, 14);
 		contentPane.add(lblLimpeza);
 		
 		JLabel lblMercearia = new JLabel("Mercearia");
+		lblMercearia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblMercearia.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Mercearia().setVisible(true);
+			}
+		});
 		lblMercearia.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblMercearia.setBounds(547, 85, 64, 14);
 		contentPane.add(lblMercearia);
 		
 		JLabel lblHigiene = new JLabel("Higiene");
+		lblHigiene.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblHigiene.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Higiene().setVisible(true);
+			}
+		});
 		lblHigiene.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblHigiene.setBounds(647, 85, 56, 14);
 		contentPane.add(lblHigiene);
@@ -182,11 +219,25 @@ public class Frios extends JFrame {
 		contentPane.add(label_12);
 		
 		JLabel lblHortifruti = new JLabel("Hortifruti");
+		lblHortifruti.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblHortifruti.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Hortifruti().setVisible(true);
+			}
+		});
 		lblHortifruti.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblHortifruti.setBounds(127, 85, 64, 14);
 		contentPane.add(lblHortifruti);
 		
 		JLabel lblCosmeticos = new JLabel("Cosm\u00E9ticos");
+		lblCosmeticos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCosmeticos.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Cosmeticos().setVisible(true);
+			}
+		});
 		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblCosmeticos.setBounds(732, 85, 74, 14);
 		contentPane.add(lblCosmeticos);
