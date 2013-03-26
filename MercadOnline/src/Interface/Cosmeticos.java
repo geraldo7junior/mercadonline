@@ -14,7 +14,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-public class Cosméticos extends JFrame {
+public class Cosmeticos extends JFrame {
 
 	/**
 	 * 
@@ -31,7 +31,7 @@ public class Cosméticos extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Cosméticos frame = new Cosméticos();
+					Cosmeticos frame = new Cosmeticos();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -43,7 +43,7 @@ public class Cosméticos extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Cosméticos() {
+	public Cosmeticos() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1024, 768);
 		contentPane = new JPanel();
