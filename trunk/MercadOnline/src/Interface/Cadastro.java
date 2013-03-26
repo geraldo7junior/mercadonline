@@ -784,6 +784,7 @@ public class Cadastro extends JFrame {
 		
 		
 		//links dos menus
+		
 				new Utilitarios.Frame().Abrir(new Padaria(), lblPadaria);
 				//new Utilitarios.Frame().Abrir(new Hortifruti(), lblHortifruti);
 				//new Utilitarios.Frame().Abrir(new Bebidas(), lblBebidas);
