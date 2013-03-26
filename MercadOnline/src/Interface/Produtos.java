@@ -2,22 +2,17 @@ package Interface;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JTextField;
-import javax.swing.JPasswordField;
-import javax.swing.JButton;
 
+import Utilitarios.Login;
 import Utilitarios.Menu;
-
-
-import java.awt.SystemColor;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
 public class Produtos extends JFrame {
 
@@ -26,8 +21,6 @@ public class Produtos extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField txtLogin;
-	private JPasswordField txtSenhaLogin;
 
 	public Produtos() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -39,74 +32,14 @@ public class Produtos extends JFrame {
 		
 		new Menu(contentPane); //Chama o menu principal
 		
+		new Login(contentPane); //Chama o Login
+		
 		JLabel lblProdutos_1 = new JLabel("PRODUTOS");
 		lblProdutos_1.setForeground(Color.BLACK);
 		lblProdutos_1.setFont(new Font("AR BONNIE", Font.BOLD, 24));
 		lblProdutos_1.setBackground(Color.WHITE);
 		lblProdutos_1.setBounds(482, 144, 99, 20);
 		contentPane.add(lblProdutos_1);
-		
-		JLabel lblHome = new JLabel("home");
-		lblHome.setForeground(Color.WHITE);
-		lblHome.setFont(new Font("Folks", Font.BOLD, 16));
-		lblHome.setBounds(260, 25, 51, 20);
-		contentPane.add(lblHome);
-		
-		JLabel lblProdutos = new JLabel("produtos");
-		lblProdutos.setForeground(Color.WHITE);
-		lblProdutos.setFont(new Font("Folks", Font.BOLD, 16));
-		lblProdutos.setBounds(313, 25, 74, 20);
-		contentPane.add(lblProdutos);
-		
-		JLabel lblCadastro = new JLabel("cadastro");
-		lblCadastro.setForeground(Color.WHITE);
-		lblCadastro.setFont(new Font("Folks", Font.BOLD, 16));
-		lblCadastro.setBounds(388, 25, 68, 20);
-		contentPane.add(lblCadastro);
-		
-		JLabel lblPromocao = new JLabel("promo\u00E7\u00E3o");
-		lblPromocao.setForeground(Color.WHITE);
-		lblPromocao.setFont(new Font("Folks", Font.BOLD, 16));
-		lblPromocao.setBounds(465, 25, 81, 20);
-		contentPane.add(lblPromocao);
-		
-		JLabel lblSugeridos = new JLabel("sugeridos");
-		lblSugeridos.setForeground(Color.WHITE);
-		lblSugeridos.setFont(new Font("Folks", Font.BOLD, 16));
-		lblSugeridos.setBounds(550, 25, 81, 20);
-		contentPane.add(lblSugeridos);
-		
-		JLabel lblContato = new JLabel("contato");
-		lblContato.setForeground(Color.WHITE);
-		lblContato.setFont(new Font("Folks", Font.BOLD, 16));
-		lblContato.setBounds(634, 25, 70, 20);
-		contentPane.add(lblContato);
-		
-		JLabel lblLogin = new JLabel("Login:");
-		lblLogin.setFont(new Font("Arial", Font.BOLD, 12));
-		lblLogin.setBounds(714, 15, 34, 14);
-		contentPane.add(lblLogin);
-		
-		JLabel lblSenhaLogin = new JLabel("Senha:");
-		lblSenhaLogin.setFont(new Font("Arial", Font.BOLD, 12));
-		lblSenhaLogin.setBounds(861, 14, 42, 14);
-		contentPane.add(lblSenhaLogin);
-		
-		txtLogin = new JTextField();
-		txtLogin.setName("txtLogin");
-		txtLogin.setColumns(10);
-		txtLogin.setBounds(755, 12, 96, 18);
-		contentPane.add(txtLogin);
-		
-		txtSenhaLogin = new JPasswordField();
-		txtSenhaLogin.setBounds(902, 11, 96, 18);
-		contentPane.add(txtSenhaLogin);
-		
-		JButton btnEntrar = new JButton("Entrar");
-		btnEntrar.setFont(new Font("Tahoma", Font.PLAIN, 9));
-		btnEntrar.setBackground(SystemColor.menu);
-		btnEntrar.setBounds(931, 39, 67, 18);
-		contentPane.add(btnEntrar);
 		
 		JLabel lblPadaria = new JLabel("Padaria");
 		lblPadaria.setFont(new Font("Calibri", Font.BOLD, 15));

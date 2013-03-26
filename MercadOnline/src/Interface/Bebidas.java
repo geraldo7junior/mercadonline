@@ -2,19 +2,16 @@ package Interface;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.SystemColor;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
+import Utilitarios.Login;
 import Utilitarios.Menu;
 public class Bebidas extends JFrame {
 
@@ -23,8 +20,6 @@ public class Bebidas extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField txtLogin;
-	private JPasswordField txtSenhaLogin;
 
 	public Bebidas() {
 		
@@ -38,31 +33,7 @@ public class Bebidas extends JFrame {
 	
 		new Menu(contentPane); //Chama o menu principal		
 		
-		JLabel lblLogin = new JLabel("Login:");
-		lblLogin.setBounds(724, 15, 34, 14);
-		lblLogin.setFont(new Font("Arial", Font.BOLD, 12));
-		contentPane.add(lblLogin);
-		
-		JLabel lblSenhaLogin = new JLabel("Senha:");
-		lblSenhaLogin.setBounds(871, 14, 42, 14);
-		lblSenhaLogin.setFont(new Font("Arial", Font.BOLD, 12));
-		contentPane.add(lblSenhaLogin);
-		
-		txtLogin = new JTextField();
-		txtLogin.setBounds(765, 12, 96, 18);
-		txtLogin.setName("txtLogin");
-		txtLogin.setColumns(10);
-		contentPane.add(txtLogin);
-		
-		txtSenhaLogin = new JPasswordField();
-		txtSenhaLogin.setBounds(912, 11, 96, 18);
-		contentPane.add(txtSenhaLogin);
-		
-		JButton btnEntrar = new JButton("Entrar");
-		btnEntrar.setBounds(931, 39, 67, 18);
-		btnEntrar.setFont(new Font("Tahoma", Font.PLAIN, 9));
-		btnEntrar.setBackground(SystemColor.menu);
-		contentPane.add(btnEntrar);
+		new Login(contentPane); //Chama o Login
 		
 		JLabel lblPadaria = new JLabel("Padaria");
 		lblPadaria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
