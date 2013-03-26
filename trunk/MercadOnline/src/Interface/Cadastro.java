@@ -26,6 +26,8 @@ import Main.ConexaoDB;
 import Utilitarios.ApenasNum;
 import Utilitarios.ApenasStr;
 import Utilitarios.Mascara;
+import Utilitarios.Menu;
+
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -200,6 +202,8 @@ public class Cadastro extends JFrame {
 		panelCadastro = new JPanel();
 		panelCadastro.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(panelCadastro);
+		
+		new Menu(panelCadastro); //Chama o menu principal
 		
 		JLabel lblNome = new JLabel("Nome*:");
 		lblNome.setFont(new Font("Dialog", Font.PLAIN, 12));
@@ -451,42 +455,6 @@ public class Cadastro extends JFrame {
 		lblConfirmarSenha.setFont(new Font("Dialog", Font.PLAIN, 12));
 		lblConfirmarSenha.setBounds(497, 604, 125, 14);
 		panelCadastro.add(lblConfirmarSenha);
-		
-		JLabel lblHome = new JLabel("home");
-		lblHome.setForeground(Color.WHITE);
-		lblHome.setFont(new Font("Folks", Font.BOLD, 16));
-		lblHome.setBounds(258, 25, 51, 20);
-		panelCadastro.add(lblHome);
-		
-		JLabel lblProdutos = new JLabel("produtos");
-		lblProdutos.setForeground(Color.WHITE);
-		lblProdutos.setFont(new Font("Folks", Font.BOLD, 16));
-		lblProdutos.setBounds(311, 25, 74, 20);
-		panelCadastro.add(lblProdutos);
-		
-		JLabel lblCadastromenu = new JLabel("cadastro");
-		lblCadastromenu.setForeground(Color.WHITE);
-		lblCadastromenu.setFont(new Font("Folks", Font.BOLD, 16));
-		lblCadastromenu.setBounds(386, 25, 68, 20);
-		panelCadastro.add(lblCadastromenu);
-		
-		JLabel lblPromocao = new JLabel("promo\u00E7\u00E3o");
-		lblPromocao.setForeground(Color.WHITE);
-		lblPromocao.setFont(new Font("Folks", Font.BOLD, 16));
-		lblPromocao.setBounds(463, 25, 81, 20);
-		panelCadastro.add(lblPromocao);
-		
-		JLabel lblSugeridos = new JLabel("sugeridos");
-		lblSugeridos.setForeground(Color.WHITE);
-		lblSugeridos.setFont(new Font("Folks", Font.BOLD, 16));
-		lblSugeridos.setBounds(548, 25, 81, 20);
-		panelCadastro.add(lblSugeridos);
-		
-		JLabel lblContato = new JLabel("contato");
-		lblContato.setForeground(Color.WHITE);
-		lblContato.setFont(new Font("Folks", Font.BOLD, 16));
-		lblContato.setBounds(632, 25, 70, 20);
-		panelCadastro.add(lblContato);
 		
 		JLabel lblPadaria = new JLabel("Padaria");
 		lblPadaria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));

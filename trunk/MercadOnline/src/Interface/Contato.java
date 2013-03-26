@@ -17,6 +17,8 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.text.Document;
 
+import Utilitarios.Menu;
+
 public class Contato extends JFrame {
 
 	/**
@@ -58,6 +60,8 @@ public class Contato extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		new Menu(contentPane); //Chama o menu principal
 		
 		JLabel lblHome = new JLabel("home");
 		lblHome.setForeground(Color.WHITE);

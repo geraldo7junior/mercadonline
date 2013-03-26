@@ -16,6 +16,8 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
+import Utilitarios.Menu;
+
 public class Mercearia extends JFrame {
 	
 	private static final long serialVersionUID = 1L;
@@ -31,6 +33,8 @@ public class Mercearia extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		new Menu(contentPane); //Chama o menu principal
 		
 		JLabel lblHome = new JLabel("home");
 		lblHome.setForeground(Color.WHITE);

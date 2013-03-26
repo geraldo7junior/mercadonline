@@ -15,6 +15,7 @@ import javax.swing.border.EmptyBorder;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import Utilitarios.*;
 public class Bebidas extends JFrame {
 
 	/**
@@ -26,6 +27,7 @@ public class Bebidas extends JFrame {
 	private JPasswordField txtSenhaLogin;
 
 	public Bebidas() {
+		
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1024, 768);
@@ -33,42 +35,8 @@ public class Bebidas extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
-		JLabel lblHome = new JLabel("home");
-		lblHome.setBounds(270, 25, 51, 20);
-		lblHome.setForeground(Color.WHITE);
-		lblHome.setFont(new Font("Folks", Font.BOLD, 16));
-		contentPane.add(lblHome);
-		
-		JLabel lblProdutos = new JLabel("produtos");
-		lblProdutos.setBounds(323, 25, 74, 20);
-		lblProdutos.setForeground(Color.WHITE);
-		lblProdutos.setFont(new Font("Folks", Font.BOLD, 16));
-		contentPane.add(lblProdutos);
-		
-		JLabel lblCadastro = new JLabel("cadastro");
-		lblCadastro.setBounds(398, 25, 68, 20);
-		lblCadastro.setForeground(Color.WHITE);
-		lblCadastro.setFont(new Font("Folks", Font.BOLD, 16));
-		contentPane.add(lblCadastro);
-		
-		JLabel lblPromocao = new JLabel("promo\u00E7\u00E3o");
-		lblPromocao.setBounds(475, 25, 81, 20);
-		lblPromocao.setForeground(Color.WHITE);
-		lblPromocao.setFont(new Font("Folks", Font.BOLD, 16));
-		contentPane.add(lblPromocao);
-		
-		JLabel lblSugeridos = new JLabel("sugeridos");
-		lblSugeridos.setBounds(560, 25, 81, 20);
-		lblSugeridos.setForeground(Color.WHITE);
-		lblSugeridos.setFont(new Font("Folks", Font.BOLD, 16));
-		contentPane.add(lblSugeridos);
-		
-		JLabel lblContato = new JLabel("contato");
-		lblContato.setBounds(644, 25, 70, 20);
-		lblContato.setForeground(Color.WHITE);
-		lblContato.setFont(new Font("Folks", Font.BOLD, 16));
-		contentPane.add(lblContato);
+	
+		new Menu(contentPane); //Chama o menu principal		
 		
 		JLabel lblLogin = new JLabel("Login:");
 		lblLogin.setBounds(724, 15, 34, 14);

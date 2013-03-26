@@ -15,6 +15,8 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
+import Utilitarios.Menu;
+
 public class Hortifruti extends JFrame {
 
 	/**
@@ -34,6 +36,8 @@ public class Hortifruti extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		new Menu(contentPane); //Chama o menu principal
 		
 		JLabel lblHome = new JLabel("home");
 		lblHome.setBounds(260, 25, 51, 20);
