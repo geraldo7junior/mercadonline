@@ -129,8 +129,8 @@ public class Padaria extends JFrame {
 		lblLimpeza.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		lblLimpeza.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
-				//dispose();
-				//new Limpeza().setVisible(true);
+				dispose();
+				new Limpeza().setVisible(true);
 			}
 		});
 		lblLimpeza.setFont(new Font("Calibri", Font.BOLD, 15));
@@ -153,8 +153,8 @@ public class Padaria extends JFrame {
 		lblHigiene.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		lblHigiene.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
-				//dispose();
-				//new Higiene().setVisible(true);
+				dispose();
+				new Higiene().setVisible(true);
 			}
 		});
 		lblHigiene.setFont(new Font("Calibri", Font.BOLD, 15));
@@ -219,8 +219,8 @@ public class Padaria extends JFrame {
 		lblCosmeticos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		lblCosmeticos.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
-				//dispose();
-				//new Cosmeticos().setVisible(true);
+				dispose();
+				new Cosmeticos().setVisible(true);
 			}
 		});
 		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));

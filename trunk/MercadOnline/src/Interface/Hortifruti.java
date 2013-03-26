@@ -137,8 +137,8 @@ public class Hortifruti extends JFrame {
 		lblLimpeza.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		lblLimpeza.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
-				//dispose();
-				//new Limpeza().setVisible(true);
+				dispose();
+				new Limpeza().setVisible(true);
 			}
 		});
 		lblLimpeza.setBounds(452, 85, 51, 14);
@@ -161,8 +161,8 @@ public class Hortifruti extends JFrame {
 		lblHigiene.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		lblHigiene.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
-				//dispose();
-				//new Higiene().setVisible(true);
+				dispose();
+				new Higiene().setVisible(true);
 			}
 		});
 		lblHigiene.setBounds(642, 85, 56, 14);
@@ -220,8 +220,8 @@ public class Hortifruti extends JFrame {
 		lblCosmeticos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		lblCosmeticos.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
-				//dispose();
-				//new Cosmeticos().setVisible(true);
+				dispose();
+				new Cosmeticos().setVisible(true);
 			}
 		});
 		lblCosmeticos.setBounds(727, 85, 74, 14);
