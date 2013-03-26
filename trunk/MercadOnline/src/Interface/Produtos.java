@@ -12,6 +12,8 @@ import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
 import java.awt.SystemColor;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Produtos extends JFrame {
 
@@ -111,21 +113,49 @@ public class Produtos extends JFrame {
 		contentPane.add(lblBebidas);
 		
 		JLabel lblFrios = new JLabel("Frios e Congelados");
+		lblFrios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblFrios.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Frios().setVisible(true);
+			}
+		});
 		lblFrios.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblFrios.setBounds(297, 87, 121, 14);
 		contentPane.add(lblFrios);
 		
 		JLabel lblLimpeza = new JLabel("Limpeza");
+		lblLimpeza.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblLimpeza.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Limpeza().setVisible(true);
+			}
+		});
 		lblLimpeza.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblLimpeza.setBounds(452, 87, 51, 14);
 		contentPane.add(lblLimpeza);
 		
 		JLabel lblMercearia = new JLabel("Mercearia");
+		lblMercearia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblMercearia.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Mercearia().setVisible(true);
+			}
+		});
 		lblMercearia.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblMercearia.setBounds(542, 87, 64, 14);
 		contentPane.add(lblMercearia);
 		
 		JLabel lblHigiene = new JLabel("Higiene");
+		lblHigiene.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblHigiene.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Higiene().setVisible(true);
+			}
+		});
 		lblHigiene.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblHigiene.setBounds(642, 87, 56, 14);
 		contentPane.add(lblHigiene);
@@ -178,6 +208,13 @@ public class Produtos extends JFrame {
 		contentPane.add(lblHortifruti);
 		
 		JLabel lblCosmeticos = new JLabel("Cosm\u00E9ticos");
+		lblCosmeticos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCosmeticos.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Cosmeticos().setVisible(true);
+			}
+		});
 		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblCosmeticos.setBounds(727, 87, 74, 14);
 		contentPane.add(lblCosmeticos);
@@ -188,16 +225,37 @@ public class Produtos extends JFrame {
 		contentPane.add(lblCarrinhoCompras);
 		
 		JLabel lblIconPadaria = new JLabel("New label");
+		lblPadaria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblPadaria.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Padaria().setVisible(true);
+			}
+		});
 		lblIconPadaria.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Categorias\\Padaria.png"));
 		lblIconPadaria.setBounds(124, 208, 120, 120);
 		contentPane.add(lblIconPadaria);
 		
 		JLabel lblIconHortifruti = new JLabel("New label");
+		lblHortifruti.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblHortifruti.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Hortifruti().setVisible(true);
+			}
+		});
 		lblIconHortifruti.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Categorias\\Hortifruti.png"));
 		lblIconHortifruti.setBounds(312, 208, 120, 120);
 		contentPane.add(lblIconHortifruti);
 		
 		JLabel lblIconBebidas = new JLabel("New label");
+		lblBebidas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblBebidas.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Bebidas().setVisible(true);
+			}
+		});
 		lblIconBebidas.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Categorias\\Bebidas.png"));
 		lblIconBebidas.setBounds(531, 208, 120, 120);
 		contentPane.add(lblIconBebidas);

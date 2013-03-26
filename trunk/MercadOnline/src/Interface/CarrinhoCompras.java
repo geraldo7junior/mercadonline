@@ -255,6 +255,13 @@ public class CarrinhoCompras extends JFrame {
 		contentPane.add(label_28);
 		
 		JLabel label_29 = new JLabel("Limpeza");
+		lblLimpeza.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblLimpeza.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Limpeza().setVisible(true);
+			}
+		});
 		label_29.setFont(new Font("Calibri", Font.BOLD, 15));
 		label_29.setBounds(452, 87, 51, 14);
 		contentPane.add(label_29);
