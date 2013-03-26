@@ -98,31 +98,73 @@ public class Hortifruti extends JFrame {
 		contentPane.add(btnEntrar);
 		
 		JLabel lblPadaria = new JLabel("Padaria");
+		lblPadaria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblPadaria.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Padaria().setVisible(true);
+			}
+		});
 		lblPadaria.setBounds(43, 85, 53, 14);
 		lblPadaria.setFont(new Font("Calibri", Font.BOLD, 15));
 		contentPane.add(lblPadaria);
 		
 		JLabel lblBebidas = new JLabel("Bebidas");
+		lblBebidas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblBebidas.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Bebidas().setVisible(true);
+			}
+		});
 		lblBebidas.setBounds(212, 85, 56, 14);
 		lblBebidas.setFont(new Font("Calibri", Font.BOLD, 15));
 		contentPane.add(lblBebidas);
 		
 		JLabel lblFrios = new JLabel("Frios e Congelados");
+		lblFrios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblFrios.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Frios().setVisible(true);
+			}
+		});
 		lblFrios.setBounds(297, 85, 121, 14);
 		lblFrios.setFont(new Font("Calibri", Font.BOLD, 15));
 		contentPane.add(lblFrios);
 		
 		JLabel lblLimpeza = new JLabel("Limpeza");
+		lblLimpeza.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblLimpeza.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Limpeza().setVisible(true);
+			}
+		});
 		lblLimpeza.setBounds(452, 85, 51, 14);
 		lblLimpeza.setFont(new Font("Calibri", Font.BOLD, 15));
 		contentPane.add(lblLimpeza);
 		
 		JLabel lblMercearia = new JLabel("Mercearia");
+		lblMercearia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblMercearia.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Mercearia().setVisible(true);
+			}
+		});
 		lblMercearia.setBounds(542, 85, 64, 14);
 		lblMercearia.setFont(new Font("Calibri", Font.BOLD, 15));
 		contentPane.add(lblMercearia);
 		
 		JLabel lblHigiene = new JLabel("Higiene");
+		lblHigiene.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblHigiene.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Higiene().setVisible(true);
+			}
+		});
 		lblHigiene.setBounds(642, 85, 56, 14);
 		lblHigiene.setFont(new Font("Calibri", Font.BOLD, 15));
 		contentPane.add(lblHigiene);
@@ -175,6 +217,13 @@ public class Hortifruti extends JFrame {
 		contentPane.add(lblHortifruti);
 		
 		JLabel lblCosmeticos = new JLabel("Cosm\u00E9ticos");
+		lblCosmeticos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCosmeticos.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Cosmeticos().setVisible(true);
+			}
+		});
 		lblCosmeticos.setBounds(727, 85, 74, 14);
 		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
 		contentPane.add(lblCosmeticos);

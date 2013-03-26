@@ -26,6 +26,8 @@ import Main.ConexaoDB;
 import Utilitarios.ApenasNum;
 import Utilitarios.ApenasStr;
 import Utilitarios.Mascara;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Cadastro extends JFrame {
 	
@@ -193,7 +195,7 @@ public class Cadastro extends JFrame {
 	 */
 	public Cadastro() {
 		setResizable(false);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 1024, 768);
 		panelCadastro = new JPanel();
 		panelCadastro.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -487,31 +489,73 @@ public class Cadastro extends JFrame {
 		panelCadastro.add(lblContato);
 		
 		JLabel lblPadaria = new JLabel("Padaria");
+		lblPadaria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblPadaria.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Padaria().setVisible(true);
+			}
+		});
 		lblPadaria.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblPadaria.setBounds(41, 85, 53, 14);
 		panelCadastro.add(lblPadaria);
 		
 		JLabel lblBebidas = new JLabel("Bebidas");
+		lblBebidas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblBebidas.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Bebidas().setVisible(true);
+			}
+		});
 		lblBebidas.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblBebidas.setBounds(210, 85, 56, 14);
 		panelCadastro.add(lblBebidas);
 		
 		JLabel lblFrios = new JLabel("Frios e Congelados");
+		lblFrios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblFrios.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Frios().setVisible(true);
+			}
+		});
 		lblFrios.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblFrios.setBounds(295, 85, 121, 14);
 		panelCadastro.add(lblFrios);
 		
 		JLabel lblLimpeza = new JLabel("Limpeza");
+		lblLimpeza.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblLimpeza.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Limpeza().setVisible(true);
+			}
+		});
 		lblLimpeza.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblLimpeza.setBounds(450, 85, 51, 14);
 		panelCadastro.add(lblLimpeza);
 		
 		JLabel lblMercearia = new JLabel("Mercearia");
+		lblMercearia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblMercearia.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Mercearia().setVisible(true);
+			}
+		});
 		lblMercearia.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblMercearia.setBounds(540, 85, 64, 14);
 		panelCadastro.add(lblMercearia);
 		
 		JLabel lblHigiene = new JLabel("Higiene");
+		lblHigiene.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblHigiene.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Higiene().setVisible(true);
+			}
+		});
 		lblHigiene.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblHigiene.setBounds(640, 85, 56, 14);
 		panelCadastro.add(lblHigiene);
@@ -750,11 +794,25 @@ public class Cadastro extends JFrame {
 		}});
 		
 		JLabel lblHortifruti = new JLabel("Hortifruti");
+		lblHortifruti.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblHortifruti.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new Hortifruti().setVisible(true);
+			}
+		});
 		lblHortifruti.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblHortifruti.setBounds(120, 85, 64, 14);
 		panelCadastro.add(lblHortifruti);
 		
 		JLabel lblCosmeticos = new JLabel("Cosm\u00E9ticos");
+		lblCosmeticos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCosmeticos.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//dispose();
+				//new Cosmeticos().setVisible(true);
+			}
+		});
 		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblCosmeticos.setBounds(725, 85, 74, 14);
 		panelCadastro.add(lblCosmeticos);
@@ -781,19 +839,6 @@ public class Cadastro extends JFrame {
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setBounds(0, 0, 1024, 768);
 		panelCadastro.add(lblBackGround);
-		
-		
-		//links dos menus
-				new Utilitarios.Frame().Abrir(new Padaria(), lblPadaria);
-				new Utilitarios.Frame().Abrir(new Bebidas(), lblBebidas);
-				//new Utilitarios.Frame().Abrir(new Hortifruti(), lblHortifruti);
-				//new Utilitarios.Frame().Abrir(new Bebidas(), lblBebidas);
-				//new Utilitarios.Frame().Abrir(new FriosECongelados(), lblFrios);
-				//new Utilitarios.Frame().Abrir(new Limpeza(), lblLimpeza);
-				new Utilitarios.Frame().Abrir(new Mercearia(), lblMercearia);
-				//new Utilitarios.Frame().Abrir(new Higiene(), lblHigiene);
-				//new Utilitarios.Frame().Abrir(new Cosmeticos(), lblCosmeticos);
-		
 	}
 
 	private void LimparCampos() {
