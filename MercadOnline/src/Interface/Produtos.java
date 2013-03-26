@@ -11,6 +11,9 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
+
+import Utilitarios.Menu;
+
 import java.awt.SystemColor;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -32,6 +35,8 @@ public class Produtos extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		new Menu(contentPane); //Chama o menu principal
 		
 		JLabel lblProdutos_1 = new JLabel("PRODUTOS");
 		lblProdutos_1.setForeground(Color.BLACK);

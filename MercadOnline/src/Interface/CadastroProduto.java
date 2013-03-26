@@ -12,6 +12,9 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+
+import Utilitarios.Menu;
+
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -42,6 +45,8 @@ public class CadastroProduto extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		new Menu(contentPane); //Chama o menu principal
+		
 		JLabel lblPadaria = new JLabel("Padaria");
 		lblPadaria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		lblPadaria.addMouseListener(new MouseAdapter() {
@@ -53,36 +58,6 @@ public class CadastroProduto extends JFrame {
 		lblPadaria.setFont(new Font("Calibri", Font.BOLD, 15));
 		lblPadaria.setBounds(43, 87, 53, 14);
 		contentPane.add(lblPadaria);
-		
-		JLabel lblProdutos = new JLabel("produtos");
-		lblProdutos.setForeground(Color.WHITE);
-		lblProdutos.setFont(new Font("Folks", Font.BOLD, 16));
-		lblProdutos.setBounds(313, 25, 74, 20);
-		contentPane.add(lblProdutos);
-		
-		JLabel lblcadastro = new JLabel("cadastro");
-		lblcadastro.setForeground(Color.WHITE);
-		lblcadastro.setFont(new Font("Folks", Font.BOLD, 16));
-		lblcadastro.setBounds(388, 25, 68, 20);
-		contentPane.add(lblcadastro);
-		
-		JLabel lblPromocao = new JLabel("promo\u00E7\u00E3o");
-		lblPromocao.setForeground(Color.WHITE);
-		lblPromocao.setFont(new Font("Folks", Font.BOLD, 16));
-		lblPromocao.setBounds(465, 25, 81, 20);
-		contentPane.add(lblPromocao);
-		
-		JLabel lblSugeridos = new JLabel("sugeridos");
-		lblSugeridos.setForeground(Color.WHITE);
-		lblSugeridos.setFont(new Font("Folks", Font.BOLD, 16));
-		lblSugeridos.setBounds(550, 25, 81, 20);
-		contentPane.add(lblSugeridos);
-		
-		JLabel lblContato = new JLabel("contato");
-		lblContato.setForeground(Color.WHITE);
-		lblContato.setFont(new Font("Folks", Font.BOLD, 16));
-		lblContato.setBounds(634, 25, 70, 20);
-		contentPane.add(lblContato);
 		
 		JLabel lblLogin = new JLabel("Login:");
 		lblLogin.setFont(new Font("Arial", Font.BOLD, 12));
@@ -103,12 +78,6 @@ public class CadastroProduto extends JFrame {
 		txtSenhaLogin = new JPasswordField();
 		txtSenhaLogin.setBounds(902, 11, 96, 18);
 		contentPane.add(txtSenhaLogin);
-		
-		JLabel lblHome = new JLabel("home");
-		lblHome.setForeground(Color.WHITE);
-		lblHome.setFont(new Font("Folks", Font.BOLD, 16));
-		lblHome.setBounds(260, 25, 51, 20);
-		contentPane.add(lblHome);
 		
 		JButton btnEntrar = new JButton("Entrar");
 		btnEntrar.setFont(new Font("Tahoma", Font.PLAIN, 9));

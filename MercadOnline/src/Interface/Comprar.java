@@ -16,6 +16,9 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.Document;
+
+import Utilitarios.Menu;
+
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -48,6 +51,8 @@ public class Comprar extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		new Menu(contentPane); //Chama o menu principal
 		
 		JLabel lblProdutos = new JLabel("produtos");
 		lblProdutos.setForeground(Color.WHITE);
