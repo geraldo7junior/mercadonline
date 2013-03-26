@@ -14,7 +14,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-public class Limpeza extends JFrame {
+public class Higiene extends JFrame {
 
 	/**
 	 * 
@@ -31,7 +31,7 @@ public class Limpeza extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Limpeza frame = new Limpeza();
+					Higiene frame = new Higiene();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -43,7 +43,7 @@ public class Limpeza extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Limpeza() {
+	public Higiene() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1024, 768);
 		contentPane = new JPanel();
@@ -212,38 +212,38 @@ public class Limpeza extends JFrame {
 		label_17.setBounds(935, 80, 63, 14);
 		contentPane.add(label_17);
 		
-		JLabel lblLimpeza_1 = new JLabel("LIMPEZA");
-		lblLimpeza_1.setFont(new Font("AR BONNIE", Font.BOLD, 24));
-		lblLimpeza_1.setBounds(482, 140, 74, 20);
-		contentPane.add(lblLimpeza_1);
+		JLabel lblHigiene_1 = new JLabel("HIGIENE");
+		lblHigiene_1.setFont(new Font("AR BONNIE", Font.BOLD, 24));
+		lblHigiene_1.setBounds(582, 140, 74, 20);
+		contentPane.add(lblHigiene_1);
 		
-		JLabel lblLimpezaDaCozinha = new JLabel("Limpeza da Cozinha");
-		lblLimpezaDaCozinha.setForeground(new Color(255, 153, 0));
-		lblLimpezaDaCozinha.setFont(new Font("Calibri", Font.BOLD, 14));
-		lblLimpezaDaCozinha.setBounds(47, 180, 139, 14);
-		contentPane.add(lblLimpezaDaCozinha);
+		JLabel lblPapelHiginico = new JLabel("Papel  Higi\u00EAnico");
+		lblPapelHiginico.setForeground(new Color(255, 153, 0));
+		lblPapelHiginico.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblPapelHiginico.setBounds(47, 180, 139, 14);
+		contentPane.add(lblPapelHiginico);
 		
 		JLabel label_1 = new JLabel("New label");
 		label_1.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\linha.png"));
 		label_1.setBounds(47, 192, 913, 14);
 		contentPane.add(label_1);
 		
-		JLabel lblLimpezaDaRoupa = new JLabel("Limpeza da Roupa");
-		lblLimpezaDaRoupa.setForeground(new Color(255, 153, 0));
-		lblLimpezaDaRoupa.setFont(new Font("Calibri", Font.BOLD, 14));
-		lblLimpezaDaRoupa.setBounds(47, 361, 127, 14);
-		contentPane.add(lblLimpezaDaRoupa);
+		JLabel lblSabonete = new JLabel("Sabonete");
+		lblSabonete.setForeground(new Color(255, 153, 0));
+		lblSabonete.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblSabonete.setBounds(47, 361, 96, 14);
+		contentPane.add(lblSabonete);
 		
 		JLabel label_2 = new JLabel("New label");
 		label_2.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\linha.png"));
 		label_2.setBounds(47, 373, 913, 14);
 		contentPane.add(label_2);
 		
-		JLabel lblLimpezaDoBanheiro = new JLabel("Limpeza do Banheiro");
-		lblLimpezaDoBanheiro.setForeground(new Color(255, 153, 0));
-		lblLimpezaDoBanheiro.setFont(new Font("Calibri", Font.BOLD, 14));
-		lblLimpezaDoBanheiro.setBounds(47, 536, 149, 14);
-		contentPane.add(lblLimpezaDoBanheiro);
+		JLabel lblHigieneDoBeb = new JLabel("Higiene do Beb\u00EA");
+		lblHigieneDoBeb.setForeground(new Color(255, 153, 0));
+		lblHigieneDoBeb.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblHigieneDoBeb.setBounds(47, 536, 149, 14);
+		contentPane.add(lblHigieneDoBeb);
 		
 		JLabel label_3 = new JLabel("New label");
 		label_3.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\linha.png"));
