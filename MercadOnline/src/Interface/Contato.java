@@ -201,22 +201,10 @@ public class Contato extends JFrame {
 		lblCosmeticos.setBounds(717, 87, 74, 14);
 		contentPane.add(lblCosmeticos);
 		
-		JLabel label_23 = new JLabel("Carrinho");
-		label_23.setForeground(new Color(255, 153, 0));
-		label_23.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_23.setBounds(844, 82, 56, 14);
-		contentPane.add(label_23);
-		
-		JLabel label_24 = new JLabel("New label");
-		label_24.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
-		label_24.setBounds(880, 78, 56, 23);
-		contentPane.add(label_24);
-		
-		JLabel label_25 = new JLabel("Compras");
-		label_25.setForeground(new Color(255, 153, 0));
-		label_25.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_25.setBounds(925, 82, 63, 14);
-		contentPane.add(label_25);
+		JLabel lblCarrinhoCompras = new JLabel("New label");
+		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
+		lblCarrinhoCompras.setBounds(843, 75, 152, 30);
+		contentPane.add(lblCarrinhoCompras);
 		
 		JLabel lblContato_1 = new JLabel("CONTATO");
 		lblContato_1.setFont(new Font("AR BONNIE", Font.BOLD, 24));

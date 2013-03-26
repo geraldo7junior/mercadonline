@@ -817,22 +817,10 @@ public class Cadastro extends JFrame {
 		lblCosmeticos.setBounds(725, 85, 74, 14);
 		panelCadastro.add(lblCosmeticos);
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
-		lblNewLabel.setBounds(888, 76, 56, 23);
-		panelCadastro.add(lblNewLabel);
-		
-		JLabel lblCarrinho = new JLabel("Carrinho");
-		lblCarrinho.setForeground(new Color(255, 153, 0));
-		lblCarrinho.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblCarrinho.setBounds(852, 80, 56, 14);
-		panelCadastro.add(lblCarrinho);
-		
-		JLabel lblCompras = new JLabel("Compras");
-		lblCompras.setForeground(new Color(255, 153, 0));
-		lblCompras.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblCompras.setBounds(933, 80, 63, 14);
-		panelCadastro.add(lblCompras);
+		JLabel lblcarrinhoCompras = new JLabel("New label");
+		lblcarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
+		lblcarrinhoCompras.setBounds(839, 76, 152, 30);
+		panelCadastro.add(lblcarrinhoCompras);
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));

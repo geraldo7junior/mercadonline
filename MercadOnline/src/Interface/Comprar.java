@@ -331,22 +331,10 @@ public class Comprar extends JFrame {
 		label_37.setBounds(727, 87, 74, 14);
 		contentPane.add(label_37);
 		
-		JLabel label_38 = new JLabel("Carrinho");
-		label_38.setForeground(new Color(255, 153, 0));
-		label_38.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_38.setBounds(854, 82, 56, 14);
-		contentPane.add(label_38);
-		
-		JLabel label_39 = new JLabel("");
-		label_39.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
-		label_39.setBounds(889, 78, 56, 23);
-		contentPane.add(label_39);
-		
-		JLabel label_40 = new JLabel("Compras");
-		label_40.setForeground(new Color(255, 153, 0));
-		label_40.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_40.setBounds(935, 82, 63, 14);
-		contentPane.add(label_40);
+		JLabel lblCarrinhoCompras = new JLabel("");
+		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
+		lblCarrinhoCompras.setBounds(838, 75, 152, 30);
+		contentPane.add(lblCarrinhoCompras);
 		
 		JLabel lblFinalizarCompras = new JLabel("FINALIZAR COMPRAS");
 		lblFinalizarCompras.setForeground(Color.BLACK);

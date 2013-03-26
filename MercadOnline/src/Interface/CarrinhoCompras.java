@@ -228,23 +228,6 @@ public class CarrinhoCompras extends JFrame {
 		lblCosmeticos.setBounds(727, 87, 74, 14);
 		contentPane.add(lblCosmeticos);
 		
-		JLabel label_23 = new JLabel("Carrinho");
-		label_23.setForeground(new Color(255, 153, 0));
-		label_23.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_23.setBounds(854, 82, 56, 14);
-		contentPane.add(label_23);
-		
-		JLabel label_24 = new JLabel("");
-		label_24.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
-		label_24.setBounds(889, 78, 56, 23);
-		contentPane.add(label_24);
-		
-		JLabel label_25 = new JLabel("Compras");
-		label_25.setForeground(new Color(255, 153, 0));
-		label_25.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_25.setBounds(935, 82, 63, 14);
-		contentPane.add(label_25);
-		
 		JLabel label_26 = new JLabel("Padaria");
 		label_26.setFont(new Font("Calibri", Font.BOLD, 15));
 		label_26.setBounds(43, 87, 53, 14);
@@ -341,18 +324,6 @@ public class CarrinhoCompras extends JFrame {
 		label_40.setBounds(727, 87, 74, 14);
 		contentPane.add(label_40);
 		
-		JLabel label_41 = new JLabel("Carrinho");
-		label_41.setForeground(new Color(255, 153, 0));
-		label_41.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_41.setBounds(854, 82, 56, 14);
-		contentPane.add(label_41);
-		
-		JLabel label_43 = new JLabel("Compras");
-		label_43.setForeground(new Color(255, 153, 0));
-		label_43.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_43.setBounds(935, 82, 63, 14);
-		contentPane.add(label_43);
-		
 		JLabel lblCarrinhoDeCompras = new JLabel("Carrinho de Compras");
 		lblCarrinhoDeCompras.setForeground(Color.BLACK);
 		lblCarrinhoDeCompras.setFont(new Font("AR BONNIE", Font.BOLD, 24));
@@ -373,6 +344,11 @@ public class CarrinhoCompras extends JFrame {
 				"Produto:", "Pre\u00E7o:"
 			}
 		));
+		
+		JLabel lblcarrinhoCompras = new JLabel("New label");
+		lblcarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
+		lblcarrinhoCompras.setBounds(840, 71, 157, 33);
+		contentPane.add(lblcarrinhoCompras);
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
