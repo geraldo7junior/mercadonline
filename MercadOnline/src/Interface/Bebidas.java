@@ -35,59 +35,59 @@ public class Bebidas extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblHome = new JLabel("home");
-		lblHome.setBounds(260, 25, 51, 20);
+		lblHome.setBounds(270, 25, 51, 20);
 		lblHome.setForeground(Color.WHITE);
 		lblHome.setFont(new Font("Folks", Font.BOLD, 16));
 		contentPane.add(lblHome);
 		
 		JLabel lblProdutos = new JLabel("produtos");
-		lblProdutos.setBounds(313, 25, 74, 20);
+		lblProdutos.setBounds(323, 25, 74, 20);
 		lblProdutos.setForeground(Color.WHITE);
 		lblProdutos.setFont(new Font("Folks", Font.BOLD, 16));
 		contentPane.add(lblProdutos);
 		
 		JLabel lblCadastro = new JLabel("cadastro");
-		lblCadastro.setBounds(388, 25, 68, 20);
+		lblCadastro.setBounds(398, 25, 68, 20);
 		lblCadastro.setForeground(Color.WHITE);
 		lblCadastro.setFont(new Font("Folks", Font.BOLD, 16));
 		contentPane.add(lblCadastro);
 		
 		JLabel lblPromocao = new JLabel("promo\u00E7\u00E3o");
-		lblPromocao.setBounds(465, 25, 81, 20);
+		lblPromocao.setBounds(475, 25, 81, 20);
 		lblPromocao.setForeground(Color.WHITE);
 		lblPromocao.setFont(new Font("Folks", Font.BOLD, 16));
 		contentPane.add(lblPromocao);
 		
 		JLabel lblSugeridos = new JLabel("sugeridos");
-		lblSugeridos.setBounds(550, 25, 81, 20);
+		lblSugeridos.setBounds(560, 25, 81, 20);
 		lblSugeridos.setForeground(Color.WHITE);
 		lblSugeridos.setFont(new Font("Folks", Font.BOLD, 16));
 		contentPane.add(lblSugeridos);
 		
 		JLabel lblContato = new JLabel("contato");
-		lblContato.setBounds(634, 25, 70, 20);
+		lblContato.setBounds(644, 25, 70, 20);
 		lblContato.setForeground(Color.WHITE);
 		lblContato.setFont(new Font("Folks", Font.BOLD, 16));
 		contentPane.add(lblContato);
 		
 		JLabel lblLogin = new JLabel("Login:");
-		lblLogin.setBounds(714, 15, 34, 14);
+		lblLogin.setBounds(724, 15, 34, 14);
 		lblLogin.setFont(new Font("Arial", Font.BOLD, 12));
 		contentPane.add(lblLogin);
 		
 		JLabel lblSenhaLogin = new JLabel("Senha:");
-		lblSenhaLogin.setBounds(861, 14, 42, 14);
+		lblSenhaLogin.setBounds(871, 14, 42, 14);
 		lblSenhaLogin.setFont(new Font("Arial", Font.BOLD, 12));
 		contentPane.add(lblSenhaLogin);
 		
 		txtLogin = new JTextField();
-		txtLogin.setBounds(755, 12, 96, 18);
+		txtLogin.setBounds(765, 12, 96, 18);
 		txtLogin.setName("txtLogin");
 		txtLogin.setColumns(10);
 		contentPane.add(txtLogin);
 		
 		txtSenhaLogin = new JPasswordField();
-		txtSenhaLogin.setBounds(902, 11, 96, 18);
+		txtSenhaLogin.setBounds(912, 11, 96, 18);
 		contentPane.add(txtSenhaLogin);
 		
 		JButton btnEntrar = new JButton("Entrar");
@@ -282,60 +282,64 @@ public class Bebidas extends JFrame {
 		label_21.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\linha.png"));
 		contentPane.add(label_21);
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\skol.png"));
-		lblNewLabel.setBounds(108, 213, 88, 116);
-		contentPane.add(lblNewLabel);
+		JLabel lblSkolI = new JLabel("New label");
+		lblSkolI.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\skol.png"));
+		lblSkolI.setBounds(108, 213, 88, 116);
+		contentPane.add(lblSkolI);
 		
-		JLabel lblNewLabel_1 = new JLabel("New label");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\Heineken.png"));
-		lblNewLabel_1.setBounds(343, 213, 88, 116);
-		contentPane.add(lblNewLabel_1);
+		JLabel lblHeinekenI = new JLabel("New label");
+		lblHeinekenI.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\Heineken.png"));
+		lblHeinekenI.setBounds(343, 213, 88, 116);
+		contentPane.add(lblHeinekenI);
 		
-		JLabel lblNewLabel_2 = new JLabel("New label");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\chalise.png"));
-		lblNewLabel_2.setBounds(591, 213, 88, 116);
-		contentPane.add(lblNewLabel_2);
+		JLabel lblChaliseI = new JLabel("New label");
+		lblChaliseI.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\chalise.png"));
+		lblChaliseI.setBounds(591, 213, 88, 116);
+		contentPane.add(lblChaliseI);
 		
-		JLabel lblNewLabel_3 = new JLabel("New label");
-		lblNewLabel_3.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\blue.png"));
-		lblNewLabel_3.setBounds(841, 213, 88, 116);
-		contentPane.add(lblNewLabel_3);
+		JLabel lblBlueI = new JLabel("New label");
+		lblBlueI.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\blue.png"));
+		lblBlueI.setBounds(841, 213, 88, 116);
+		contentPane.add(lblBlueI);
 		
+
 		JLabel lblNewLabel_4 = new JLabel("New label");
 		lblNewLabel_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\ades.png"));
 		lblNewLabel_4.setBounds(103, 392, 88, 116);
 		contentPane.add(lblNewLabel_4);
-		
+
 		JLabel lblNewLabel_5 = new JLabel("New label");
 		lblNewLabel_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\delvalle.png"));
 		lblNewLabel_5.setBounds(343, 392, 88, 116);
 		contentPane.add(lblNewLabel_5);
-		
+
 		JLabel lblNewLabel_6 = new JLabel("New label");
 		lblNewLabel_6.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\pessego.png"));
 		lblNewLabel_6.setBounds(591, 392, 88, 116);
 		contentPane.add(lblNewLabel_6);
-		
+
 		JLabel lblNewLabel_7 = new JLabel("New label");
 		lblNewLabel_7.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\tampico.png"));
 		lblNewLabel_7.setBounds(841, 392, 88, 116);
 		contentPane.add(lblNewLabel_7);
+
 		
 		JLabel lblNewLabel_8 = new JLabel("New label");
 		lblNewLabel_8.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\coca.png"));
 		lblNewLabel_8.setBounds(108, 570, 88, 116);
 		contentPane.add(lblNewLabel_8);
 		
-		JLabel lblNewLabel_9 = new JLabel("New label");
-		lblNewLabel_9.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\guarana.png"));
-		lblNewLabel_9.setBounds(348, 570, 88, 116);
-		contentPane.add(lblNewLabel_9);
+		JLabel lblGuaranaI = new JLabel("New label");
+		lblGuaranaI.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\guarana.png"));
+		lblGuaranaI.setBounds(348, 570, 88, 116);
+		contentPane.add(lblGuaranaI);
 		
+
 		JLabel lblNewLabel_10 = new JLabel("New label");
 		lblNewLabel_10.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\sprite.png"));
 		lblNewLabel_10.setBounds(592, 570, 88, 116);
 		contentPane.add(lblNewLabel_10);
+
 		
 		JLabel lblNewLabel_11 = new JLabel("New label");
 		lblNewLabel_11.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\coca 3.png"));

@@ -330,50 +330,50 @@ public class Mercearia extends JFrame {
 		lblR_2.setBounds(128, 698, 42, 14);
 		contentPane.add(lblR_2);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\feijao2.png"));
-		lblNewLabel.setBounds(313, 213, 88, 116);
-		contentPane.add(lblNewLabel);
+		JLabel lblMaximo = new JLabel("");
+		lblMaximo.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\feijao2.png"));
+		lblMaximo.setBounds(313, 213, 88, 116);
+		contentPane.add(lblMaximo);
 		
-		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\feijao3.png"));
-		label.setBounds(550, 213, 88, 116);
-		contentPane.add(label);
+		JLabel lblKicaldo = new JLabel("");
+		lblKicaldo.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\feijao3.png"));
+		lblKicaldo.setBounds(550, 213, 88, 116);
+		contentPane.add(lblKicaldo);
 		
-		JLabel label_1 = new JLabel("New label");
-		label_1.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\feijao4.png"));
-		label_1.setBounds(841, 213, 88, 116);
-		contentPane.add(label_1);
+		JLabel lblUrbano = new JLabel("New label");
+		lblUrbano.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\feijao4.png"));
+		lblUrbano.setBounds(841, 213, 88, 116);
+		contentPane.add(lblUrbano);
 		
-		JLabel label_2 = new JLabel("New label");
-		label_2.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\arroz 4.png"));
-		label_2.setBounds(841, 398, 88, 116);
-		contentPane.add(label_2);
+		JLabel lblTiojoao = new JLabel("New label");
+		lblTiojoao.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\arroz 4.png"));
+		lblTiojoao.setBounds(841, 398, 88, 116);
+		contentPane.add(lblTiojoao);
 		
-		JLabel label_3 = new JLabel("");
-		label_3.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\arroz2.png"));
-		label_3.setBounds(313, 398, 88, 116);
-		contentPane.add(label_3);
+		JLabel lblNamorado = new JLabel("");
+		lblNamorado.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\arroz2.png"));
+		lblNamorado.setBounds(313, 398, 88, 116);
+		contentPane.add(lblNamorado);
 		
-		JLabel label_4 = new JLabel("");
-		label_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\arroz3.png"));
-		label_4.setBounds(550, 398, 88, 116);
-		contentPane.add(label_4);
+		JLabel lblCamil = new JLabel("");
+		lblCamil.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\arroz3.png"));
+		lblCamil.setBounds(550, 398, 88, 116);
+		contentPane.add(lblCamil);
 		
-		JLabel label_5 = new JLabel("New label");
-		label_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarrao 4 copy.png"));
-		label_5.setBounds(841, 573, 88, 116);
-		contentPane.add(label_5);
+		JLabel lblPetybon = new JLabel("New label");
+		lblPetybon.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarrao 4 copy.png"));
+		lblPetybon.setBounds(841, 573, 88, 116);
+		contentPane.add(lblPetybon);
 		
-		JLabel label_13 = new JLabel("");
-		label_13.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarr\u00E3o2.png"));
-		label_13.setBounds(313, 573, 88, 116);
-		contentPane.add(label_13);
+		JLabel lblPilar = new JLabel("");
+		lblPilar.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarr\u00E3o2.png"));
+		lblPilar.setBounds(313, 573, 88, 116);
+		contentPane.add(lblPilar);
 		
-		JLabel label_14 = new JLabel("");
-		label_14.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarrao3.png"));
-		label_14.setBounds(550, 573, 88, 116);
-		contentPane.add(label_14);
+		JLabel lblDonaBenta = new JLabel("");
+		lblDonaBenta.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarrao3.png"));
+		lblDonaBenta.setBounds(550, 573, 88, 116);
+		contentPane.add(lblDonaBenta);
 		
 		JLabel lblArrozNamoradokg = new JLabel("Arroz Namorado 1Kg");
 		lblArrozNamoradokg.setVerticalAlignment(SwingConstants.TOP);
