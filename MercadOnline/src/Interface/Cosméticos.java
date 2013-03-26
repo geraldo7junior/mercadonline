@@ -14,7 +14,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-public class Limpeza extends JFrame {
+public class Cosméticos extends JFrame {
 
 	/**
 	 * 
@@ -31,7 +31,7 @@ public class Limpeza extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Limpeza frame = new Limpeza();
+					Cosméticos frame = new Cosméticos();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -43,7 +43,7 @@ public class Limpeza extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Limpeza() {
+	public Cosméticos() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1024, 768);
 		contentPane = new JPanel();
@@ -113,35 +113,35 @@ public class Limpeza extends JFrame {
 		btnEntrar.setBounds(931, 39, 67, 18);
 		contentPane.add(btnEntrar);
 		
-		JLabel lblPadaria = new JLabel("Padaria");
-		lblPadaria.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblPadaria.setBounds(43, 85, 53, 14);
-		contentPane.add(lblPadaria);
+		JLabel label = new JLabel("Padaria");
+		label.setFont(new Font("Calibri", Font.BOLD, 15));
+		label.setBounds(43, 85, 53, 14);
+		contentPane.add(label);
 		
-		JLabel lblBebidas = new JLabel("Bebidas");
-		lblBebidas.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblBebidas.setBounds(212, 85, 56, 14);
-		contentPane.add(lblBebidas);
+		JLabel label_1 = new JLabel("Bebidas");
+		label_1.setFont(new Font("Calibri", Font.BOLD, 15));
+		label_1.setBounds(212, 85, 56, 14);
+		contentPane.add(label_1);
 		
-		JLabel lblFrios = new JLabel("Frios e Congelados");
-		lblFrios.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblFrios.setBounds(297, 85, 121, 14);
-		contentPane.add(lblFrios);
+		JLabel label_2 = new JLabel("Frios e Congelados");
+		label_2.setFont(new Font("Calibri", Font.BOLD, 15));
+		label_2.setBounds(297, 85, 121, 14);
+		contentPane.add(label_2);
 		
-		JLabel lblLimpeza = new JLabel("Limpeza");
-		lblLimpeza.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblLimpeza.setBounds(452, 85, 51, 14);
-		contentPane.add(lblLimpeza);
+		JLabel label_3 = new JLabel("Limpeza");
+		label_3.setFont(new Font("Calibri", Font.BOLD, 15));
+		label_3.setBounds(452, 85, 51, 14);
+		contentPane.add(label_3);
 		
-		JLabel lblMercearia = new JLabel("Mercearia");
-		lblMercearia.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblMercearia.setBounds(542, 85, 64, 14);
-		contentPane.add(lblMercearia);
+		JLabel label_4 = new JLabel("Mercearia");
+		label_4.setFont(new Font("Calibri", Font.BOLD, 15));
+		label_4.setBounds(542, 85, 64, 14);
+		contentPane.add(label_4);
 		
-		JLabel lblHigiene = new JLabel("Higiene");
-		lblHigiene.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblHigiene.setBounds(642, 85, 56, 14);
-		contentPane.add(lblHigiene);
+		JLabel label_5 = new JLabel("Higiene");
+		label_5.setFont(new Font("Calibri", Font.BOLD, 15));
+		label_5.setBounds(642, 85, 56, 14);
+		contentPane.add(label_5);
 		
 		JLabel label_6 = new JLabel("I");
 		label_6.setForeground(new Color(255, 153, 0));
@@ -185,15 +185,15 @@ public class Limpeza extends JFrame {
 		label_12.setBounds(707, 87, 4, 14);
 		contentPane.add(label_12);
 		
-		JLabel lblHortifruti = new JLabel("Hortifruti");
-		lblHortifruti.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblHortifruti.setBounds(122, 85, 64, 14);
-		contentPane.add(lblHortifruti);
+		JLabel label_13 = new JLabel("Hortifruti");
+		label_13.setFont(new Font("Calibri", Font.BOLD, 15));
+		label_13.setBounds(122, 85, 64, 14);
+		contentPane.add(label_13);
 		
-		JLabel lblCosmeticos = new JLabel("Cosm\u00E9ticos");
-		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
-		lblCosmeticos.setBounds(727, 85, 74, 14);
-		contentPane.add(lblCosmeticos);
+		JLabel label_14 = new JLabel("Cosm\u00E9ticos");
+		label_14.setFont(new Font("Calibri", Font.BOLD, 15));
+		label_14.setBounds(727, 85, 74, 14);
+		contentPane.add(label_14);
 		
 		JLabel label_15 = new JLabel("Carrinho");
 		label_15.setForeground(new Color(255, 153, 0));
@@ -212,43 +212,43 @@ public class Limpeza extends JFrame {
 		label_17.setBounds(935, 80, 63, 14);
 		contentPane.add(label_17);
 		
-		JLabel lblLimpeza_1 = new JLabel("LIMPEZA");
-		lblLimpeza_1.setFont(new Font("AR BONNIE", Font.BOLD, 24));
-		lblLimpeza_1.setBounds(482, 140, 74, 20);
-		contentPane.add(lblLimpeza_1);
+		JLabel lblCosmticos = new JLabel("COSM\u00C9TICOS");
+		lblCosmticos.setFont(new Font("AR BONNIE", Font.BOLD, 24));
+		lblCosmticos.setBounds(582, 140, 121, 20);
+		contentPane.add(lblCosmticos);
 		
-		JLabel lblLimpezaDaCozinha = new JLabel("Limpeza da Cozinha");
-		lblLimpezaDaCozinha.setForeground(new Color(255, 153, 0));
-		lblLimpezaDaCozinha.setFont(new Font("Calibri", Font.BOLD, 14));
-		lblLimpezaDaCozinha.setBounds(47, 180, 139, 14);
-		contentPane.add(lblLimpezaDaCozinha);
+		JLabel label_18 = new JLabel("New label");
+		label_18.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\linha.png"));
+		label_18.setBounds(47, 192, 913, 14);
+		contentPane.add(label_18);
 		
-		JLabel label_1 = new JLabel("New label");
-		label_1.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\linha.png"));
-		label_1.setBounds(47, 192, 913, 14);
-		contentPane.add(label_1);
+		JLabel lblColoraes = new JLabel("Colora\u00E7\u00F5es");
+		lblColoraes.setForeground(new Color(255, 153, 0));
+		lblColoraes.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblColoraes.setBounds(47, 180, 96, 14);
+		contentPane.add(lblColoraes);
 		
-		JLabel lblLimpezaDaRoupa = new JLabel("Limpeza da Roupa");
-		lblLimpezaDaRoupa.setForeground(new Color(255, 153, 0));
-		lblLimpezaDaRoupa.setFont(new Font("Calibri", Font.BOLD, 14));
-		lblLimpezaDaRoupa.setBounds(47, 361, 127, 14);
-		contentPane.add(lblLimpezaDaRoupa);
+		JLabel lblDesodorantes = new JLabel("Desodorantes");
+		lblDesodorantes.setForeground(new Color(255, 153, 0));
+		lblDesodorantes.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblDesodorantes.setBounds(47, 361, 107, 14);
+		contentPane.add(lblDesodorantes);
 		
-		JLabel label_2 = new JLabel("New label");
-		label_2.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\linha.png"));
-		label_2.setBounds(47, 373, 913, 14);
-		contentPane.add(label_2);
+		JLabel label_20 = new JLabel("New label");
+		label_20.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\linha.png"));
+		label_20.setBounds(47, 373, 913, 14);
+		contentPane.add(label_20);
 		
-		JLabel lblLimpezaDoBanheiro = new JLabel("Limpeza do Banheiro");
-		lblLimpezaDoBanheiro.setForeground(new Color(255, 153, 0));
-		lblLimpezaDoBanheiro.setFont(new Font("Calibri", Font.BOLD, 14));
-		lblLimpezaDoBanheiro.setBounds(47, 536, 149, 14);
-		contentPane.add(lblLimpezaDoBanheiro);
+		JLabel lblHidratantes = new JLabel("Hidratantes");
+		lblHidratantes.setForeground(new Color(255, 153, 0));
+		lblHidratantes.setFont(new Font("Calibri", Font.BOLD, 14));
+		lblHidratantes.setBounds(47, 536, 107, 14);
+		contentPane.add(lblHidratantes);
 		
-		JLabel label_3 = new JLabel("New label");
-		label_3.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\linha.png"));
-		label_3.setBounds(47, 548, 913, 14);
-		contentPane.add(label_3);
+		JLabel label_21 = new JLabel("New label");
+		label_21.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\linha.png"));
+		label_21.setBounds(47, 548, 913, 14);
+		contentPane.add(label_21);
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
@@ -256,4 +256,5 @@ public class Limpeza extends JFrame {
 		lblBackGround.setBounds(0, 0, 1024, 768);
 		contentPane.add(lblBackGround);
 	}
+
 }
