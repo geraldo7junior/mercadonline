@@ -227,22 +227,10 @@ public class Padaria extends JFrame {
 		lblCosmeticos.setBounds(727, 85, 74, 14);
 		contentPane.add(lblCosmeticos);
 		
-		JLabel label_15 = new JLabel("Carrinho");
-		label_15.setForeground(new Color(255, 153, 0));
-		label_15.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_15.setBounds(854, 80, 56, 14);
-		contentPane.add(label_15);
-		
-		JLabel label_16 = new JLabel("New label");
-		label_16.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
-		label_16.setBounds(890, 76, 56, 23);
-		contentPane.add(label_16);
-		
-		JLabel label_17 = new JLabel("Compras");
-		label_17.setForeground(new Color(255, 153, 0));
-		label_17.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_17.setBounds(935, 80, 63, 14);
-		contentPane.add(label_17);
+		JLabel lblCarrinhoCompras = new JLabel("New label");
+		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
+		lblCarrinhoCompras.setBounds(846, 74, 152, 30);
+		contentPane.add(lblCarrinhoCompras);
 		
 		JLabel lblPadaria_1 = new JLabel("PADARIA");
 		lblPadaria_1.setForeground(Color.BLACK);

@@ -228,22 +228,10 @@ public class Hortifruti extends JFrame {
 		lblCosmeticos.setFont(new Font("Calibri", Font.BOLD, 15));
 		contentPane.add(lblCosmeticos);
 		
-		JLabel label_24 = new JLabel("Carrinho");
-		label_24.setBounds(854, 80, 56, 14);
-		label_24.setForeground(new Color(255, 153, 0));
-		label_24.setFont(new Font("Calibri", Font.BOLD, 15));
-		contentPane.add(label_24);
-		
-		JLabel label_25 = new JLabel("New label");
-		label_25.setBounds(890, 76, 56, 23);
-		label_25.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
-		contentPane.add(label_25);
-		
-		JLabel label_26 = new JLabel("Compras");
-		label_26.setBounds(935, 80, 63, 14);
-		label_26.setForeground(new Color(255, 153, 0));
-		label_26.setFont(new Font("Calibri", Font.BOLD, 15));
-		contentPane.add(label_26);
+		JLabel lblCarrinhoCompras = new JLabel("New label");
+		lblCarrinhoCompras.setBounds(846, 75, 152, 30);
+		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
+		contentPane.add(lblCarrinhoCompras);
 		
 		JLabel lblHortifruti_1 = new JLabel("HORTIFRUTI");
 		lblHortifruti_1.setBounds(482, 140, 93, 20);
