@@ -129,8 +129,8 @@ public class Bebidas extends JFrame {
 		lblLimpeza.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		lblLimpeza.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
-				//dispose();
-				//new Limpeza().setVisible(true);
+				dispose();
+				new Limpeza().setVisible(true);
 			}
 		});
 		lblLimpeza.setBounds(452, 85, 51, 14);
