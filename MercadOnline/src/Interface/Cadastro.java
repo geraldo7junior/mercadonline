@@ -17,6 +17,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 
@@ -25,7 +26,6 @@ import Main.ConexaoDB;
 import Utilitarios.ApenasNum;
 import Utilitarios.ApenasStr;
 import Utilitarios.Mascara;
-import javax.swing.SwingConstants;
 
 public class Cadastro extends JFrame {
 	
@@ -784,13 +784,13 @@ public class Cadastro extends JFrame {
 		
 		
 		//links dos menus
-		
 				new Utilitarios.Frame().Abrir(new Padaria(), lblPadaria);
+				new Utilitarios.Frame().Abrir(new Bebidas(), lblBebidas);
 				//new Utilitarios.Frame().Abrir(new Hortifruti(), lblHortifruti);
 				//new Utilitarios.Frame().Abrir(new Bebidas(), lblBebidas);
 				//new Utilitarios.Frame().Abrir(new FriosECongelados(), lblFrios);
 				//new Utilitarios.Frame().Abrir(new Limpeza(), lblLimpeza);
-				//new Utilitarios.Frame().Abrir(new Mercearia(), lblMercearia);
+				new Utilitarios.Frame().Abrir(new Mercearia(), lblMercearia);
 				//new Utilitarios.Frame().Abrir(new Higiene(), lblHigiene);
 				//new Utilitarios.Frame().Abrir(new Cosmeticos(), lblCosmeticos);
 		
@@ -823,6 +823,4 @@ public class Cadastro extends JFrame {
 			return true; 
 		return true;
 	}
-	
-	
 }
