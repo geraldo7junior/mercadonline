@@ -394,7 +394,6 @@ public class Padaria extends JFrame {
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
 		lblBackGround.setBounds(0, 0, 1024, 768);
 		contentPane.add(lblBackGround);
-		
 	
 	}
 }

@@ -9,9 +9,9 @@ import javax.swing.JLabel;
 public class Frame {
 	
 	public void Abrir(final JFrame telaAbrir, JLabel label){
-	
+		label.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		label.addMouseListener(new MouseAdapter() {
-			public void mouseClicked(MouseEvent arg0) {
+			public void mousePressed(MouseEvent arg0) {
 				telaAbrir.setVisible(true);
 			}
 		});
