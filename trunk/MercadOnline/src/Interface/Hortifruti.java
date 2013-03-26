@@ -17,6 +17,7 @@ import javax.swing.border.EmptyBorder;
 
 import Utilitarios.Menu;
 
+
 public class Hortifruti extends JFrame {
 
 	/**

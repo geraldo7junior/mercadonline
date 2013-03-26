@@ -18,6 +18,7 @@ import javax.swing.border.EmptyBorder;
 
 import Utilitarios.Menu;
 
+
 public class Sugeridos extends JFrame {
 
 	/**
