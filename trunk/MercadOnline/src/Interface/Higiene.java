@@ -230,50 +230,62 @@ public class Higiene extends JFrame {
 		contentPane.add(label_3);
 		
 		JLabel label = new JLabel("New label");
+		label.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\papel1.png"));
 		label.setBounds(57, 215, 88, 116);
 		contentPane.add(label);
 		
 		JLabel label_4 = new JLabel("New label");
+		label_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\papel2.png"));
 		label_4.setBounds(292, 215, 88, 116);
 		contentPane.add(label_4);
 		
 		JLabel label_5 = new JLabel("New label");
+		label_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\papel3.png"));
 		label_5.setBounds(540, 215, 88, 116);
 		contentPane.add(label_5);
 		
 		JLabel label_13 = new JLabel("New label");
+		label_13.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\papel4.png"));
 		label_13.setBounds(790, 215, 88, 116);
 		contentPane.add(label_13);
 		
 		JLabel label_14 = new JLabel("New label");
+		label_14.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\s1.png"));
 		label_14.setBounds(57, 396, 88, 116);
 		contentPane.add(label_14);
 		
 		JLabel label_15 = new JLabel("New label");
+		label_15.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\s2.png"));
 		label_15.setBounds(292, 396, 88, 116);
 		contentPane.add(label_15);
 		
 		JLabel label_16 = new JLabel("New label");
+		label_16.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\s3.png"));
 		label_16.setBounds(540, 396, 88, 116);
 		contentPane.add(label_16);
 		
 		JLabel label_17 = new JLabel("New label");
+		label_17.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\s4.png"));
 		label_17.setBounds(790, 396, 88, 116);
 		contentPane.add(label_17);
 		
 		JLabel label_18 = new JLabel("New label");
+		label_18.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\bb3.png"));
 		label_18.setBounds(57, 565, 88, 116);
 		contentPane.add(label_18);
 		
 		JLabel label_19 = new JLabel("New label");
+		label_19.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\bb4.png"));
 		label_19.setBounds(292, 565, 88, 116);
 		contentPane.add(label_19);
 		
 		JLabel label_20 = new JLabel("New label");
+		label_20.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\bb2.png"));
 		label_20.setBounds(540, 565, 88, 116);
 		contentPane.add(label_20);
 		
 		JLabel label_21 = new JLabel("New label");
+		label_21.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\bb.png"));
 		label_21.setBounds(790, 565, 88, 116);
 		contentPane.add(label_21);
 		
