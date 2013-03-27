@@ -224,6 +224,45 @@ public class Produtos extends JFrame {
 		lblIconCosmeticos.setBounds(759, 438, 120, 120);
 		contentPane.add(lblIconCosmeticos);
 		
+		JLabel lblPadaria_1 = new JLabel("Padaria");
+		lblPadaria_1.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblPadaria_1.setBounds(166, 339, 46, 14);
+		contentPane.add(lblPadaria_1);
+		
+		JLabel lblHortifruti_1 = new JLabel("Hortifruti");
+		lblHortifruti_1.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblHortifruti_1.setBounds(350, 339, 85, 14);
+		contentPane.add(lblHortifruti_1);
+		
+		JLabel lblBebidas_1 = new JLabel("Bebidas");
+		lblBebidas_1.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblBebidas_1.setBounds(571, 339, 68, 14);
+		contentPane.add(lblBebidas_1);
+		
+		JLabel lblCongelados = new JLabel("Congelados");
+		lblCongelados.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblCongelados.setBounds(783, 339, 92, 14);
+		contentPane.add(lblCongelados);
+		
+		JLabel lblLimpeza_1 = new JLabel("Limpeza");
+		lblLimpeza_1.setBounds(158, 569, 46, 14);
+		contentPane.add(lblLimpeza_1);
+		
+		JLabel lblFrios_1 = new JLabel("Frios");
+		lblFrios_1.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblFrios_1.setBounds(357, 569, 46, 14);
+		contentPane.add(lblFrios_1);
+		
+		JLabel lblHigiene_1 = new JLabel("Higiene");
+		lblHigiene_1.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblHigiene_1.setBounds(571, 569, 46, 14);
+		contentPane.add(lblHigiene_1);
+		
+		JLabel lblCosmticos = new JLabel("Cosm\u00E9ticos");
+		lblCosmticos.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblCosmticos.setBounds(787, 569, 92, 14);
+		contentPane.add(lblCosmticos);
+		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
