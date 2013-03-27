@@ -231,42 +231,42 @@ public class Limpeza extends JFrame {
 		
 		JLabel label_14 = new JLabel("New label");
 		label_14.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\amaciante.png"));
-		label_14.setBounds(57, 398, 88, 116);
+		label_14.setBounds(69, 390, 88, 116);
 		contentPane.add(label_14);
 		
 		JLabel label_18 = new JLabel("New label");
 		label_18.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\ariel.png"));
-		label_18.setBounds(292, 398, 88, 116);
+		label_18.setBounds(292, 390, 88, 116);
 		contentPane.add(label_18);
 		
 		JLabel label_19 = new JLabel("New label");
 		label_19.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\omo.png"));
-		label_19.setBounds(540, 398, 88, 116);
+		label_19.setBounds(540, 390, 88, 116);
 		contentPane.add(label_19);
 		
 		JLabel label_20 = new JLabel("New label");
 		label_20.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\vanish.png"));
-		label_20.setBounds(790, 398, 88, 116);
+		label_20.setBounds(790, 390, 88, 116);
 		contentPane.add(label_20);
 		
 		JLabel label_21 = new JLabel("New label");
 		label_21.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\rodo.png"));
-		label_21.setBounds(57, 567, 88, 116);
+		label_21.setBounds(57, 563, 88, 116);
 		contentPane.add(label_21);
 		
 		JLabel label_22 = new JLabel("New label");
 		label_22.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\pinho sol.png"));
-		label_22.setBounds(292, 567, 88, 116);
+		label_22.setBounds(292, 563, 88, 116);
 		contentPane.add(label_22);
 		
 		JLabel label_23 = new JLabel("New label");
 		label_23.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\agua sanitaria.png"));
-		label_23.setBounds(540, 567, 88, 116);
+		label_23.setBounds(540, 563, 88, 116);
 		contentPane.add(label_23);
 		
 		JLabel label_24 = new JLabel("New label");
 		label_24.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\veja.png"));
-		label_24.setBounds(790, 567, 88, 116);
+		label_24.setBounds(790, 563, 88, 116);
 		contentPane.add(label_24);
 		
 		JLabel lblEspanador = new JLabel("Espanador");
@@ -301,9 +301,69 @@ public class Limpeza extends JFrame {
 		lblR_3.setBounds(807, 339, 51, 14);
 		contentPane.add(lblR_3);
 		
-		JLabel lblPregador = new JLabel("Pregador");
-		lblPregador.setBounds(60, 506, 46, 14);
-		contentPane.add(lblPregador);
+		JLabel lblAmaciante = new JLabel("Amaciante");
+		lblAmaciante.setBounds(83, 508, 53, 14);
+		contentPane.add(lblAmaciante);
+		
+		JLabel lblR_4 = new JLabel("R$ 15,00");
+		lblR_4.setBounds(87, 523, 51, 14);
+		contentPane.add(lblR_4);
+		
+		JLabel lblAriel = new JLabel("Ariel");
+		lblAriel.setBounds(321, 508, 51, 14);
+		contentPane.add(lblAriel);
+		
+		JLabel lblR_5 = new JLabel("R$ 12,00");
+		lblR_5.setBounds(309, 523, 51, 14);
+		contentPane.add(lblR_5);
+		
+		JLabel lblSaboEmP = new JLabel("Sab\u00E3o em p\u00F3 OMO");
+		lblSaboEmP.setBounds(537, 508, 113, 14);
+		contentPane.add(lblSaboEmP);
+		
+		JLabel lblR_6 = new JLabel("R$ 5,50");
+		lblR_6.setBounds(562, 523, 51, 14);
+		contentPane.add(lblR_6);
+		
+		JLabel lblVanish = new JLabel("Vanish");
+		lblVanish.setBounds(817, 508, 56, 14);
+		contentPane.add(lblVanish);
+		
+		JLabel lblR_7 = new JLabel("R$ 10,00");
+		lblR_7.setBounds(805, 523, 51, 14);
+		contentPane.add(lblR_7);
+		
+		JLabel lblRodo = new JLabel("Rodo");
+		lblRodo.setBounds(81, 681, 53, 14);
+		contentPane.add(lblRodo);
+		
+		JLabel lblR_8 = new JLabel("R$ 14,00");
+		lblR_8.setBounds(70, 696, 51, 14);
+		contentPane.add(lblR_8);
+		
+		JLabel lblPinhoSol = new JLabel("Pinho Sol");
+		lblPinhoSol.setBounds(316, 681, 51, 14);
+		contentPane.add(lblPinhoSol);
+		
+		JLabel lblR_9 = new JLabel("R$ 6,50");
+		lblR_9.setBounds(310, 696, 51, 14);
+		contentPane.add(lblR_9);
+		
+		JLabel lblguaSanitriaDrago = new JLabel("\u00C1gua Sanit\u00E1ria drag\u00E3o");
+		lblguaSanitriaDrago.setBounds(533, 681, 117, 14);
+		contentPane.add(lblguaSanitriaDrago);
+		
+		JLabel lblR_10 = new JLabel("R$ 1,50");
+		lblR_10.setBounds(568, 696, 51, 14);
+		contentPane.add(lblR_10);
+		
+		JLabel lblVeja = new JLabel("Veja");
+		lblVeja.setBounds(819, 681, 56, 14);
+		contentPane.add(lblVeja);
+		
+		JLabel lblR_11 = new JLabel("R$ 4,50");
+		lblR_11.setBounds(810, 696, 51, 14);
+		contentPane.add(lblR_11);
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
