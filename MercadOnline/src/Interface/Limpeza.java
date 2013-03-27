@@ -211,22 +211,22 @@ public class Limpeza extends JFrame {
 		
 		JLabel label = new JLabel("New label");
 		label.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\espanador.png"));
-		label.setBounds(57, 217, 88, 116);
+		label.setBounds(57, 205, 88, 116);
 		contentPane.add(label);
 		
 		JLabel label_4 = new JLabel("New label");
 		label_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\vasoura.png"));
-		label_4.setBounds(292, 217, 88, 116);
+		label_4.setBounds(292, 205, 88, 116);
 		contentPane.add(label_4);
 		
 		JLabel label_5 = new JLabel("New label");
 		label_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\luvas.png"));
-		label_5.setBounds(540, 217, 88, 116);
+		label_5.setBounds(540, 205, 88, 116);
 		contentPane.add(label_5);
 		
 		JLabel label_13 = new JLabel("New label");
 		label_13.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\limpa uax.png"));
-		label_13.setBounds(790, 217, 88, 116);
+		label_13.setBounds(790, 205, 88, 116);
 		contentPane.add(label_13);
 		
 		JLabel label_14 = new JLabel("New label");
@@ -268,6 +268,38 @@ public class Limpeza extends JFrame {
 		label_24.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\veja.png"));
 		label_24.setBounds(790, 567, 88, 116);
 		contentPane.add(label_24);
+		
+		JLabel lblEspanador = new JLabel("Espanador");
+		lblEspanador.setBounds(81, 324, 53, 14);
+		contentPane.add(lblEspanador);
+		
+		JLabel lblR = new JLabel("R$ 6,00");
+		lblR.setBounds(89, 339, 51, 14);
+		contentPane.add(lblR);
+		
+		JLabel lblVassoura = new JLabel("Vassoura");
+		lblVassoura.setBounds(310, 324, 51, 14);
+		contentPane.add(lblVassoura);
+		
+		JLabel lblR_1 = new JLabel("R$ 15,00");
+		lblR_1.setBounds(306, 339, 51, 14);
+		contentPane.add(lblR_1);
+		
+		JLabel lblLuvas = new JLabel("Luvas");
+		lblLuvas.setBounds(569, 324, 37, 14);
+		contentPane.add(lblLuvas);
+		
+		JLabel lblR_2 = new JLabel("R$ 3,50");
+		lblR_2.setBounds(564, 339, 51, 14);
+		contentPane.add(lblR_2);
+		
+		JLabel lblLimpaMax = new JLabel("Limpa MAX");
+		lblLimpaMax.setBounds(804, 324, 56, 14);
+		contentPane.add(lblLimpaMax);
+		
+		JLabel lblR_3 = new JLabel("R$ 8,00");
+		lblR_3.setBounds(807, 339, 51, 14);
+		contentPane.add(lblR_3);
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
