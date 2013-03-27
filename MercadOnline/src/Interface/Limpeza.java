@@ -305,7 +305,7 @@ public class Limpeza extends JFrame {
 		lblAmaciante.setBounds(83, 508, 53, 14);
 		contentPane.add(lblAmaciante);
 		
-		JLabel lblR_4 = new JLabel("R$ 15,00");
+		JLabel lblR_4 = new JLabel("R$ 5,80");
 		lblR_4.setBounds(87, 523, 51, 14);
 		contentPane.add(lblR_4);
 		
@@ -321,7 +321,7 @@ public class Limpeza extends JFrame {
 		lblSaboEmP.setBounds(537, 508, 113, 14);
 		contentPane.add(lblSaboEmP);
 		
-		JLabel lblR_6 = new JLabel("R$ 5,50");
+		JLabel lblR_6 = new JLabel("R$ 10,50");
 		lblR_6.setBounds(562, 523, 51, 14);
 		contentPane.add(lblR_6);
 		
