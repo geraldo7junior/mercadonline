@@ -218,6 +218,66 @@ public class Frios extends JFrame {
 		label_2.setBounds(47, 373, 913, 14);
 		contentPane.add(label_2);
 		
+		JLabel label_1 = new JLabel("New label");
+		label_1.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\f1.png"));
+		label_1.setBounds(57, 215, 88, 116);
+		contentPane.add(label_1);
+		
+		JLabel label_3 = new JLabel("New label");
+		label_3.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\f6.png"));
+		label_3.setBounds(292, 215, 88, 116);
+		contentPane.add(label_3);
+		
+		JLabel label_4 = new JLabel("New label");
+		label_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\f3.png"));
+		label_4.setBounds(540, 215, 88, 116);
+		contentPane.add(label_4);
+		
+		JLabel label_5 = new JLabel("New label");
+		label_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\f4.png"));
+		label_5.setBounds(790, 215, 88, 116);
+		contentPane.add(label_5);
+		
+		JLabel label_13 = new JLabel("New label");
+		label_13.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\c1.png"));
+		label_13.setBounds(57, 396, 88, 116);
+		contentPane.add(label_13);
+		
+		JLabel label_14 = new JLabel("New label");
+		label_14.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\c3.png"));
+		label_14.setBounds(292, 396, 88, 116);
+		contentPane.add(label_14);
+		
+		JLabel label_15 = new JLabel("New label");
+		label_15.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\c4.png"));
+		label_15.setBounds(540, 396, 88, 116);
+		contentPane.add(label_15);
+		
+		JLabel label_16 = new JLabel("New label");
+		label_16.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\c2.png"));
+		label_16.setBounds(790, 396, 88, 116);
+		contentPane.add(label_16);
+		
+		JLabel label_17 = new JLabel("New label");
+		label_17.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\f5.png"));
+		label_17.setBounds(57, 565, 88, 116);
+		contentPane.add(label_17);
+		
+		JLabel label_18 = new JLabel("New label");
+		label_18.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\s.png"));
+		label_18.setBounds(292, 565, 88, 116);
+		contentPane.add(label_18);
+		
+		JLabel label_19 = new JLabel("New label");
+		label_19.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\f8.png"));
+		label_19.setBounds(540, 565, 88, 116);
+		contentPane.add(label_19);
+		
+		JLabel label_20 = new JLabel("New label");
+		label_20.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\f7.png"));
+		label_20.setBounds(790, 565, 88, 116);
+		contentPane.add(label_20);
+		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));

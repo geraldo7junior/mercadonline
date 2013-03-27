@@ -186,22 +186,10 @@ public class Cosmeticos extends JFrame {
 		lblCosmeticos.setBounds(727, 85, 74, 14);
 		contentPane.add(lblCosmeticos);
 		
-		JLabel label_15 = new JLabel("Carrinho");
-		label_15.setForeground(new Color(255, 153, 0));
-		label_15.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_15.setBounds(854, 80, 56, 14);
-		contentPane.add(label_15);
-		
-		JLabel label_16 = new JLabel("New label");
-		label_16.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
-		label_16.setBounds(890, 76, 56, 23);
-		contentPane.add(label_16);
-		
-		JLabel label_17 = new JLabel("Compras");
-		label_17.setForeground(new Color(255, 153, 0));
-		label_17.setFont(new Font("Calibri", Font.BOLD, 15));
-		label_17.setBounds(935, 80, 63, 14);
-		contentPane.add(label_17);
+		JLabel lblCarrinhoCompras = new JLabel("New label");
+		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
+		lblCarrinhoCompras.setBounds(827, 73, 157, 33);
+		contentPane.add(lblCarrinhoCompras);
 		
 		JLabel lblCosmticos = new JLabel("COSM\u00C9TICOS");
 		lblCosmticos.setFont(new Font("AR BONNIE", Font.BOLD, 24));
@@ -241,11 +229,70 @@ public class Cosmeticos extends JFrame {
 		label_21.setBounds(47, 548, 913, 14);
 		contentPane.add(label_21);
 		
+		JLabel label = new JLabel("New label");
+		label.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\cor1.png"));
+		label.setBounds(57, 217, 88, 116);
+		contentPane.add(label);
+		
+		JLabel label_1 = new JLabel("New label");
+		label_1.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\cor2.png"));
+		label_1.setBounds(292, 217, 88, 116);
+		contentPane.add(label_1);
+		
+		JLabel label_2 = new JLabel("New label");
+		label_2.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\cor3.png"));
+		label_2.setBounds(540, 217, 88, 116);
+		contentPane.add(label_2);
+		
+		JLabel label_3 = new JLabel("New label");
+		label_3.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\cor4.png"));
+		label_3.setBounds(790, 217, 88, 116);
+		contentPane.add(label_3);
+		
+		JLabel label_4 = new JLabel("New label");
+		label_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\des.png"));
+		label_4.setBounds(57, 398, 88, 116);
+		contentPane.add(label_4);
+		
+		JLabel label_5 = new JLabel("New label");
+		label_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\des2.png"));
+		label_5.setBounds(292, 398, 88, 116);
+		contentPane.add(label_5);
+		
+		JLabel label_13 = new JLabel("New label");
+		label_13.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\des3.png"));
+		label_13.setBounds(540, 398, 88, 116);
+		contentPane.add(label_13);
+		
+		JLabel label_14 = new JLabel("New label");
+		label_14.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\des4.png"));
+		label_14.setBounds(790, 398, 88, 116);
+		contentPane.add(label_14);
+		
+		JLabel label_19 = new JLabel("New label");
+		label_19.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\h1.png"));
+		label_19.setBounds(57, 571, 88, 116);
+		contentPane.add(label_19);
+		
+		JLabel label_22 = new JLabel("New label");
+		label_22.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\h2.png"));
+		label_22.setBounds(292, 571, 88, 116);
+		contentPane.add(label_22);
+		
+		JLabel label_23 = new JLabel("New label");
+		label_23.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\h3.png"));
+		label_23.setBounds(540, 571, 88, 116);
+		contentPane.add(label_23);
+		
+		JLabel label_24 = new JLabel("New label");
+		label_24.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\h4.png"));
+		label_24.setBounds(790, 571, 88, 116);
+		contentPane.add(label_24);
+		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
 		lblBackGround.setBounds(0, 0, 1024, 768);
 		contentPane.add(lblBackGround);
 	}
-
 }
