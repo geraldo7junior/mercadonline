@@ -1,7 +1,6 @@
 package Interface;
 
 import java.awt.Color;
-import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -32,25 +31,6 @@ public class Contato extends JFrame {
 	private JTextField textField_4;
 	private JTextField textField_5;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Contato frame = new Contato();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
 	public Contato() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1024, 768);
@@ -202,6 +182,13 @@ public class Contato extends JFrame {
 		contentPane.add(lblCosmeticos);
 		
 		JLabel lblCarrinhoCompras = new JLabel("New label");
+		lblCarrinhoCompras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCarrinhoCompras.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new CarrinhoCompras().setVisible(true);
+			}
+		});
 		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
 		lblCarrinhoCompras.setBounds(843, 75, 152, 30);
 		contentPane.add(lblCarrinhoCompras);

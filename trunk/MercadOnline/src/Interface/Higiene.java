@@ -1,7 +1,6 @@
 package Interface;
 
 import java.awt.Color;
-import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -24,25 +23,6 @@ public class Higiene extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Higiene frame = new Higiene();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
 	public Higiene() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1024, 768);
@@ -187,6 +167,13 @@ public class Higiene extends JFrame {
 		contentPane.add(lblCosmeticos);
 		
 		JLabel lblCarrinhoCompras = new JLabel("New label");
+		lblCarrinhoCompras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCarrinhoCompras.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new CarrinhoCompras().setVisible(true);
+			}
+		});
 		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
 		lblCarrinhoCompras.setBounds(825, 73, 157, 33);
 		contentPane.add(lblCarrinhoCompras);

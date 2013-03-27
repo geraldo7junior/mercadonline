@@ -273,6 +273,13 @@ public class Comprar extends JFrame {
 		contentPane.add(label_37);
 		
 		JLabel lblCarrinhoCompras = new JLabel("");
+		lblCarrinhoCompras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCarrinhoCompras.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new CarrinhoCompras().setVisible(true);
+			}
+		});
 		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
 		lblCarrinhoCompras.setBounds(838, 75, 152, 30);
 		contentPane.add(lblCarrinhoCompras);

@@ -169,6 +169,13 @@ public class Hortifruti extends JFrame {
 		contentPane.add(lblCosmeticos);
 		
 		JLabel lblCarrinhoCompras = new JLabel("New label");
+		lblCarrinhoCompras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCarrinhoCompras.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new CarrinhoCompras().setVisible(true);
+			}
+		});
 		lblCarrinhoCompras.setBounds(846, 75, 152, 30);
 		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
 		contentPane.add(lblCarrinhoCompras);

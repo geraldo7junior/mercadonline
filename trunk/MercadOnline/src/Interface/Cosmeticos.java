@@ -1,7 +1,6 @@
 package Interface;
 
 import java.awt.Color;
-import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -12,6 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import Main.Produto;
 import Utilitarios.Login;
 import Utilitarios.Menu;
 
@@ -24,25 +24,6 @@ public class Cosmeticos extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Cosmeticos frame = new Cosmeticos();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
 	public Cosmeticos() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1024, 768);
@@ -187,6 +168,13 @@ public class Cosmeticos extends JFrame {
 		contentPane.add(lblCosmeticos);
 		
 		JLabel lblCarrinhoCompras = new JLabel("New label");
+		lblCarrinhoCompras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCarrinhoCompras.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new CarrinhoCompras().setVisible(true);
+			}
+		});
 		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
 		lblCarrinhoCompras.setBounds(827, 73, 157, 33);
 		contentPane.add(lblCarrinhoCompras);
@@ -235,6 +223,12 @@ public class Cosmeticos extends JFrame {
 		contentPane.add(label);
 		
 		JLabel label_1 = new JLabel("New label");
+		label_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		label_1.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				new Produto().setInListaCompras("Alta Moda","3.20");
+			}
+		});
 		label_1.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\cor2.png"));
 		label_1.setBounds(292, 217, 88, 116);
 		contentPane.add(label_1);
@@ -260,6 +254,12 @@ public class Cosmeticos extends JFrame {
 		contentPane.add(label_5);
 		
 		JLabel label_13 = new JLabel("New label");
+		label_13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		label_13.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				new Produto().setInListaCompras("Rexona Powder","9.90");
+			}
+		});
 		label_13.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\des3.png"));
 		label_13.setBounds(540, 391, 88, 116);
 		contentPane.add(label_13);
