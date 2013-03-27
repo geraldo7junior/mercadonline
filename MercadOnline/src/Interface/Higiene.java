@@ -231,7 +231,7 @@ public class Higiene extends JFrame {
 		
 		JLabel label = new JLabel("New label");
 		label.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\papel1.png"));
-		label.setBounds(57, 215, 88, 116);
+		label.setBounds(56, 198, 88, 116);
 		contentPane.add(label);
 		
 		JLabel label_4 = new JLabel("New label");
@@ -246,27 +246,27 @@ public class Higiene extends JFrame {
 		
 		JLabel label_13 = new JLabel("New label");
 		label_13.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\papel4.png"));
-		label_13.setBounds(790, 215, 88, 116);
+		label_13.setBounds(788, 207, 88, 116);
 		contentPane.add(label_13);
 		
 		JLabel label_14 = new JLabel("New label");
 		label_14.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\s1.png"));
-		label_14.setBounds(57, 396, 88, 116);
+		label_14.setBounds(57, 385, 88, 116);
 		contentPane.add(label_14);
 		
 		JLabel label_15 = new JLabel("New label");
 		label_15.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\s2.png"));
-		label_15.setBounds(292, 396, 88, 116);
+		label_15.setBounds(296, 378, 88, 116);
 		contentPane.add(label_15);
 		
 		JLabel label_16 = new JLabel("New label");
 		label_16.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\s3.png"));
-		label_16.setBounds(540, 396, 88, 116);
+		label_16.setBounds(540, 378, 88, 116);
 		contentPane.add(label_16);
 		
 		JLabel label_17 = new JLabel("New label");
 		label_17.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\s4.png"));
-		label_17.setBounds(790, 396, 88, 116);
+		label_17.setBounds(788, 377, 88, 116);
 		contentPane.add(label_17);
 		
 		JLabel label_18 = new JLabel("New label");
@@ -288,6 +288,102 @@ public class Higiene extends JFrame {
 		label_21.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Higiene\\bb.png"));
 		label_21.setBounds(790, 565, 88, 116);
 		contentPane.add(label_21);
+		
+		JLabel lblPapelHiginicoNeve = new JLabel("Papel Higi\u00EAnico Neve-12 rolos");
+		lblPapelHiginicoNeve.setBounds(34, 332, 154, 14);
+		contentPane.add(lblPapelHiginicoNeve);
+		
+		JLabel lblNewLabel = new JLabel("R$ 18,89");
+		lblNewLabel.setBounds(74, 346, 46, 14);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblPapelHiginicoScott = new JLabel("Papel Higi\u00EAnico Scott-4 rolos");
+		lblPapelHiginicoScott.setBounds(269, 330, 176, 14);
+		contentPane.add(lblPapelHiginicoScott);
+		
+		JLabel lblNewLabel_1 = new JLabel("R$ 3,89");
+		lblNewLabel_1.setBounds(312, 343, 46, 14);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblPapelHiginicoNeve_1 = new JLabel("Papel Higi\u00EAnico Neve-4 rolos");
+		lblPapelHiginicoNeve_1.setBounds(510, 330, 162, 14);
+		contentPane.add(lblPapelHiginicoNeve_1);
+		
+		JLabel lblPapelHiginicoPersonal = new JLabel("Papel Higi\u00EAnico Personal-8 rolos");
+		lblPapelHiginicoPersonal.setBounds(759, 331, 187, 14);
+		contentPane.add(lblPapelHiginicoPersonal);
+		
+		JLabel lblR = new JLabel("R$ 2,50");
+		lblR.setBounds(813, 345, 46, 14);
+		contentPane.add(lblR);
+		
+		JLabel lblR_1 = new JLabel("R$ 6,05");
+		lblR_1.setBounds(558, 345, 46, 14);
+		contentPane.add(lblR_1);
+		
+		JLabel lblEvenLuxo = new JLabel("Even Luxo");
+		lblEvenLuxo.setBounds(84, 498, 74, 14);
+		contentPane.add(lblEvenLuxo);
+		
+		JLabel lblProtex = new JLabel("Protex");
+		lblProtex.setBounds(321, 498, 46, 14);
+		contentPane.add(lblProtex);
+		
+		JLabel lblAsepxia = new JLabel("Asepxia");
+		lblAsepxia.setBounds(562, 498, 46, 14);
+		contentPane.add(lblAsepxia);
+		
+		JLabel lblDove = new JLabel("Dove");
+		lblDove.setBounds(823, 498, 46, 14);
+		contentPane.add(lblDove);
+		
+		JLabel lblR_2 = new JLabel("R$ 1,59");
+		lblR_2.setBounds(320, 511, 46, 14);
+		contentPane.add(lblR_2);
+		
+		JLabel lblR_3 = new JLabel("R$ 1,78");
+		lblR_3.setBounds(818, 512, 46, 14);
+		contentPane.add(lblR_3);
+		
+		JLabel lblR_4 = new JLabel("R$ 4,09");
+		lblR_4.setBounds(564, 511, 46, 14);
+		contentPane.add(lblR_4);
+		
+		JLabel lblR_5 = new JLabel("R$ 1,68");
+		lblR_5.setBounds(86, 513, 46, 14);
+		contentPane.add(lblR_5);
+		
+		JLabel lblLenosUmidecidos = new JLabel("Len\u00E7os Umidecidos");
+		lblLenosUmidecidos.setBounds(790, 679, 110, 14);
+		contentPane.add(lblLenosUmidecidos);
+		
+		JLabel lblR_6 = new JLabel("R$ 8,39");
+		lblR_6.setBounds(813, 692, 46, 14);
+		contentPane.add(lblR_6);
+		
+		JLabel lblFraldasPampers = new JLabel("Fraldas Pampers ");
+		lblFraldasPampers.setBounds(61, 678, 120, 14);
+		contentPane.add(lblFraldasPampers);
+		
+		JLabel lblR_7 = new JLabel("R$ 67,89");
+		lblR_7.setBounds(68, 694, 46, 14);
+		contentPane.add(lblR_7);
+		
+		JLabel lblMamadeira = new JLabel("Mamadeira");
+		lblMamadeira.setBounds(560, 682, 113, 14);
+		contentPane.add(lblMamadeira);
+		
+		JLabel lblR_8 = new JLabel("R$ 3,10");
+		lblR_8.setBounds(560, 694, 46, 14);
+		contentPane.add(lblR_8);
+		
+		JLabel lblTalcoJohnsons = new JLabel("Talco Johnson's");
+		lblTalcoJohnsons.setBounds(294, 688, 91, 14);
+		contentPane.add(lblTalcoJohnsons);
+		
+		JLabel lblR_9 = new JLabel("R$ 6,99");
+		lblR_9.setBounds(313, 702, 46, 14);
+		contentPane.add(lblR_9);
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
