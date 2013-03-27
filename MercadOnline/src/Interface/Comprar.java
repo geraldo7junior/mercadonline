@@ -4,6 +4,9 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -17,6 +20,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.Document;
 
+import Main.ConexaoDB;
 import Utilitarios.Login;
 import Utilitarios.Menu;
 
@@ -305,6 +309,9 @@ public class Comprar extends JFrame {
 		));
 		scrollPaneCarrinhoCompras.setViewportView(table);
 		
+		javax.swing.table.DefaultTableModel dtm = (javax.swing.table.DefaultTableModel)table.getModel();
+		new Interface.CarrinhoCompras().MostrarLista(dtm);
+		
 		JLabel lblCarrinhoDeCompras = new JLabel("Carrinho de Compras:");
 		lblCarrinhoDeCompras.setForeground(new Color(255, 153, 0));
 		lblCarrinhoDeCompras.setFont(new Font("Microsoft Sans Serif", Font.BOLD, 12));
@@ -418,6 +425,7 @@ public class Comprar extends JFrame {
 		txtFrete.setBounds(320, 576, 86, 20);
 		contentPane.add(txtFrete);
 		txtFrete.setColumns(10);
+		txtFrete.setText("R$ 5.00");
 		
 		txtTotal = new JTextField();
 		txtTotal.setBounds(320, 617, 86, 20);
@@ -442,6 +450,7 @@ public class Comprar extends JFrame {
 		txtProtocolo.setBounds(618, 617, 86, 20);
 		contentPane.add(txtProtocolo);
 		txtProtocolo.setColumns(10);
+		txtProtocolo.setText("Prot20138765342");
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
@@ -449,7 +458,39 @@ public class Comprar extends JFrame {
 		lblBackGround.setBounds(0, 0, 1024, 768);
 		contentPane.add(lblBackGround);
 		
+	
+			
+			String sql = "SELECT * FROM mercadondb.usuario Where email= 'iii'";
+			ConexaoDB conexao = new ConexaoDB();
+			conexao.getConnection();
+			try {
+				PreparedStatement stm = conexao.conn.prepareStatement(sql);			
+				
+				ResultSet rs = stm.executeQuery();
+				
+				while (rs.next()) {
+					
+					txtRua.setText(rs.getString(12));
+					txtComplemento.setText(rs.getString(13));
+					txtBairro.setText(rs.getString(14));
+					txtCidade.setText(rs.getString(15));
+					txtUf.setText(rs.getString(16));
+					txtcep.setText(rs.getString(17));
+					
+				}
+				
+				stm.close();
+				conexao.closeConnection();
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+				conexao.closeConnection();
+			}	
+				
+		
 		
 	}
 
-}
+		
+	}
+
+
