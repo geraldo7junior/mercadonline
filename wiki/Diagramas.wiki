@@ -27,5 +27,13 @@
 <a href="https://mercadonline.googlecode.com/files/DiagramaAtividadeMercadon_AD_06032013.jpg">Versão: 0.01</a> 
 <hr>
 
+
+<h2><b><p align="center">Modelo de Entidade Relacional</p></b></h2><br>
+
+<p align="center"><img src="
+https://lh3.googleusercontent.com/-WuVP3GePSPo/UVJJk9hpk9I/AAAAAAAAASk/zloY1fk0vL0/s800/MER.png"><br>
+<a href="https://mercadonline.googlecode.com/files/ModeloEntidaderelacional_MER_26032013.png">Versão: 0.01</a> 
+<hr>
+
 <br>
 <hr>
