@@ -226,34 +226,42 @@ public class Sugeridos extends JFrame {
 		contentPane.add(label_3);
 		
 		JLabel label = new JLabel("New label");
+		label.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\ades.png"));
 		label.setBounds(54, 207, 88, 116);
 		contentPane.add(label);
 		
 		JLabel label_2 = new JLabel("New label");
+		label_2.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Hortifruti\\coentro.png"));
 		label_2.setBounds(259, 211, 88, 116);
 		contentPane.add(label_2);
 		
 		JLabel label_4 = new JLabel("New label");
+		label_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Hortifruti\\cebola.png"));
 		label_4.setBounds(496, 211, 88, 116);
 		contentPane.add(label_4);
 		
 		JLabel label_5 = new JLabel("New label");
-		label_5.setBounds(787, 131, 88, 116);
+		label_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Hortifruti\\tomate.png"));
+		label_5.setBounds(787, 211, 88, 116);
 		contentPane.add(label_5);
 		
 		JLabel label_6 = new JLabel("New label");
+		label_6.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\feijao.png"));
 		label_6.setBounds(54, 412, 88, 116);
 		contentPane.add(label_6);
 		
 		JLabel label_7 = new JLabel("New label");
+		label_7.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\arroz 4.png"));
 		label_7.setBounds(259, 416, 88, 116);
 		contentPane.add(label_7);
 		
 		JLabel label_8 = new JLabel("New label");
+		label_8.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarrao.png"));
 		label_8.setBounds(496, 416, 88, 116);
 		contentPane.add(label_8);
 		
 		JLabel label_9 = new JLabel("New label");
+		label_9.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\coca 3.png"));
 		label_9.setBounds(787, 416, 88, 116);
 		contentPane.add(label_9);
 		

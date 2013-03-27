@@ -203,6 +203,46 @@ public class Promocao extends JFrame {
 		lblPromocao_1.setBounds(482, 140, 113, 20);
 		contentPane.add(lblPromocao_1);
 		
+		JLabel label = new JLabel("New label");
+		label.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\delvalle.png"));
+		label.setBounds(66, 207, 88, 116);
+		contentPane.add(label);
+		
+		JLabel label_1 = new JLabel("New label");
+		label_1.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\chalise.png"));
+		label_1.setBounds(271, 211, 88, 116);
+		contentPane.add(label_1);
+		
+		JLabel label_2 = new JLabel("New label");
+		label_2.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Padaria\\Torta de morango.png"));
+		label_2.setBounds(508, 211, 88, 116);
+		contentPane.add(label_2);
+		
+		JLabel label_3 = new JLabel("New label");
+		label_3.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Hortifruti\\melancia.png"));
+		label_3.setBounds(799, 211, 88, 116);
+		contentPane.add(label_3);
+		
+		JLabel label_4 = new JLabel("New label");
+		label_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Frios e congelados\\c2.png"));
+		label_4.setBounds(66, 436, 88, 116);
+		contentPane.add(label_4);
+		
+		JLabel label_5 = new JLabel("New label");
+		label_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Hortifruti\\tomate.png"));
+		label_5.setBounds(271, 440, 88, 116);
+		contentPane.add(label_5);
+		
+		JLabel label_6 = new JLabel("New label");
+		label_6.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Cosmeticos\\h4.png"));
+		label_6.setBounds(508, 440, 88, 116);
+		contentPane.add(label_6);
+		
+		JLabel label_7 = new JLabel("New label");
+		label_7.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Mercearia\\macarrao.png"));
+		label_7.setBounds(799, 440, 88, 116);
+		contentPane.add(label_7);
+		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
