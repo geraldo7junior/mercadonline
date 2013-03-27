@@ -10,11 +10,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 import Utilitarios.Login;
 import Utilitarios.Menu;
-import javax.swing.SwingConstants;
 
 
 public class Home extends JFrame {
@@ -24,7 +24,7 @@ public class Home extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-
+	
 	/**
 	 * Launch the application.
 	 */
@@ -32,7 +32,7 @@ public class Home extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Home frame = new Home();
+					Contato frame = new Contato();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -44,6 +44,7 @@ public class Home extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+
 	public Home() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -258,6 +259,13 @@ public class Home extends JFrame {
 		contentPane.add(label_9);
 		
 		JLabel lblCarrinhoCompras = new JLabel("New label");
+		lblCarrinhoCompras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCarrinhoCompras.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new CarrinhoCompras().setVisible(true);
+			}
+		});
 		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
 		lblCarrinhoCompras.setBounds(841, 72, 157, 33);
 		contentPane.add(lblCarrinhoCompras);

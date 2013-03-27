@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import Main.Produto;
 import Utilitarios.Login;
 import Utilitarios.Menu;
 public class Bebidas extends JFrame {
@@ -205,6 +206,12 @@ public class Bebidas extends JFrame {
 		contentPane.add(label_21);
 		
 		JLabel lblSkolI = new JLabel("New label");
+		lblSkolI.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblSkolI.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				new Produto().setInListaCompras("Skol lata 350 ml","1.62");
+			}
+		});
 		lblSkolI.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\skol.png"));
 		lblSkolI.setBounds(108, 213, 88, 116);
 		contentPane.add(lblSkolI);
@@ -231,6 +238,12 @@ public class Bebidas extends JFrame {
 		contentPane.add(lblNewLabel_4);
 
 		JLabel lblNewLabel_5 = new JLabel("New label");
+		lblNewLabel_5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblNewLabel_5.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				new Produto().setInListaCompras("Del Vale Uva 1L","5.50");
+			}
+		});
 		lblNewLabel_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Bebidas\\delvalle.png"));
 		lblNewLabel_5.setBounds(343, 392, 88, 116);
 		contentPane.add(lblNewLabel_5);
@@ -365,6 +378,13 @@ public class Bebidas extends JFrame {
 		contentPane.add(lblCocaCola);
 		
 		JLabel lblCarrinhoCompras = new JLabel("New label");
+		lblCarrinhoCompras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblCarrinhoCompras.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new CarrinhoCompras().setVisible(true);
+			}
+		});
 		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
 		lblCarrinhoCompras.setBounds(848, 72, 157, 33);
 		contentPane.add(lblCarrinhoCompras);

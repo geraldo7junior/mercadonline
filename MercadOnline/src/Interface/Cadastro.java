@@ -785,6 +785,13 @@ public class Cadastro extends JFrame {
 		panelCadastro.add(lblCosmeticos);
 		
 		JLabel lblcarrinhoCompras = new JLabel("New label");
+		lblcarrinhoCompras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		lblcarrinhoCompras.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+				new CarrinhoCompras().setVisible(true);
+			}
+		});
 		lblcarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
 		lblcarrinhoCompras.setBounds(839, 76, 152, 30);
 		panelCadastro.add(lblcarrinhoCompras);

@@ -4,6 +4,9 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -14,6 +17,7 @@ import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
+import Main.ConexaoDB;
 import Utilitarios.Login;
 import Utilitarios.Menu;
 
@@ -288,17 +292,62 @@ public class CarrinhoCompras extends JFrame {
 			}
 		));
 		
+		javax.swing.table.DefaultTableModel dtm = (javax.swing.table.DefaultTableModel)table.getModel();
+		MostrarLista(dtm);
+		
 		JLabel lblcarrinhoCompras = new JLabel("New label");
 		lblcarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
 		lblcarrinhoCompras.setBounds(840, 71, 157, 33);
 		contentPane.add(lblcarrinhoCompras);
 		
+		JLabel lblTotal = new JLabel("Total:   R$");
+		lblTotal.setForeground(Color.RED);
+		lblTotal.setBounds(461, 493, 64, 14);
+		contentPane.add(lblTotal);
+		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
 		lblBackGround.setBounds(0, 0, 1024, 768);
-		contentPane.add(lblBackGround);
+		contentPane.add(lblBackGround);		
+	}
+	
+	
+	public void MostrarLista(javax.swing.table.DefaultTableModel dtm){
 		
+		JLabel lblValorTotal = new JLabel("");
+		lblValorTotal.setForeground(Color.RED);
+		lblValorTotal.setBounds(520, 493, 82, 14);
+		contentPane.add(lblValorTotal);
 		
+		String sql = "SELECT * FROM mercadondb.Produto";
+		ConexaoDB conexao = new ConexaoDB();
+		conexao.getConnection();
+		try {
+			PreparedStatement stm = conexao.conn.prepareStatement(sql);			
+			
+			ResultSet rs = stm.executeQuery();
+			
+			double total = 0.00;
+			Integer i = 0;
+			while (rs.next()) {
+				dtm.addRow(new Object[]{"",""});
+				dtm.setValueAt(rs.getString("idProduto"), i, 0);
+				dtm.setValueAt(rs.getString("Preco"), i, 1);
+				total += Double.valueOf((String) dtm.getValueAt(i, 1));
+				
+				i+=1;				
+			}
+			
+			lblValorTotal.setText(String.valueOf(total));
+			
+			stm.close();
+			conexao.closeConnection();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+			conexao.closeConnection();
+		}
+			
 	}
 }

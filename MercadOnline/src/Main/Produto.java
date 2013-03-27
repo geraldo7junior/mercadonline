@@ -1,5 +1,7 @@
 package Main;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.Date;
 
 public class Produto {
@@ -67,6 +69,27 @@ public class Produto {
 		this.preco = preco;
 	}
 	
+	public void setInListaCompras(String produto, String valor){
+		String sql = "INSERT INTO Produto (idProduto, Preco) " +
+				"VALUES (?,?)";
+		ConexaoDB conexao = new ConexaoDB();
+		conexao.getConnection();
+		try {
+			PreparedStatement stm = conexao.conn.prepareStatement(sql);
+			
+			stm.setString(1, produto);
+			stm.setString(2, valor);
+						
+			stm.executeUpdate();
+			
+			stm.close();
+			conexao.closeConnection();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			conexao.closeConnection();
+		}
+		
+	}
 	
 	
 	
