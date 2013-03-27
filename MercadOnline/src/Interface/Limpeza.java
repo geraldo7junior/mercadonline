@@ -210,50 +210,62 @@ public class Limpeza extends JFrame {
 		contentPane.add(label_3);
 		
 		JLabel label = new JLabel("New label");
+		label.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\espanador.png"));
 		label.setBounds(57, 217, 88, 116);
 		contentPane.add(label);
 		
 		JLabel label_4 = new JLabel("New label");
+		label_4.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\vasoura.png"));
 		label_4.setBounds(292, 217, 88, 116);
 		contentPane.add(label_4);
 		
 		JLabel label_5 = new JLabel("New label");
+		label_5.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\luvas.png"));
 		label_5.setBounds(540, 217, 88, 116);
 		contentPane.add(label_5);
 		
 		JLabel label_13 = new JLabel("New label");
+		label_13.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\limpa uax.png"));
 		label_13.setBounds(790, 217, 88, 116);
 		contentPane.add(label_13);
 		
 		JLabel label_14 = new JLabel("New label");
+		label_14.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\amaciante.png"));
 		label_14.setBounds(57, 398, 88, 116);
 		contentPane.add(label_14);
 		
 		JLabel label_18 = new JLabel("New label");
+		label_18.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\ariel.png"));
 		label_18.setBounds(292, 398, 88, 116);
 		contentPane.add(label_18);
 		
 		JLabel label_19 = new JLabel("New label");
+		label_19.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\omo.png"));
 		label_19.setBounds(540, 398, 88, 116);
 		contentPane.add(label_19);
 		
 		JLabel label_20 = new JLabel("New label");
+		label_20.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\vanish.png"));
 		label_20.setBounds(790, 398, 88, 116);
 		contentPane.add(label_20);
 		
 		JLabel label_21 = new JLabel("New label");
+		label_21.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\rodo.png"));
 		label_21.setBounds(57, 567, 88, 116);
 		contentPane.add(label_21);
 		
 		JLabel label_22 = new JLabel("New label");
+		label_22.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\pinho sol.png"));
 		label_22.setBounds(292, 567, 88, 116);
 		contentPane.add(label_22);
 		
 		JLabel label_23 = new JLabel("New label");
+		label_23.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\agua sanitaria.png"));
 		label_23.setBounds(540, 567, 88, 116);
 		contentPane.add(label_23);
 		
 		JLabel label_24 = new JLabel("New label");
+		label_24.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Limpeza\\veja.png"));
 		label_24.setBounds(790, 567, 88, 116);
 		contentPane.add(label_24);
 		
