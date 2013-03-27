@@ -253,7 +253,7 @@ public class Hortifruti extends JFrame {
 		
 		JLabel lblNewLabel_8 = new JLabel("New label");
 		lblNewLabel_8.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\Produtos\\Hortifruti\\fava.png"));
-		lblNewLabel_8.setBounds(108, 573, 88, 116);
+		lblNewLabel_8.setBounds(110, 571, 88, 116);
 		contentPane.add(lblNewLabel_8);
 		
 		JLabel lblNewLabel_9 = new JLabel("New label");
@@ -319,21 +319,21 @@ public class Hortifruti extends JFrame {
 		lblR_5.setBounds(869, 522, 51, 14);
 		contentPane.add(lblR_5);
 		
-		JLabel label_7 = new JLabel("R$ 3,80");
-		label_7.setBounds(867, 691, 51, 14);
-		contentPane.add(label_7);
+		JLabel lblR_11 = new JLabel("R$ 55,60");
+		lblR_11.setBounds(861, 697, 51, 14);
+		contentPane.add(lblR_11);
 		
-		JLabel label_8 = new JLabel("R$ 3,80");
-		label_8.setBounds(607, 695, 51, 14);
-		contentPane.add(label_8);
+		JLabel lblR_10 = new JLabel("R$ 2,90");
+		lblR_10.setBounds(607, 695, 51, 14);
+		contentPane.add(lblR_10);
 		
-		JLabel label_9 = new JLabel("R$ 3,80");
-		label_9.setBounds(363, 693, 51, 14);
-		contentPane.add(label_9);
+		JLabel lblR_9 = new JLabel("R$ 35,00");
+		lblR_9.setBounds(367, 698, 51, 14);
+		contentPane.add(lblR_9);
 		
-		JLabel label_10 = new JLabel("R$ 3,80");
-		label_10.setBounds(123, 689, 51, 14);
-		contentPane.add(label_10);
+		JLabel lblR_8 = new JLabel("R$ 23,80");
+		lblR_8.setBounds(130, 695, 51, 14);
+		contentPane.add(lblR_8);
 		
 		JLabel lblCebola = new JLabel("Cebola 1Kg");
 		lblCebola.setBounds(116, 507, 96, 14);
@@ -350,6 +350,22 @@ public class Hortifruti extends JFrame {
 		JLabel lblAlfaceCrespaUnd = new JLabel("Alface Crespa Und");
 		lblAlfaceCrespaUnd.setBounds(847, 507, 113, 14);
 		contentPane.add(lblAlfaceCrespaUnd);
+		
+		JLabel lblFavakg = new JLabel("Fava 1Kg");
+		lblFavakg.setBounds(130, 681, 46, 14);
+		contentPane.add(lblFavakg);
+		
+		JLabel lblErvilhakg = new JLabel("Ervilha 1kg");
+		lblErvilhakg.setBounds(364, 685, 95, 14);
+		contentPane.add(lblErvilhakg);
+		
+		JLabel lblVagemkg = new JLabel("Vagem 1kg");
+		lblVagemkg.setBounds(603, 682, 76, 14);
+		contentPane.add(lblVagemkg);
+		
+		JLabel lblLentilhakg = new JLabel("Lentilha 1kg");
+		lblLentilhakg.setBounds(855, 683, 97, 14);
+		contentPane.add(lblLentilhakg);
 		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setBounds(0, 0, 1024, 768);

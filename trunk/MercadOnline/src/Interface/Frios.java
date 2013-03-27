@@ -278,11 +278,106 @@ public class Frios extends JFrame {
 		label_20.setBounds(790, 565, 88, 116);
 		contentPane.add(label_20);
 		
+		JLabel lblR = new JLabel("R$ 18,90");
+		lblR.setBounds(77, 346, 46, 14);
+		contentPane.add(lblR);
+		
+		JLabel lblPeixekg = new JLabel("Peixes Diversos 1kg");
+		lblPeixekg.setBounds(58, 333, 110, 14);
+		contentPane.add(lblPeixekg);
+		
+		JLabel lblR_5 = new JLabel("R$ 49,90");
+		lblR_5.setBounds(318, 348, 46, 14);
+		contentPane.add(lblR_5);
+		
+		JLabel lblCamaroSemCasca = new JLabel("Camar\u00E3o Sem Casca 400g");
+		lblCamaroSemCasca.setBounds(266, 332, 136, 14);
+		contentPane.add(lblCamaroSemCasca);
+		
+		JLabel lblFrangoInteiro = new JLabel("Frango Inteiro");
+		lblFrangoInteiro.setBounds(550, 334, 88, 14);
+		contentPane.add(lblFrangoInteiro);
+		
+		JLabel lblPicanhakg = new JLabel("Picanha 1kg");
+		lblPicanhakg.setBounds(799, 335, 79, 14);
+		contentPane.add(lblPicanhakg);
+		
+		JLabel lblR_1 = new JLabel("R$ 47,25");
+		lblR_1.setBounds(804, 348, 46, 14);
+		contentPane.add(lblR_1);
+		
+		JLabel lblR_2 = new JLabel("R$ 13,80");
+		lblR_2.setBounds(566, 348, 46, 14);
+		contentPane.add(lblR_2);
+		
+		JLabel lblR_3 = new JLabel("R$ 5,50");
+		lblR_3.setBounds(75, 524, 46, 14);
+		contentPane.add(lblR_3);
+		
+		JLabel lblHamburguerDePeru = new JLabel("Hamburguer de Peru");
+		lblHamburguerDePeru.setBounds(45, 507, 136, 14);
+		contentPane.add(lblHamburguerDePeru);
+		
+		JLabel lblR_11 = new JLabel("R$ 55,00");
+		lblR_11.setBounds(314, 526, 54, 14);
+		contentPane.add(lblR_11);
+		
+		JLabel lblSalaminhoPerdigo = new JLabel("Salaminho Perdig\u00E3o");
+		lblSalaminhoPerdigo.setBounds(288, 512, 111, 14);
+		contentPane.add(lblSalaminhoPerdigo);
+		
+		JLabel lblR_4 = new JLabel("R$ 4,29");
+		lblR_4.setBounds(805, 519, 46, 14);
+		contentPane.add(lblR_4);
+		
+		JLabel lblMiniChicken = new JLabel("Mini Chicken");
+		lblMiniChicken.setBounds(797, 506, 74, 14);
+		contentPane.add(lblMiniChicken);
+		
+		JLabel lblR_6 = new JLabel("R$ 13,00");
+		lblR_6.setBounds(563, 524, 46, 14);
+		contentPane.add(lblR_6);
+		
+		JLabel lblQueijoPratokg = new JLabel("Queijo Prato 1Kg");
+		lblQueijoPratokg.setBounds(537, 510, 96, 16);
+		contentPane.add(lblQueijoPratokg);
+		
+		JLabel lblR_7 = new JLabel("R$ 4,90");
+		lblR_7.setBounds(74, 692, 46, 14);
+		contentPane.add(lblR_7);
+		
+		JLabel lblR_10 = new JLabel("R$ 3,15");
+		lblR_10.setBounds(318, 695, 46, 14);
+		contentPane.add(lblR_10);
+		
+		JLabel lblR_8 = new JLabel("R$ 17,30");
+		lblR_8.setBounds(550, 698, 46, 14);
+		contentPane.add(lblR_8);
+		
+		JLabel lblR_9 = new JLabel("R$ 12,50");
+		lblR_9.setBounds(817, 697, 46, 14);
+		contentPane.add(lblR_9);
+		
+		JLabel lblManteigaCamponesa = new JLabel("Manteiga Camponesa");
+		lblManteigaCamponesa.setBounds(42, 675, 120, 14);
+		contentPane.add(lblManteigaCamponesa);
+		
+		JLabel lblPresuntoDePeru = new JLabel("Presunto de Peru 1kg");
+		lblPresuntoDePeru.setBounds(522, 683, 127, 14);
+		contentPane.add(lblPresuntoDePeru);
+		
+		JLabel lblRequeijoItamb = new JLabel("Requeij\u00E3o Itamb\u00E9");
+		lblRequeijoItamb.setBounds(289, 677, 130, 14);
+		contentPane.add(lblRequeijoItamb);
+		
+		JLabel lblMortadelaBologna = new JLabel("Mortadela Bologna 1kg");
+		lblMortadelaBologna.setBounds(779, 684, 116, 14);
+		contentPane.add(lblMortadelaBologna);
+		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
 		lblBackGround.setBounds(0, 1, 1024, 768);
 		contentPane.add(lblBackGround);
 	}
-
 }

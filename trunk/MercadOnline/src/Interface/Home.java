@@ -14,6 +14,7 @@ import javax.swing.border.EmptyBorder;
 
 import Utilitarios.Login;
 import Utilitarios.Menu;
+import javax.swing.SwingConstants;
 
 
 public class Home extends JFrame {
@@ -260,6 +261,74 @@ public class Home extends JFrame {
 		lblCarrinhoCompras.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\carro.png"));
 		lblCarrinhoCompras.setBounds(841, 72, 157, 33);
 		contentPane.add(lblCarrinhoCompras);
+		
+		JLabel label_10 = new JLabel("P\u00E3o Franc\u00EAs Kg");
+		label_10.setBounds(71, 306, 112, 14);
+		contentPane.add(label_10);
+		
+		JLabel label_11 = new JLabel("R$ 9,50");
+		label_11.setBounds(86, 321, 42, 14);
+		contentPane.add(label_11);
+		
+		JLabel label_12 = new JLabel("Torta de Morango Kg");
+		label_12.setBounds(789, 468, 159, 14);
+		contentPane.add(label_12);
+		
+		JLabel label_13 = new JLabel("R$ 28,00");
+		label_13.setBounds(815, 482, 50, 14);
+		contentPane.add(label_13);
+		
+		JLabel label_21 = new JLabel("Coca Cola 3L");
+		label_21.setBounds(292, 309, 82, 14);
+		contentPane.add(label_21);
+		
+		JLabel label_22 = new JLabel("R$ 5,15");
+		label_22.setBounds(303, 323, 51, 14);
+		contentPane.add(label_22);
+		
+		JLabel label_23 = new JLabel("Del Valle Uva 1L");
+		label_23.setBounds(75, 476, 109, 14);
+		contentPane.add(label_23);
+		
+		JLabel label_24 = new JLabel("R$ 5,50");
+		label_24.setBounds(92, 490, 51, 14);
+		contentPane.add(label_24);
+		
+		JLabel label_25 = new JLabel("Feij\u00E3o Carioca Turquesa 1Kg");
+		label_25.setVerticalAlignment(SwingConstants.TOP);
+		label_25.setHorizontalAlignment(SwingConstants.LEFT);
+		label_25.setBounds(763, 314, 174, 20);
+		contentPane.add(label_25);
+		
+		JLabel label_26 = new JLabel("R$ 5,00");
+		label_26.setBounds(809, 329, 42, 14);
+		contentPane.add(label_26);
+		
+		JLabel label_27 = new JLabel("Arroz Tio Jo\u00E3o 1Kg");
+		label_27.setBounds(508, 315, 134, 14);
+		contentPane.add(label_27);
+		
+		JLabel label_28 = new JLabel("R$ 2,20");
+		label_28.setBounds(536, 330, 42, 14);
+		contentPane.add(label_28);
+		
+		JLabel label_29 = new JLabel("Macarr\u00E3o Vitarela 1pct");
+		label_29.setVerticalAlignment(SwingConstants.TOP);
+		label_29.setHorizontalAlignment(SwingConstants.LEFT);
+		label_29.setBounds(497, 474, 146, 14);
+		contentPane.add(label_29);
+		
+		JLabel label_30 = new JLabel("R$ 1,20");
+		label_30.setBounds(530, 488, 42, 14);
+		contentPane.add(label_30);
+		
+		JLabel label_31 = new JLabel("Tomate 1kg");
+		label_31.setBounds(286, 465, 96, 14);
+		contentPane.add(label_31);
+		
+		JLabel label_32 = new JLabel("R$ 5,20");
+		label_32.setBounds(294, 482, 51, 14);
+		contentPane.add(label_32);
 		
 		JLabel lblBackGrpund = new JLabel("");
 		lblBackGrpund.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGroundHome.png"));
