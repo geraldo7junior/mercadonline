@@ -301,6 +301,10 @@ public class Limpeza extends JFrame {
 		lblR_3.setBounds(807, 339, 51, 14);
 		contentPane.add(lblR_3);
 		
+		JLabel lblPregador = new JLabel("Pregador");
+		lblPregador.setBounds(60, 506, 46, 14);
+		contentPane.add(lblPregador);
+		
 		JLabel lblBackGround = new JLabel("");
 		lblBackGround.setIcon(new ImageIcon("C:\\EclipseProjects\\MercadOnline\\imagem\\BackGround.png"));
 		lblBackGround.setFont(new Font("Dialog", Font.PLAIN, 12));
